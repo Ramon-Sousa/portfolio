@@ -8,7 +8,7 @@ import Hobbies from "./components/Hobbies";
 export default function page() {
   return (
     <div className="min-h-screen overflow-hidden">
-      <div className="max-w-screen-7xl mx-auto p-5">
+      <div className="max-w-screen-7xl mx-auto">
         <Navbar />
         <HeroSection />
         <Services />
