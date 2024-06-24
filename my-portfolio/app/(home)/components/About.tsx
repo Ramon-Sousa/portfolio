@@ -12,14 +12,14 @@ export function About() {
             <h1 className="text-4xl font-semibold text-black dark:text-white">
               Sobre mim <br />
               <span className="md:text-[6rem] text-9xl font-black mt-1 leading-none">
-                Um paulista de sotaque mineiro
+                LoremIpsum
               </span>
             </h1>
           </>
         }
       >
         <Image
-          src={`/linear.webp`}
+          src={`/assets/test-cover.webp`}
           alt="hero"
           height={720}
           width={1400}

@@ -19,7 +19,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="py-4 flex justify-between bg-transparent border border-transparent border-b-gray-600">
+    <nav className="py-4 flex justify-between bg-transparent border border-transparent border-b-gray-600" id="Nav">
       <div className="container flex justify-between">
         <div className="gap-3 flex justify-between">
           <img src="/assets/1x1-Logo.png" className="h-8" alt="portfolio" />

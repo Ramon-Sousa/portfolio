@@ -4,16 +4,28 @@ import HeroSection from "./components/HeroSection";
 import Services from "./components/services";
 import { About } from "./components/About";
 import Hobbies from "./components/Hobbies";
+import Description from "./components/Description";
+import Projects from "./components/Projects";
+import Roles from "./components/Roles";
+import Brands from "./components/Brands";
+import Footer from "./components/Footer";
+import { TestimonialDemo } from "./components/Testimonial";
+
 
 export default function page() {
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen overflow-hidden bg-[#090A0C]">
       <div className="max-w-screen-7xl mx-auto">
-        <Navbar />
-        <HeroSection />
-        <Services />
-        <About />
+        <Navbar/>
+        <HeroSection/>
+        <Services/>
+        <About/>
+        <Description/>
         <Hobbies/>
+        <Projects/>
+        <Roles/>
+        <Brands/>
+        <Footer/>
       </div>
     </div>
   );

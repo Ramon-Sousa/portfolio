@@ -1,8 +1,18 @@
-import React from "react";
+import React from 'react'
 
-export default function Hobbies() {
+export default function Brands() {
   return (
-    <section className="mx-auto w-full">
+<section className="mx-auto w-full py-8 sm:py-12 lg:py-40">
+      <div className="mx-auto sm:pb-12 lg:pb-16">
+        <div className="mx-auto max-w-5xl text-center">
+          <div className="text-slate-200 text-[80px] font-black font-['Nunito Sans']">
+          Brands who trust me
+          </div>
+          <div className="text-center text-slate-400 text-sm font-semibold font-['Nunito Sans']">
+          I craft amazing digital experiences through a selection of sought after services and offerings.
+          </div>
+        </div>
+      </div>
       <div className="px-0 mx-0 w-full sm:justify-between sm:mt-0 grid auto-cols-max grid-cols-9 grid-rows-2">
         <div className="col-span-1 border border-l-0 border-gray-600"></div>
         <div className="col-span-2 flex justify-center items-center py-6 border border-gray-600">
@@ -194,5 +204,5 @@ export default function Hobbies() {
         <div className="col-span-1 border border-r-0 border-gray-600"></div>
       </div>
     </section>
-  );
+  )
 }
