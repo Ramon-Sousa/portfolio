@@ -5,17 +5,17 @@ export default function Brands() {
 <section className="mx-auto w-full py-8 sm:py-12 lg:py-40">
       <div className="mx-auto sm:pb-12 lg:pb-16">
         <div className="mx-auto max-w-5xl text-center">
-          <div className="text-slate-200 text-[80px] font-black font-['Nunito Sans']">
+          <div className="text-slate-200 text-[80px] font-black  bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text">
           Brands who trust me
           </div>
-          <div className="text-center text-slate-400 text-sm font-semibold font-['Nunito Sans']">
+          <div className="text-center text-slate-400 text-sm font-semibold ">
           I craft amazing digital experiences through a selection of sought after services and offerings.
           </div>
         </div>
       </div>
       <div className="px-0 mx-0 w-full sm:justify-between sm:mt-0 grid auto-cols-max grid-cols-9 grid-rows-2">
-        <div className="col-span-1 border border-l-0 border-gray-600"></div>
-        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-600">
+        <div className="col-span-1 border border-l-0 border-gray-800"></div>
+        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-800">
           <svg
             width="57"
             height="56"
@@ -53,7 +53,7 @@ export default function Brands() {
             />
           </svg>
         </div>
-        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-600">
+        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-800">
           <svg
             width="57"
             height="56"
@@ -98,7 +98,7 @@ export default function Brands() {
             />
           </svg>
         </div>
-        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-600">
+        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-800">
           <svg
             width="57"
             height="56"
@@ -143,10 +143,10 @@ export default function Brands() {
             />
           </svg>
         </div>
-        <div className="col-span-2  border border-r-0 border-gray-600 text-gray-300"></div>
+        <div className="col-span-2  border border-r-0 border-gray-800 text-gray-300"></div>
 
-        <div className="col-span-2 border border-l-0 border-gray-600"></div>
-        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-600">
+        <div className="col-span-2 border border-l-0 border-gray-800"></div>
+        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="56"
@@ -165,7 +165,7 @@ export default function Brands() {
             <path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" />
           </svg>
         </div>
-        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-600">
+        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="56"
@@ -184,7 +184,7 @@ export default function Brands() {
             <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
           </svg>
         </div>
-        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-600">
+        <div className="col-span-2 flex justify-center items-center py-6 border border-gray-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="56"
@@ -201,7 +201,7 @@ export default function Brands() {
             <path d="M6 17h12" />
           </svg>
         </div>
-        <div className="col-span-1 border border-r-0 border-gray-600"></div>
+        <div className="col-span-1 border border-r-0 border-gray-800"></div>
       </div>
     </section>
   )

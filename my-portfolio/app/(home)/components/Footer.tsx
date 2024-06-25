@@ -31,10 +31,10 @@ export default function Footer() {
             <div>
               <div className="flex justify-center text-teal-600 lg:justify-start">
                 <div>
-                  <span className="text-slate-50 text-xl font-normal">
+                  <span className="text-slate-50 text-xl font-light">
                     Feito por
                   </span>
-                  <span className="text-slate-50 text-xl font-semibold">
+                  <span className="text-slate-50 text-xl font-bold">
                     {" "}
                     Ramon Sousa
                   </span>
@@ -43,10 +43,10 @@ export default function Footer() {
 
               <div className="flex justify-center text-teal-600 lg:justify-start">
                 <div>
-                  <span className="text-slate-50 text-xl font-normal">
+                  <span className="text-slate-50 text-xl font-light">
                     Copyright ©{" "}
                   </span>
-                  <span className="text-slate-50 text-xl font-semibold">
+                  <span className="text-slate-50 text-xl font-light">
                     2022
                   </span>
                 </div>
@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
             <div className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
             <div className="flex-col justify-start items-start gap-px inline-flex">
-            <div className="text-slate-50 text-xl font-normal">E-mail</div>
+            <div className="text-slate-50 text-xl font-light">E-mail</div>
             <div className="text-slate-50 text-2xl font-semibold">contato@ramonsousa.com</div>
           </div>
             </div>

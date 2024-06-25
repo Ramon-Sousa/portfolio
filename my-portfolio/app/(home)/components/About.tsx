@@ -5,14 +5,14 @@ import Image from "next/image";
 
 export function About() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden" id="about">
       <ContainerScroll
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-black dark:text-white">
               Sobre mim <br />
-              <span className="md:text-[6rem] text-9xl font-black mt-1 leading-none">
-                LoremIpsum
+              <span className="md:text-[6rem] text-9xl font-black mt-1 leading-none bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text">
+                Minha jornada até aqui
               </span>
             </h1>
           </>

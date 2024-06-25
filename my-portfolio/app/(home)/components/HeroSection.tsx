@@ -7,7 +7,7 @@ export default function HeroSection() {
         <div className=" text-white">
           <div className="flex justify-between items-center">
             <h1 className="text-9xl font-black lg:text-8xl sm:text-5xl">Ramon Sousa</h1>
-            <button className="justify-center items-center gap-2 inline-flex rounded-full bg-white text-2xl text-black font-bold sm:text-base py-3 px-4  sm:px-3 sm:py-2">
+            <a href="#" className="justify-center items-center gap-2 inline-flex rounded-full bg-white text-2xl text-black font-bold sm:text-base py-3 px-4  sm:px-3 sm:py-2">
               Fazer proposta
               <div className="bg-neutral-950 rounded-[101px] justify-center items-center gap-2 flex p-4 lg:p3 sm:p2">
                 <svg
@@ -23,7 +23,7 @@ export default function HeroSection() {
                   />
                 </svg>
               </div>
-            </button>
+            </a>
           </div>
           <h1 className="text-9xl lg:text-8xl sm:text-5xl font-black text-gray-500">
             Product designer

@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Roles() {
   return (
-    <div className="border-b-2 border-zinc-800">
-      <div className="container flex justify-center lg:gap-20 sm:gap-12 items-center mx-auto px-4 py-4 sm:px-6 sm:py-12 lg:px-8 lg:py-40 ">
+    <div className="border-b border-gray-800">
+      <div className="container flex justify-between items-center mx-auto px-4 py-4 sm:px-6 sm:py-12 lg:px-8 lg:py-40 ">
         <div className="">
           <div className=" text-slate-500 text-sm font-semibold uppercase">
             DESTAQUES
           </div>
-          <div className="text-slate-200 text-[80px] font-black leading-snug">
+          <div className="text-slate-200 text-[80px] font-black leading-snug  bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text">
             My roles
           </div>
           <div className=" text-slate-400 text-base font-normal pb-8">
@@ -18,7 +18,7 @@ export default function Roles() {
         </div>
         <div className="flex flex-col gap-2">
           <div className="w-[504px] h-[504px] grid grid-cols-2">
-            <div className="w-60 h-60 p-8 bg-zinc-950 rounded-2xl border border-slate-500 backdrop-blur-[14px] flex-col justify-center items-center gap-8 inline-flex">
+            <div className="w-60 h-60 p-8 bg-zinc-950 rounded-2xl border border-gray-800 backdrop-blur-[14px] flex-col justify-center items-center gap-8 inline-flex">
               <div className="w-[182px] h-[87px] px-[55px] pt-2 pb-[7px] justify-center items-center inline-flex">
                 <svg
                   width="72"
@@ -42,7 +42,7 @@ export default function Roles() {
                 </div>
               </div>
             </div>
-            <div className="w-60 h-60 p-8 bg-zinc-950 rounded-2xl border border-slate-500 backdrop-blur-[14px] flex-col justify-center items-center gap-8 inline-flex">
+            <div className="w-60 h-60 p-8 bg-zinc-950 rounded-2xl border border-gray-800 backdrop-blur-[14px] flex-col justify-center items-center gap-8 inline-flex">
               <div className="w-[182px] h-[87px] px-[55px] pt-2 pb-[7px] justify-center items-center inline-flex">
                 <svg
                   width="72"
@@ -66,7 +66,7 @@ export default function Roles() {
                 </div>
               </div>
             </div>
-            <div className="w-60 h-60 p-8 bg-zinc-950 rounded-2xl border border-slate-500 backdrop-blur-[14px] flex-col justify-center items-center gap-8 inline-flex">
+            <div className="w-60 h-60 p-8 bg-zinc-950 rounded-2xl border border-gray-800 backdrop-blur-[14px] flex-col justify-center items-center gap-8 inline-flex">
               <div className="w-[182px] h-[87px] px-[55px] pt-2 pb-[7px] justify-center items-center inline-flex">
                 <svg
                   width="72"
@@ -90,7 +90,7 @@ export default function Roles() {
                 </div>
               </div>
             </div>
-            <div className="w-60 h-60 p-8 bg-zinc-950 rounded-2xl border border-slate-500 backdrop-blur-[14px] flex-col justify-center items-center gap-8 inline-flex">
+            <div className="w-60 h-60 p-8 bg-zinc-950 rounded-2xl border border-gray-800 backdrop-blur-[14px] flex-col justify-center items-center gap-8 inline-flex">
               <div className="w-[182px] h-[87px] px-[55px] pt-2 pb-[7px] justify-center items-center inline-flex">
                 <svg
                   width="72"
