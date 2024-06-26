@@ -9,9 +9,9 @@ export function About() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white">
+            <h1 className="text-xl text-slate-500 font-semibold">
               Sobre mim <br />
-              <span className="md:text-[6rem] text-9xl font-black mt-1 leading-none bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text">
+              <span className="text-slate-200 text-[80px] font-black leading-snug  bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text">
                 Minha jornada até aqui
               </span>
             </h1>

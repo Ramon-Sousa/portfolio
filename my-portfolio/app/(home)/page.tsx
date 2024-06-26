@@ -14,7 +14,7 @@ import { TestimonialDemo } from "./components/Testimonial";
 
 export default function page() {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#090A0C]">
+    <div className="min-h-screen overflow-hidden bg-[#020202]">
       <div className="max-w-screen-7xl mx-auto">
         <Navbar/>
         <HeroSection/>

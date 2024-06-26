@@ -15,7 +15,7 @@ export default function Projects() {
             I craft amazing digital experiences through a selection of sought
             after services and offerings.
           </div>
-          <a className="justify-center items-center gap-2 inline-flex rounded-full bg-white px-4 text-2xl text-black font-bold py-3" href="/projects">
+          <a className="justify-center items-center gap-2 inline-flex rounded-full bg-white px-4 text-xl text-black font-normal py-3" href="/projects">
             Ver todos
             <div className="p-4 bg-neutral-950 rounded-[101px] justify-center items-center gap-2 flex">
               <svg
@@ -34,7 +34,7 @@ export default function Projects() {
           </a>
         </div>
         <div className="flex flex-col gap-2 basis-9/12 w-[504px] h-[504px]">
-          <a className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-slate-500 justify-between items-center inline-flex hover:bg-[#20252A]" href="#" target="blank">
+          <a className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-gray-800 justify-between items-center inline-flex hover:bg-[#20252A]" href="#" target="blank">
             <div className="justify-between items-center gap-4 flex">
               <div className="" />
               <svg
@@ -96,7 +96,7 @@ export default function Projects() {
               </defs>
             </svg>
           </a>
-          <a className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-slate-500 justify-between items-center inline-flex hover:bg-[#20252A]" href="#" target="blank">
+          <a className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-gray-800 justify-between items-center inline-flex hover:bg-[#20252A]" href="#" target="blank">
             <div className="justify-between items-center gap-4 flex">
               <div className="" />
               <svg
@@ -158,7 +158,7 @@ export default function Projects() {
               </defs>
             </svg>
           </a>
-          <a className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-slate-500 justify-between items-center inline-flex hover:bg-[#20252A]" href="#" target="blank">
+          <a className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-gray-800 justify-between items-center inline-flex hover:bg-[#20252A]" href="#" target="blank">
             <div className="justify-between items-center gap-4 flex">
               <div className="" />
               <svg
@@ -220,7 +220,7 @@ export default function Projects() {
               </defs>
             </svg>
           </a>
-          <a className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-slate-500 justify-between items-center inline-flex hover:bg-[#20252A]" href="#" target="blank">
+          <a className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-gray-800 justify-between items-center inline-flex hover:bg-[#20252A]" href="#" target="blank">
             <div className="justify-between items-center gap-4 flex">
               <div className="" />
               <svg
