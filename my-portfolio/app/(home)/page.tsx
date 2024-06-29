@@ -19,11 +19,9 @@ export default function page() {
         <Navbar/>
         <HeroSection/>
         <Services/>
-        <About/>
         <Description/>
         <Hobbies/>
         <Projects/>
-        <Roles/>
         <Brands/>
         <Footer/>
       </div>

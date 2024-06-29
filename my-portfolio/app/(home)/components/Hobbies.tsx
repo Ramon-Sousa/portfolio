@@ -3,8 +3,8 @@ import React from "react";
 export default function Hobbies() {
   return (
     <section className="mx-auto w-full">
-      <div className="px-0 mx-0 w-full sm:justify-between sm:mt-0 grid auto-cols-max grid-cols-9 grid-rows-2">
-        <div className="col-span-1 border border-l-0 border-gray-900"></div>
+      <div className="px-0 mx-0 w-full sm:justify-between sm:mt-0 grid auto-cols-max grid-cols-4  sm:grid-cols-9 grid-rows-2">
+        <div className="col-span-1 hidden sm:inline border border-l-0 border-gray-900"></div>
         <div className="col-span-2 flex justify-center items-center py-6 border border-gray-900">
           <svg
             width="57"
@@ -133,9 +133,9 @@ export default function Hobbies() {
             />
           </svg>
         </div>
-        <div className="col-span-2  border border-r-0 border-gray-900 text-gray-300"></div>
+        <div className="col-span-2 hidden sm:inline border border-r-0 border-gray-900 text-gray-300"></div>
 
-        <div className="col-span-2 border border-l-0 border-gray-900"></div>
+        <div className="col-span-2 hidden sm:inline border border-l-0 border-gray-900"></div>
         <div className="col-span-2 flex justify-center items-center py-6 border border-gray-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -191,8 +191,9 @@ export default function Hobbies() {
             <path d="M6 17h12" />
           </svg>
         </div>
-        <div className="col-span-1 border border-r-0 border-gray-900"></div>
+        <div className="col-span-1 hidden sm:inline border border-r-0 border-gray-900"></div>
       </div>
     </section>
   );
 }
+

@@ -2,35 +2,26 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="h-auto py-40 w-screen flex items-center justify-center" id="HeroSection">
-      <div className="container">
-        <div className=" text-white">
-          <div className="flex justify-between items-center">
-            <h1 className="text-9xl font-black lg:text-8xl sm:text-5xl">Ramon Sousa</h1>
-            <a href="#" className="justify-center items-center gap-2 inline-flex rounded-full bg-white text-2xl text-black font-normal sm:text-base py-3 px-4  sm:px-3 sm:py-2">
-              Fazer proposta
-              <div className="bg-neutral-950 rounded-[101px] justify-center items-center gap-2 flex p-4 lg:p3 sm:p2">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
-                    fill="#FCFCFC"
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-          <h1 className="text-9xl lg:text-8xl sm:text-5xl font-black text-gray-500">
-            Product designer
+    <section
+      className="h-auto py-20 sm:py-32 lg:py-40 w-screen flex items-center justify-center"
+      id="HeroSection"
+    >
+      <div className="container mx-auto">
+        <div className="flex-col justify-end inline-flex">
+          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-normal">
+          Construindo produtos,
           </h1>
-
-          <div className="mt-8"></div>
+          <h2 className="text-4xl sm:text-6xl lg:text-8xl font-normal">
+          interações & <span className="text-4xl sm:text-6xl lg:text-8xl bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text font-[Piazolla] font-black italic"> experiências</span>
+          </h2>
         </div>
+        <div className="pt-10">
+        <div className="w-full flex-col justify-end items-end inline-flex">
+            <div className="text-white text-lg sm:text-xl lg:text-2xl font-normal tracking-wide">Ramon Sousa</div>
+            <div className="text-slate-500 text-lg sm:text-xl lg:text-2xl font-normal tracking-wide">Designer de produtos</div>
+        </div>
+          </div>
+        {/* <img src="/assets/stamp.png" className="w-40 right-96 top-40 absolute"/> */}
       </div>
     </section>
   );

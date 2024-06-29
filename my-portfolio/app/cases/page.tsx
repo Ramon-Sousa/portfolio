@@ -3,14 +3,18 @@ import Footer from "../(home)/components/Footer";
 import Navbar from "../(home)/components/Navbar";
 import { AwardIcon } from "lucide-react";
 import Link from "next/link";
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
+import { GetStaticProps, GetStaticPaths, GetServerSideProps, Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "cases",
+  description: "Apaixonado por resolver problemas",
+};
 
 export default function page() {
   return (
     <div className="min-h-screen overflow-hidden bg-[#020202]">
       <div className="max-w-screen-7xl mx-auto">
         <Navbar />
-
         <div className="container py-8">
           <div className="">
             <nav aria-label="Breadcrumb">

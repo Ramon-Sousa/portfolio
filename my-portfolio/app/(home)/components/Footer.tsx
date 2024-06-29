@@ -1,14 +1,15 @@
 import React from "react";
+const dateYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
     <div className="w-full bg-slate-50 ">
-      <div className=" container py-16 bg-slate-50 gap-8">
-        <div className="flex-col justify-start items-start gap-4 inline-flex text-neutral-950 text-[56px] font-bold">
+      {/* <div className=" container py-16 bg-slate-50 gap-8">
+        <div className="flex-col justify-start items-start gap-4 inline-flex text-neutral-950 text-xl sm:text-4xl lg:text-5xl font-bold">
           O seu projeto pode ser o próximo!
-          <button className=" justify-center items-center gap-2 inline-flex rounded-full bg-black px-4 text-2xl text-white font-bold py-3">
+          <button className=" justify-center items-center gap-2 inline-flex rounded-full bg-black px-4 text-lg sm:text-xl lg:text-xl text-white font-bold py-3">
             Ver todos
-            <div className="p-4 bg-white rounded-[101px] gap-2">
+            <div className="p-2 sm:p-2 lg:p-4 bg-white rounded-[101px] gap-2">
               <svg
                 width="16"
                 height="16"
@@ -24,12 +25,12 @@ export default function Footer() {
             </div>
           </button>
         </div>
-      </div>
-      <footer className="bg-[#090A0C]">
+      </div> */}
+      <footer className="bg-[#020202] border-t border-gray-900">
         <div className="container py-16 sm:px-6 lg:pt-24">
-          <div className="lg:flex lg:items-end lg:justify-between">
+          <div className="lg:flex lg:items-center lg:justify-center">
             <div>
-              <div className="flex justify-center text-teal-600 lg:justify-start">
+              {/* <div className=" lg:justify-start">
                 <div>
                   <span className="text-slate-50 text-xl font-light">
                     Feito por
@@ -39,25 +40,27 @@ export default function Footer() {
                     Ramon Sousa
                   </span>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="flex justify-center text-teal-600 lg:justify-start">
+              <div className="flex flex-col items-center gap-2">
                 <div>
-                  <span className="text-slate-50 text-xl font-light">
-                    Copyright ©{" "}
-                  </span>
-                  <span className="text-slate-50 text-xl font-light">
-                    2022
+                  Desenvolvido por
+                  <span className="text-slate-50 text-xl font-bold">
+                    {" "}
+                    Ramon Sousa
                   </span>
                 </div>
+                <span className="text-slate-50 text-xl font-light">Copyright ©{" "} {dateYear}</span>
               </div>
             </div>
-            <div className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
-            <div className="flex-col justify-start items-start gap-px inline-flex">
-            <div className="text-slate-50 text-xl font-light">E-mail</div>
-            <div className="text-slate-50 text-2xl font-semibold">contato@ramonsousa.com</div>
-          </div>
-            </div>
+            {/* <div className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
+              <div className="flex-col justify-start items-start gap-px inline-flex">
+                <div className="text-slate-50 text-xl font-light">E-mail</div>
+                <div className="text-slate-50 text-2xl font-semibold">
+                  contato@ramonsousa.com
+                </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </footer>

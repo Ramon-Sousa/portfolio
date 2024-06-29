@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function About() {
   return (
-    <div className="flex flex-col overflow-hidden" id="about">
+    <div className="flex flex-col overflow-hidden">
       <ContainerScroll
         titleComponent={
           <>
@@ -28,6 +28,7 @@ export function About() {
         />
       </ContainerScroll>
     </div>
+    
     
   );
 }
