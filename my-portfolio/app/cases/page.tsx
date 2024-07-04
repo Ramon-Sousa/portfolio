@@ -1,14 +1,11 @@
 import React from "react";
-import Footer from "../(home)/components/Footer";
-import Navbar from "../(home)/components/Navbar";
+import Footer from "../_components/Footer";
+import Navbar from "../_components/Navbar";
 import { AwardIcon } from "lucide-react";
 import Link from "next/link";
 import { GetStaticProps, GetStaticPaths, GetServerSideProps, Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: "cases",
-  description: "Apaixonado por resolver problemas",
-};
+
 
 export default function page() {
   return (

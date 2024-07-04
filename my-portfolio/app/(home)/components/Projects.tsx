@@ -1,6 +1,9 @@
-import React from "react";
+import React from "react"
+import ProjectCard from "./ui/ProjectCard";
+import { getPublishedProjects  } from '../../_actions/project';
 
-export default function Projects() {
+export default async function Projects() {
+  const projects = await getPublishedProjects();
   return (
     <div className="bg-transparent">
       <div className="container flex flex-col lg:flex-row justify-center items-center mx-auto px-4 py-24 sm:px-6 sm:py-12 lg:px-8 lg:py-40 gap-8 lg:gap-20">
@@ -96,116 +99,9 @@ export default function Projects() {
               />
             </svg>
           </a>
-          <a
-            className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-gray-800 flex justify-between items-center hover:bg-[#20252A]"
-            href="#"
-            target="_blank"
-          >
-            <div className="flex items-center gap-4">
-              <svg
-                width="49"
-                height="50"
-                viewBox="0 0 49 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.1979 4.95099C25.666 4.70834 25.0881 4.58276 24.5034 4.58276C23.9187 4.58276 23.3408 4.70834 22.8088 4.95099L5.3117 12.9135C4.9494 13.0732 4.64138 13.3349 4.42513 13.6666C4.20888 13.9983 4.09375 14.3857 4.09375 14.7816C4.09375 15.1776 4.20888 15.565 4.42513 15.8967C4.64138 16.2283 4.9494 16.49 5.3117 16.6497L22.8292 24.6327C23.3612 24.8753 23.9391 25.0009 24.5238 25.0009C25.1085 25.0009 25.6864 24.8753 26.2184 24.6327L43.7359 16.6702C44.0982 16.5104 44.4062 16.2488 44.6224 15.9171C44.8387 15.5854 44.9538 15.198 44.9538 14.802C44.9538 14.4061 44.8387 14.0187 44.6224 13.687C44.4062 13.3553 44.0982 13.0937 43.7359 12.9339L26.1979 4.95099Z"
-                  stroke="#F7FAFC"
-                  strokeWidth="4.08333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M44.9193 36.5352L26.1972 45.0285C25.6652 45.2711 25.0873 45.3967 24.5026 45.3967C23.9179 45.3967 23.34 45.2711 22.808 45.0285L4.08594 36.5352"
-                  stroke="#F7FAFC"
-                  strokeWidth="4.08333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M44.9193 26.3269L26.1972 34.8202C25.6652 35.0629 25.0873 35.1885 24.5026 35.1885C23.9179 35.1885 23.34 35.0629 22.808 34.8202L4.08594 26.3269"
-                  stroke="#F7FAFC"
-                  strokeWidth="4.08333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <div className="flex flex-col">
-                <div className="text-neutral-50 text-2xl font-semibold">
-                  Lorem Ipsum
-                </div>
-                <div className="text-slate-500 text-sm font-bold">2024</div>
-              </div>
-            </div>
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z"
-                fill="#A0B1BD"
-              />
-            </svg>
-          </a>
-          <a
-            className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-gray-800 flex justify-between items-center hover:bg-[#20252A]"
-            href="#"
-            target="_blank"
-          >
-            <div className="flex items-center gap-4">
-              <svg
-                width="49"
-                height="50"
-                viewBox="0 0 49 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M26.1979 4.95099C25.666 4.70834 25.0881 4.58276 24.5034 4.58276C23.9187 4.58276 23.3408 4.70834 22.8088 4.95099L5.3117 12.9135C4.9494 13.0732 4.64138 13.3349 4.42513 13.6666C4.20888 13.9983 4.09375 14.3857 4.09375 14.7816C4.09375 15.1776 4.20888 15.565 4.42513 15.8967C4.64138 16.2283 4.9494 16.49 5.3117 16.6497L22.8292 24.6327C23.3612 24.8753 23.9391 25.0009 24.5238 25.0009C25.1085 25.0009 25.6864 24.8753 26.2184 24.6327L43.7359 16.6702C44.0982 16.5104 44.4062 16.2488 44.6224 15.9171C44.8387 15.5854 44.9538 15.198 44.9538 14.802C44.9538 14.4061 44.8387 14.0187 44.6224 13.687C44.4062 13.3553 44.0982 13.0937 43.7359 12.9339L26.1979 4.95099Z"
-                  stroke="#F7FAFC"
-                  strokeWidth="4.08333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M44.9193 36.5352L26.1972 45.0285C25.6652 45.2711 25.0873 45.3967 24.5026 45.3967C23.9179 45.3967 23.34 45.2711 22.808 45.0285L4.08594 36.5352"
-                  stroke="#F7FAFC"
-                  strokeWidth="4.08333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M44.9193 26.3269L26.1972 34.8202C25.6652 35.0629 25.0873 35.1885 24.5026 35.1885C23.9179 35.1885 23.34 35.0629 22.808 34.8202L4.08594 26.3269"
-                  stroke="#F7FAFC"
-                  strokeWidth="4.08333"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <div className="flex flex-col">
-                <div className="text-neutral-50 text-2xl font-semibold">
-                  Project 3
-                </div>
-                <div className="text-slate-500 text-sm font-bold">2024</div>
-              </div>
-            </div>
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z"
-                fill="#A0B1BD"
-              />
-            </svg>
-          </a>
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
         </div>
       </div>
       <div className="flex justify-center items-stretch py-3 bg-neutral-50 w-full overflow-hidden">

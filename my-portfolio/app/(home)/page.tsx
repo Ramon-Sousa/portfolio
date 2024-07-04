@@ -1,14 +1,13 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "../_components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/services";
-import { About } from "./components/About";
 import Hobbies from "./components/Hobbies";
 import Description from "./components/Description";
 import Projects from "./components/Projects";
 import Roles from "./components/Roles";
 import Brands from "./components/Brands";
-import Footer from "./components/Footer";
+import Footer from "../_components/Footer";
 import { TestimonialDemo } from "./components/Testimonial";
 
 
