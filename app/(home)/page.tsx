@@ -8,7 +8,6 @@ import Projects from "./components/Projects";
 import Roles from "./components/Roles";
 import Brands from "./components/Brands";
 import Footer from "../_components/Footer";
-import { TestimonialDemo } from "./components/Testimonial";
 
 
 export default function page() {
