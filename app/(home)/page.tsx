@@ -8,12 +8,15 @@ import Projects from "./components/Projects";
 import Roles from "./components/Roles";
 import Brands from "./components/Brands";
 import Footer from "../_components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export default function page() {
   return (
+    
     <div className="min-h-screen overflow-hidden bg-[#020202]">
       <div className="max-w-screen-7xl mx-auto">
+      <SpeedInsights/>
         <Navbar/>
         <HeroSection/>
         <Services/>
