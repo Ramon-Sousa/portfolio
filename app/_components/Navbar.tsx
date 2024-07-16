@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 
 function Navbar() {
   const socials = [
-    { link: "/projects", label: "Projetos" },
+    // { link: "/projects", label: "Projetos" },
     { link: "/#about", label: "Sobre mim" },
     // { link: "#", label: "contato@ramondesigner.com" },
   ];
