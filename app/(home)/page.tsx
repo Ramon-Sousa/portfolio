@@ -9,7 +9,7 @@ import Roles from "./components/Roles";
 import Brands from "./components/Brands";
 import Footer from "../_components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import Cursor from "./components/Cursor";
 
 export default function page() {
   return (
@@ -17,6 +17,7 @@ export default function page() {
     <div className="min-h-screen overflow-hidden bg-[#020202]">
       <div className="max-w-screen-7xl mx-auto">
       <SpeedInsights/>
+      <Cursor/>
         <Navbar/>
         <HeroSection/>
         <Services/>
