@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function page() {
   const projects = await getProjects();
-  return (
+  return ( 
     <div className="min-h-screen overflow-hidden bg-[#020202]">
       <div className="max-w-screen-7xl mx-auto">
         <Navbar />

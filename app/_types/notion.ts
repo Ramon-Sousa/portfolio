@@ -29,10 +29,11 @@ export interface NotionDatabaseResponse {
     object: string
     id: string
   }
-  
+
+
   export interface LastEditedBy {
     object: string
-    id: string
+    id: string 
   }
   
   export interface Parent {

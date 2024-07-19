@@ -18,6 +18,7 @@ export default async function page({params}: {params: {slug:string}}) {
               {project.title}
             </h1>
           </div>
+          
      <ReactMarkdown>
     {project.content}
      </ReactMarkdown>

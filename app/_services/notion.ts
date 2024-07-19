@@ -37,7 +37,6 @@ export async function getProjects() {
       createdAt: project.created_time,
     };
   });
-  
 }
 export async function getProject(slug:string) {
   const response = await notion.databases.query({
