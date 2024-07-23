@@ -24,6 +24,7 @@ function Navbar() {
           />
         </a>
 
+        
         {/* Hamburger Menu (Desktop and Mobile) */}
         <div className="relative">
           <button

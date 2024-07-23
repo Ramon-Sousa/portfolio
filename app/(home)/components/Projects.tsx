@@ -9,9 +9,6 @@ export default async function Projects() {
     <div className="bg-transparent">
       <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto py-24 sm:py-12 lg:py-40 gap-8 lg:gap-20">
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-          {/* <div className="text-slate-500 text-sm font-semibold uppercase">
-          Portfolio
-        </div> */}
           <div className="text-4xl sm:text-4xl lg:text-6xl font-normal pb-4">
             Projetos{" "}
             <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text font-[Piazolla] font-black italic">

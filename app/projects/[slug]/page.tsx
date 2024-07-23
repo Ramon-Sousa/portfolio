@@ -56,7 +56,7 @@ export default async function page({ params }: { params: { slug: string } }) {
               <strong className="text-gray-500 text-xl sm:text-text-xl leading-6 sm:leading-8 py-8" {...props} />
             ),
             h3: ({ node, ...props }) => (
-              <h3 className="text-xl sm:text-2xl" {...props} />
+              <h3 className="text-xl sm:text-2xl" {...props} /> 
             ),
             h2: ({ node, ...props }) => (
               <h2 className="text-xl sm:text-2xl" {...props} />
