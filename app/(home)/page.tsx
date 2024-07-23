@@ -13,7 +13,6 @@ import Cursor from "./components/Cursor";
 
 export default function page() {
   return (
-    
     <div className="min-h-screen overflow-hidden bg-[#020202]">
       <div className="max-w-screen-7xl mx-auto">
       <SpeedInsights/>

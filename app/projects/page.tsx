@@ -38,7 +38,6 @@ export default async function page() {
             </BreadcrumbList>
           </Breadcrumb>
         </div> */}
-
         <Link href="/projects" className="container flex gap-2 pt-8">
           <ArrowLeft /> Voltar
         </Link>
@@ -47,8 +46,6 @@ export default async function page() {
             Projetos realizados
           </h1>
         </div>
-
-
         <div className="container pb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
             {projects.map((project) => (
@@ -82,15 +79,6 @@ export default async function page() {
                           {project.publishedAt}
                         </time>
                       </div>
-
-                      {/* <div className="py-4">
-                        <Link
-                          className={buttonVariants({ variant: "outline" })}
-                          href={`/projects/${project.slug}`}
-                        >
-                          Ver projeto
-                        </Link>
-                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -98,7 +86,6 @@ export default async function page() {
             ))}
           </div>
         </div>
-
         <Footer />
       </div>
     </div>

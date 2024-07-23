@@ -21,7 +21,6 @@ export default async function page({ params }: { params: { slug: string } }) {
     <div className="min-h-screen overflow-hidden bg-[#020202]">
       <div className="max-w-screen-7xl mx-auto">
         <Navbar />
-
         <div className="container py-8">
           <Breadcrumb>
             <BreadcrumbList>
@@ -39,11 +38,9 @@ export default async function page({ params }: { params: { slug: string } }) {
             </BreadcrumbList>
           </Breadcrumb>
         </div>
-
         <Link href="/projects" className="container flex gap-2">
           <ArrowLeft /> Voltar
         </Link>
-
         <div className="container py-8">
           <div className="">
             <h1 className="text-slate-200 text-justify text-3xl font-black pb-4">
