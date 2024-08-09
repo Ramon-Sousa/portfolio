@@ -27,7 +27,6 @@ export default function RootLayout({
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <body className={nunitoSans.className}>
-      
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"
