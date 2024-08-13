@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../_components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/services";
-import Hobbies from "./components/Hobbies";
 import Description from "./components/Description";
 import Projects from "./components/Projects";
 import Roles from "./components/Roles";
@@ -21,7 +20,6 @@ export default function page() {
         <HeroSection/>
         <Services/>
         <Description/>
-        <Hobbies/>
         <Projects/>
         <Brands/>
         <Footer/>
