@@ -36,7 +36,7 @@ export default async function Experience() {
       <div className="gap-4 w-full col-span-4">
         <div>
           {/* Suflex */}
-          <div className="h-28 px-4 py-2 border-b border-gray-800 flex justify-between items-center hover:scale-105 duration-700">
+          <div className="h-28 px-4 py-2 border-b border-gray-800 flex justify-between items-center">
             <div className="flex flex-col gap-2">
               <div className="text-neutral-50 text-3xl font-light">Suflex</div>
               <div className="text-slate-500 text-sm font-medium">
@@ -45,7 +45,7 @@ export default async function Experience() {
             </div>
           </div>
           {/* Diwe */}
-          <div className="h-28 px-4 py-2 border-b border-gray-800 flex justify-between items-center hover:scale-105">
+          <div className="h-28 px-4 py-2 border-b border-gray-800 flex justify-between items-center">
             <div className="flex flex-col gap-2">
               <div className="text-neutral-50 text-3xl font-light">Diwe</div>
               <div className="text-slate-500 text-sm font-medium">
@@ -54,7 +54,7 @@ export default async function Experience() {
             </div>
           </div>
           {/* ibSystem */}
-          <div className="h-28 px-4 py-2 border-b border-gray-800 flex justify-between items-center hover:scale-105">
+          <div className="h-28 px-4 py-2 border-b border-gray-800 flex justify-between items-center">
             <div className="flex flex-col gap-2">
               <div className="text-neutral-50 text-3xl font-light">
                 ibSystem

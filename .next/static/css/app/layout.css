@@ -682,6 +682,9 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .block {
   display: block;
 }
@@ -754,6 +757,12 @@ video {
 .h-8 {
   height: 2rem;
 }
+.h-14 {
+  height: 3.5rem;
+}
+.h-56 {
+  height: 14rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -795,6 +804,9 @@ video {
 }
 .w-\[33\.42px\] {
   width: 33.42px;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .auto-cols-max {
   grid-auto-columns: max-content;
