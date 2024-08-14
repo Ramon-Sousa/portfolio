@@ -32,10 +32,10 @@ export default async function Projects() {
               selecionados
             </span>
           </div>
-            <MoveDownLeft size={64} color="#1f2937" strokeWidth={1} />
+          <MoveDownLeft size={64} color="#1f2937" strokeWidth={1} />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
-          {projects.map((project, index) => (
+          {projects.slice(0, 4).map((project, index) => (
             <Link href={`/projects/${project.slug}`} className="mb-8">
               <div key={project.id}>
                 {" "}
@@ -43,10 +43,12 @@ export default async function Projects() {
                   <img
                     src={`${project.cover}`}
                     alt=""
-                    className="rounded-md object-cover w-full h-64 sm:h-96"
+                    className="rounded-md object-cover w-full h-64 sm:h-[500px]"
                   />
                   <div className="pt-4">
-                    <h3 className="text-2xl font-light text-gray-300">{project.title}</h3>
+                    <h3 className="text-2xl font-light text-gray-300">
+                      {project.title}
+                    </h3>
 
                     <hr className="my-4 h-[1px] border-t-0 bg-neutral-100 dark:bg-white/10" />
                     <div className="flex justify-between items-center">

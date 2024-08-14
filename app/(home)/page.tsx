@@ -9,6 +9,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Cursor from "./components/Cursor";
 import Cta from "./components/Cta";
 import Experience from "./components/Experience";
+import Carrousel from "./components/ui/Carrousel";
+
 
 export default function page() {
   return (
@@ -21,7 +23,8 @@ export default function page() {
         <HeroSection />
         <Services />
         <Projects />
-        <Brands />
+        {/* <Brands /> */}
+        <Carrousel />
         <Experience />
         <Footer />
       </div>
