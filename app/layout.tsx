@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Nunito_Sans } from "next/font/google";
+import { Nunito_Sans, Raleway } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Cursor from "./(home)/components/Cursor";
 
-const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
+
+const raleway = Raleway({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
 //   title: "Ramon Sousa - Product Designer",
@@ -26,8 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={nunitoSans.className}>
-      <Cursor/>
+      <body className={raleway.className}>
       <ThemeProvider
             attribute="class"
             defaultTheme="dark"
