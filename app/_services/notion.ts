@@ -41,7 +41,7 @@ export async function getProjects() {
       title: project.properties.title.title[0].plain_text,
       slug: project.properties.slug.rich_text[0].plain_text,
       tags: project.properties.tags.multi_select.map((tag) => tag.name),
-      publishedAt: project.properties.publishedAt.number,
+      publishedAt: project.properties.publishedAt.date?.start,
       createdAt: project.created_time,
       cover: coverUrl, 
       
@@ -67,8 +67,10 @@ export async function getProject(slug: string) {
 
   const mdblocks = await n2m.pageToMarkdown(pageId);
   const mdString = n2m.toMarkdownString(mdblocks);
-  return {
-    title: response.results[0].properties.title.title[0].plain_text,
+  const typedResponse = response as unknown as NotionDatabaseResponse;
+  
+ return {
+    title: typedResponse.results[0].properties.title.title[0].plain_text,
     content: mdString.parent,
   };
 }
