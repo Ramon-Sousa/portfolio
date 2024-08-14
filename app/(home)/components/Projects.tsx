@@ -1,124 +1,77 @@
 import React from "react";
-import ProjectCard from "./ui/ProjectCard";
 import { getProjects } from "@/app/_services/notion";
 import Link from "next/link";
+import { MoveDownLeft } from "lucide-react";
 
 export default async function Projects() {
   const projects = await getProjects();
   return (
-    <div className="bg-transparent">
-      <div className="flex justify-center items-stretch py-3 bg-neutral-50 w-full overflow-hidden">
-        <div className="flex justify-between items-center w-full overflow-hidden mx-auto px-4 flex-nowrap">
-          {/* <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            <svg
-              className="ml-2"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.4"
-                d="M12 0.5L13.6207 10.8793L24 12.5L13.6207 14.1207L12 24.5L10.3793 14.1207L0 12.5L10.3793 10.8793L12 0.5Z"
-                fill="#A0B1BD"
-              />
-            </svg>
-          </div> */}
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            +15 projetos
+    <section className="mx-auto px-4 py-8 sm:px-6 lg:px-8 lg:py-32">
+      {/* <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-6 pt-20 pb-16">
+        {projects.map((project, index) => (
+          <div
+            key={project.id}
+            className={`group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-slate-900 md:h-[400px] ${
+              index % 4 === 1 || index % 4 === 2 ? "md:col-span-2" : ""
+            }`}
+          >
+            <img
+              className="absolute inset-0 h-full w-full object-cover object-center transition group-hover:scale-110 saturate-50 hover:saturate-100 duration-700"
+              src={project.cover}
+              alt={project.title}
+            />
           </div>
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            <svg
-              className="ml-2"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.4"
-                d="M12 0.5L13.6207 10.8793L24 12.5L13.6207 14.1207L12 24.5L10.3793 14.1207L0 12.5L10.3793 10.8793L12 0.5Z"
-                fill="#A0B1BD"
-              />
-            </svg>
-          </div>
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            Experiência em desenvolvimento
-          </div>
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            <svg
-              className="ml-2"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.4"
-                d="M12 0.5L13.6207 10.8793L24 12.5L13.6207 14.1207L12 24.5L10.3793 14.1207L0 12.5L10.3793 10.8793L12 0.5Z"
-                fill="#A0B1BD"
-              />
-            </svg>
-          </div>
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            +10 clientes atendidos
-          </div>
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            <svg
-              className="ml-2"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.4"
-                d="M12 0.5L13.6207 10.8793L24 12.5L13.6207 14.1207L12 24.5L10.3793 14.1207L0 12.5L10.3793 10.8793L12 0.5Z"
-                fill="#A0B1BD"
-              />
-            </svg>
-          </div>
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            Experiência mobile first
-          </div>
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            <svg
-              className="ml-2"
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.4"
-                d="M12 0.5L13.6207 10.8793L24 12.5L13.6207 14.1207L12 24.5L10.3793 14.1207L0 12.5L10.3793 10.8793L12 0.5Z"
-                fill="#A0B1BD"
-              />
-            </svg>
-          </div>
-          <div className="text-gray-800 text-lg sm:text-2xl font-medium uppercase flex items-center px-2">
-            4 anos de epxperiência
-          </div>
-        </div>
-      </div>
-      <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto py-24 sm:py-12 lg:py-40 gap-8 lg:gap-20">
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-          <div className="text-4xl sm:text-4xl lg:text-6xl font-normal pb-4">
+        ))}
+      </div> */}
+      <div className="container">
+        <div className="flex justify-between">
+          <div className="text-4xl sm:text-4xl lg:text-6xl font-light pb-12">
             Projetos{" "}
-            <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text font-[Piazolla] font-black italic">
+            <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text font-[Piazolla] font-normal italic text-nowrap">
               {" "}
               selecionados
             </span>
           </div>
-          <div className="text-slate-400 text-base font-normal pb-8">
-            Melhores projetos realizados ao longo de minha jornada profissional.
-          </div>
-          <a
+            <MoveDownLeft size={64} color="#1f2937" strokeWidth={1} />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+          {projects.map((project, index) => (
+            <Link href={`/projects/${project.slug}`} className="mb-8">
+              <div key={project.id}>
+                {" "}
+                <div className="rounded-md">
+                  <img
+                    src={`${project.cover}`}
+                    alt=""
+                    className="rounded-md object-cover w-full h-64 sm:h-96"
+                  />
+                  <div className="pt-4">
+                    <h3 className="text-2xl font-light text-gray-300">{project.title}</h3>
+
+                    <hr className="my-4 h-[1px] border-t-0 bg-neutral-100 dark:bg-white/10" />
+                    <div className="flex justify-between items-center">
+                      <div className="mb-2 flex flex-wrap gap-1">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="whitespace-nowrap rounded-full bg-[#090A0C] border border-slate-900 px-4 py-2 text-xs text-gray-300 uppercase tracking-wide"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <time className="block text-lg text-gray-500">
+                        {project.publishedAt}
+                      </time>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="flex justify-center mt-6">
+          <Link
             className="flex items-center gap-2 rounded-full bg-white px-4 text-xl text-black font-normal py-3 hover:bg-slate-500"
             href="/projects"
           >
@@ -137,42 +90,9 @@ export default async function Projects() {
                 />
               </svg>
             </div>
-          </a>
-        </div>
-        <div className="flex flex-col gap-4 w-full lg:w-[504px]">
-          {projects.slice(-3).map((project) => (
-            <div>
-            <Link
-              className="h-28 px-4 py-2 bg-[url('/assets/dot-grid.png')] rounded-2xl border border-gray-800 flex justify-between items-center hover:bg-[#20252A]"
-              href={`/projects/${project.slug}`}
-            >
-              <div className="flex items-center gap-4">
-                <div className="flex flex-col">
-                  <div className="text-neutral-50 text-xl font-semibold">
-                    {project.title}
-                  </div>
-                  <div className="text-slate-500 text-sm font-bold">
-                    {project.publishedAt}
-                  </div>
-                </div>
-              </div>
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z"
-                  fill="#A0B1BD"
-                />
-              </svg>
-            </Link>
-            </div>
-          ))}
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 export default function Brands() {
   return (
     //justify-center items-center mx-auto px-4 py-24 sm:py-12
-    <section className="mx-auto w-full pb-24 sm:py-12 lg:pb-40">
+    <section className="mx-auto w-full pb-24 sm:py-12">
       {/* <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
         <div className="mx-auto  text-center">
         <div className="text-4xl sm:text-4xl lg:text-6xl font-normal pb-4">

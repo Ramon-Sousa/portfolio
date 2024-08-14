@@ -40,7 +40,7 @@ function Navbar() {
         <a href="/" className="flex items-center">
           <img
             src="/assets/new-logo-2x1.svg"
-            className="h-14 sm:h-14"
+            className="h-10  sm:h-14"
             alt="portfolio"
           />
         </a>
@@ -82,7 +82,7 @@ function Navbar() {
             <a
               key={index}
               href={social.link}
-              className="text-gray-300 hover:text-gray-400 text-md"
+              className="text-gray-300 hover:text-gray-400 text-md font-light"
             >
               {social.label}
             </a>
@@ -105,8 +105,8 @@ function Navbar() {
         </div>
         {/* Horário de Brasília */}
         <div className="hidden lg:inline-flex items-center text-gray-500 text-xs ml-8 gap-3 border-l border-gray-600 pl-8">
-  <Coffee size={24} />
-  <p className="w-[80px]">{`FRC • BRAZIL ${time}`}</p>
+  <Coffee size={32} />
+  <p className="text-ce">{`FRANCA • BR ${time}`}</p>
 </div>
 
       </div>
