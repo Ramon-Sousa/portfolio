@@ -50,6 +50,9 @@ export interface NotionDatabaseResponse {
   }
   
   export interface PublishedAt {
+    rich_text: any
+    publishedAt: any
+    number: any
     id: string
     type: string
     date: any
