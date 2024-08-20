@@ -28,11 +28,24 @@ export default async function Projects() {
                 key={project.id}
               >
                 <div className="rounded-md">
-                  <img
-                    src={`${project.cover}`}
-                    alt={project.title}
-                    className="rounded-md object-cover w-full h-64 sm:h-[500px]"
-                  />
+                {project.cover ? (
+                      <img
+                        src={`${project.cover}`}
+                        alt={project.title}
+                        className="rounded-md object-cover w-full h-64 sm:h-[500px]"
+                      />
+                    ) : (
+                      // <div className="flex items-center justify-center w-full h-64 sm:h-[500px] bg-gray-800 rounded-md">
+                      //   <span className="text-gray-500 text-xl">
+                      //     No Image Available
+                      //   </span>
+                      // </div>
+                      <img
+                        src='/assets/empty-state-thumb.png'
+                        alt='imagem-vazia'
+                        className="rounded-md object-cover w-full h-64 sm:h-[500px]"
+                      />
+                    )}
                   <div className="pt-4">
                     <h3 className="text-2xl font-light text-gray-300">
                       {project.title}

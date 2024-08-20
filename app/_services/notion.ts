@@ -27,7 +27,7 @@ export async function getProjects() {
       },
     ],
   });
-  console.log(response);
+  // console.log(response);
   const typedResponse = response as unknown as NotionDatabaseResponse;
   return typedResponse.results.map((project) => {
     let coverUrl = null;
