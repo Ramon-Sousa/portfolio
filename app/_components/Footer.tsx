@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="w-full px-4 pb-14">
-      <div className="container flex flex-col sm:flex-row items-center justify-between p-8 bg-[#090A0C] rounded-2xl">
+      <div className="container flex flex-col sm:flex-row items-center justify-between p-8 bg-[#090A0C] border border-slate-900 rounded-2xl">
         {/* Logo */}
         <img
           src="/assets/new-logo-2x1.svg"
