@@ -1089,6 +1089,10 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1778,6 +1782,15 @@ video {
   .lg\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .lg\:py-36 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .lg\:pb-36 {
+    padding-bottom: 9rem;
   }
 
   .lg\:text-left {

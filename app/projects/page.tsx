@@ -140,30 +140,6 @@ export default async function page() {
             </div>
           )}
 
-          {projects.length > 0 && (
-            <div className="flex justify-center mt-6">
-              <Link
-                className="flex items-center gap-2 rounded-full bg-white px-4 text-xl text-black font-normal py-3 hover:bg-slate-500"
-                href="/projects"
-              >
-                Ver todos
-                <div className="p-2 bg-neutral-950 rounded-full flex justify-center items-center">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
-                      fill="#FCFCFC"
-                    />
-                  </svg>
-                </div>
-              </Link>
-            </div>
-          )}
         </div>
         <Footer />
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 export default function Hobbies() {
   return (
     <section className="mx-auto w-full">
-      <div className="px-0 mx-0 w-full sm:justify-between sm:mt-0 grid auto-cols-max grid-cols-4  sm:grid-cols-9 grid-rows-2">
+      <div className="px-0 mx-0 w-full sm:justify-between sm:mt-0 grid auto-cols-max grid-cols-4 pb-24 lg:pb-36 sm:grid-cols-9 grid-rows-2">
         <div className="col-span-1 hidden sm:inline border border-l-0 border-gray-900"></div>
         <div className="col-span-2 flex justify-center items-center py-6 border border-gray-900">
           <svg

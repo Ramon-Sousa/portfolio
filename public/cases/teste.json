@@ -1,0 +1,15 @@
+{
+    "title": "Case de Sucesso",
+    "description": "Este é um exemplo de case de sucesso de um cliente fictício.",
+    "goals": [
+      "Aumentar o tráfego do site em 50%",
+      "Melhorar a taxa de conversão em 20%",
+      "Expandir a presença nas redes sociais"
+    ],
+    "results": {
+      "trafficIncrease": "55%",
+      "conversionRate": "22%",
+      "socialGrowth": "30%"
+    }
+  }
+  
