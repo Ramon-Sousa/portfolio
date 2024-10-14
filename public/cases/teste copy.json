@@ -1,0 +1,42 @@
+{
+  "id": "01",
+  "slug": "teste-case-2",
+  "title": "Case de Sucesso",
+  "subtitle": "Este é um exemplo de case de sucesso de um cliente fictício.",
+  "publishedAt": [
+    "2022"
+  ],
+  "thumbnail": "/assets/cases/teste/thumb-genesis.webp",
+  "banner":  "/assets/cases/teste/thumb.webp",
+  "tags": [
+    "Double Diamond",
+    "Teste Json"
+  ],
+  "goals": [
+    "Aumentar o tráfego do site em 50%",
+    "Melhorar a taxa de conversão em 20%",
+    "Expandir a presença nas redes sociais"
+  ],
+  "description": {
+    "paragraph": {
+      "descTitle": "4124",
+      "descText": "5423",
+      "descImage": "867866"
+    },
+    "paragraph-2": {
+      "descTitle": "adsasda",
+      "descText": "eqweq",
+      "descImage": "werwervwvwevw"
+    },
+    "paragraph-3": {
+      "descTitle": "165ndf",
+      "descText": "v4dfb",
+      "descImage": "asdg43r"
+    }
+  },
+  "results": {
+    "trafficIncrease": "55%",
+    "conversionRate": "22%",
+    "socialGrowth": "30%"
+  }
+}
