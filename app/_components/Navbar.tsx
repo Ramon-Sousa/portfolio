@@ -34,13 +34,13 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="py-3 bg-transparent border-b border-gray-900 sticky top-0 z-10">
-      <div className=" mx-auto flex justify-between items-center px-8">
+    <nav className="py-2 border-b border-gray-900 bg-gray-950 sticky top-0 z-10">
+      <div className="container mx-auto flex justify-between items-center">
         {/* Logo (Desktop and Mobile) */}
         <a href="/" className="flex items-center">
           <img
             src="/assets/new-logo-2x1.svg"
-            className="h-10  sm:h-14"
+            className="h-10  sm:h-11"
             alt="portfolio"
           />
         </a>
@@ -105,10 +105,9 @@ function Navbar() {
         </div>
         {/* Horário de Brasília */}
         <div className="hidden lg:inline-flex items-center text-gray-500 text-xs ml-8 gap-3 border-l border-gray-600 pl-8">
-  <Coffee size={32} />
-  <p className="text-ce">{`FRANCA • BR ${time}`}</p>
-</div>
-
+          <Coffee size={32} />
+          <p className="text-ce">{`FRANCA • BR ${time}`}</p>
+        </div>
       </div>
     </nav>
   );

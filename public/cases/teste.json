@@ -38,8 +38,21 @@
     }
   },
   "results": {
-    "trafficIncrease": "55%",
-    "conversionRate": "22%",
-    "socialGrowth": "30%"
+    "outcome": {
+      "resultIcon": "Legenda da imagem aqui",
+      "resultTitle": "55%",
+      "resultDesc": "O Parceiro da Construção é uma startup do grupo Saint-Gobain que oferece capacitação gratuita para profissionais da construção civil, de forma online e disponível via app para Android/IOS e plataforma web. Uma oportunidade de melhoria surgiu durante a busca de possíveis melhorias para aumentar a aquisição e retenção de novos usuários. Havia inconsistências entre a plataforma web e o app mobile, sendo os testes de habilidade um exemplo delas. Após análise de dados, constatou-se que, mesmo sem um layout otimizado para navegação mobile, os usuários acessavam a plataforma web pelo celular e faziam os testes de habilidade."
+    },
+    "outcome-2": {
+      "resultIcon": "Legenda da imagem aqui",
+      "resultTitle": "55%",
+      "resultDesc": "O Parceiro da Construção é uma startup do grupo Saint-Gobain que oferece capacitação gratuita para profissionais da construção civil, de forma online e disponível via app para Android/IOS e plataforma web. Uma oportunidade de melhoria surgiu durante a busca de possíveis melhorias para aumentar a aquisição e retenção de novos usuários. Havia inconsistências entre a plataforma web e o app mobile, sendo os testes de habilidade um exemplo delas. Após análise de dados, constatou-se que, mesmo sem um layout otimizado para navegação mobile, os usuários acessavam a plataforma web pelo celular e faziam os testes de habilidade."
+    },
+    "outcome-3": {
+      "resultIcon": "Legenda da imagem aqui",
+      "resultTitle": "55%",
+      "resultDesc": "O Parceiro da Construção é uma startup do grupo Saint-Gobain que oferece capacitação gratuita para profissionais da construção civil, de forma online e disponível via app para Android/IOS e plataforma web. Uma oportunidade de melhoria surgiu durante a busca de possíveis melhorias para aumentar a aquisição e retenção de novos usuários. Havia inconsistências entre a plataforma web e o app mobile, sendo os testes de habilidade um exemplo delas. Após análise de dados, constatou-se que, mesmo sem um layout otimizado para navegação mobile, os usuários acessavam a plataforma web pelo celular e faziam os testes de habilidade."
+    }
   }
+
 }
