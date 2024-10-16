@@ -1,7 +1,7 @@
 import React from "react";
 export default async function Experience() {
   return (
-    <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto py-24 sm:py-12 lg:py-20 gap-8 lg:gap-20">
+    <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto py-24 sm:py-12 lg:py-36 gap-8 lg:gap-20">
       <div className="items-center lg:items-start text-center lg:text-left w-full col-span-1">
         <div className="text-4xl sm:text-4xl lg:text-6xl font-light pb-4">
           Experiência{" "}

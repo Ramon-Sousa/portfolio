@@ -31,11 +31,13 @@ export async function getProjects() {
   const typedResponse = response as unknown as NotionDatabaseResponse;
   return typedResponse.results.map((project) => {
     let coverUrl = null;
-    if (project.cover?.type === 'file') { // Se existir capa E for tipo 'file'
-      coverUrl = project.cover.file.url; 
-    } else if (project.cover?.type === 'external') { // Se existir capa E for tipo 'external'
+    if (project.cover?.type === "file") {
+      // Se existir capa E for tipo 'file'
+      coverUrl = project.cover.file.url;
+    } else if (project.cover?.type === "external") {
+      // Se existir capa E for tipo 'external'
       coverUrl = project.cover.external.url;
-    } 
+    }
     return {
       id: project.id,
       title: project.properties.title.title[0].plain_text,
@@ -43,8 +45,7 @@ export async function getProjects() {
       tags: project.properties.tags.multi_select.map((tag) => tag.name),
       publishedAt: project.properties.publishedAt.date?.start,
       createdAt: project.created_time,
-      cover: coverUrl, 
-      
+      cover: coverUrl,
     };
   });
 }
@@ -68,8 +69,8 @@ export async function getProject(slug: string) {
   const mdblocks = await n2m.pageToMarkdown(pageId);
   const mdString = n2m.toMarkdownString(mdblocks);
   const typedResponse = response as unknown as NotionDatabaseResponse;
-  
- return {
+
+  return {
     title: typedResponse.results[0].properties.title.title[0].plain_text,
     content: mdString.parent,
   };
