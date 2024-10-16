@@ -55,14 +55,14 @@ export default async function Page() {
     console.error("Erro ao ler o diretório 'cases':", error);
   }
   return (
-    <div className="min-h-screen overflow-hidden bg-[#020202]">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <div className="max-w-screen-7xl mx-auto">
         <Navbar />
-        <Link href="/" className="container flex gap-2 pt-8">
+        <Link href="/" className="container flex gap-2 pt-8 text-gray-800 dark:text-gray-200">
           <ArrowLeft /> Voltar
         </Link>
         <div className="container py-8">
-          <h1 className="text-slate-200 text-justify text-3xl sm:text-5xl">
+          <h1 className="text-justify text-3xl sm:text-5xl text-gray-800 dark:text-gray-200">
             Cases de Sucesso
           </h1>
         </div>
@@ -71,46 +71,46 @@ export default async function Page() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
               {cases.map((caseItem, index) => (
                 <Link
-                  href={`/projects/${caseItem.slug}`} // Usando o slug diretamente do JSON
-                  className="mb-8"
-                  key={caseItem.id || index}
-                >
-                  <div className="rounded-md mb-8">
-                    <img
-                      src={caseItem.thumbnail || "/assets/default-thumbnail.png"} // Fallback para uma imagem padrão
-                      alt={caseItem.title}
-                      className="rounded-md object-cover w-full h-64 sm:h-[500px]"
-                    />
-                    <div className="pt-4">
-                      <h3 className="text-2xl font-light text-gray-300">
-                        {caseItem.title}
-                      </h3>
-                      <p className="text-gray-400 mt-2">
-                        {caseItem.subtitle}
-                      </p>
-                      <hr className="my-4 h-[1px] border-t-0 bg-neutral-100 dark:bg-white/10" />
-                      <div className="flex justify-between items-center">
-                        <div className="flex flex-wrap gap-1 items-center">
-                          {caseItem.tags?.length > 0 ? (
-                            caseItem.tags.map((tag: string) => (
-                              <span
-                                key={tag}
-                                className="whitespace-nowrap rounded-full bg-[#090A0C] border border-slate-900 px-4 py-2 text-xs text-gray-300 uppercase tracking-wide"
-                              >
-                                {tag}
-                              </span>
-                            ))
-                          ) : (
-                            <span className="text-xs text-gray-400">Sem tags</span>
-                          )}
-                        </div>
-                        <time className="text-lg text-gray-500">
-                          {caseItem.publishedAt}
-                        </time>
+                href={`/projects/${caseItem.slug}`}
+                className="mb-8"
+                key={caseItem.id || index}
+              >
+                <div className="rounded-md">
+                  <img
+                    src={caseItem.thumbnail || "/assets/empty-state-thumb.png"} // Fallback para imagem padrão
+                    alt={caseItem.title}
+                    className="rounded-md object-cover w-full h-64 sm:h-[500px]"
+                  />
+                  <div className="pt-4">
+                    <h3 className="text-3xl font-medium text-gray-800 dark:text-gray-200">
+                      {caseItem.title}
+                    </h3>
+                    <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify">{caseItem.subtitle}</p>
+                    <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" />
+                    <div className="flex justify-between items-center">
+                      <div className="flex flex-wrap gap-1 items-center">
+                        {caseItem.tags?.length > 0 ? (
+                          caseItem.tags.map((tag: string) => (
+                            <span
+                              key={tag}
+                              className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 uppercase tracking-wide"
+                            >
+                              {tag}
+                            </span>
+                          ))
+                        ) : (
+                          <span className="text-xs text-gray-800 dark:text-gray-200">
+                            Sem tags disponíveis
+                          </span>
+                        )}
                       </div>
+                      <time className="text-lg text-gray-800 dark:text-gray-200">
+                        {caseItem.publishedAt}
+                      </time>
                     </div>
                   </div>
-                </Link>
+                </div>
+              </Link>
               ))}
             </div>
           ) : (

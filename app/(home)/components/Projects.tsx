@@ -45,9 +45,9 @@ export default async function Projects() {
     <section className="mx-auto px-4 py-8 sm:px-6 lg:px-8 lg:py-32">
       <div className="container">
         <div className="flex justify-between">
-          <div className="text-4xl sm:text-4xl lg:text-6xl font-light pb-12">
+          <div className="text-4xl sm:text-4xl lg:text-6xl font-light pb-12text-gray-800 dark:text-gray-200">
             Projetos{" "}
-            <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text font-[Piazolla] font-normal italic text-nowrap">
+            <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-normal italic text-nowrap">
               selecionados
             </span>
           </div>
@@ -69,29 +69,29 @@ export default async function Projects() {
                     className="rounded-md object-cover w-full h-64 sm:h-[500px]"
                   />
                   <div className="pt-4">
-                    <h3 className="text-2xl font-light text-gray-300">
+                    <h3 className="text-3xl font-medium text-gray-800 dark:text-gray-200">
                       {project.title}
                     </h3>
-                    <p className="text-gray-400 mt-2">{project.subtitle}</p>
-                    <hr className="my-4 h-[1px] border-t-0 bg-neutral-100 dark:bg-white/10" />
+                    <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify">{project.subtitle}</p>
+                    <hr className="my-6 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" />
                     <div className="flex justify-between items-center">
                       <div className="flex flex-wrap gap-1 items-center">
                         {project.tags?.length > 0 ? (
                           project.tags.map((tag: string) => (
                             <span
                               key={tag}
-                              className="whitespace-nowrap rounded-full bg-[#090A0C] border border-slate-900 px-4 py-2 text-xs text-gray-300 uppercase tracking-wide"
+                              className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 uppercase tracking-wide"
                             >
                               {tag}
                             </span>
                           ))
                         ) : (
-                          <span className="text-xs text-gray-400">
+                          <span className="text-xs text-gray-800 dark:text-gray-200">
                             Sem tags disponíveis
                           </span>
                         )}
                       </div>
-                      <time className="text-lg text-gray-500">
+                      <time className="text-lg text-gray-800 dark:text-gray-200">
                         {project.publishedAt}
                       </time>
                     </div>
@@ -107,10 +107,10 @@ export default async function Projects() {
               alt="Erro ao carregar projetos"
               className="h-56"
             />
-            <h3 className="mt-4 text-2xl font-light text-gray-300">
+            <h3 className="mt-4 text-2xl font-light text-gray-800 dark:text-gray-200">
               Nenhum projeto disponível
             </h3>
-            <p className="mt-2 text-lg text-gray-500">
+            <p className="mt-2 text-lg text-gray-500 dark:text-gray-400">
               Pegue um café e dê uma olhada no meu Linkedin enquanto faço as melhorias no portfólio.
             </p>
           </div>
@@ -119,11 +119,11 @@ export default async function Projects() {
         {projects.length > 0 && (
           <div className="flex justify-center mt-6">
             <Link
-              className="flex items-center gap-2 rounded-full bg-white px-4 text-xl text-black font-normal py-3 hover:bg-slate-500"
+              className="flex items-center gap-2 rounded-full bg-gray-100 px-4 text-xl text-gray-800 font-normal py-3 hover:bg-gray-200 duration-300"
               href="/projects"
             >
               Ver todos
-              <div className="p-2 bg-neutral-950 rounded-full flex justify-center items-center">
+              <div className="p-2 bg-gray-950 rounded-full flex justify-center items-center">
                 <svg
                   width="16"
                   height="16"

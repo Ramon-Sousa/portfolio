@@ -7,23 +7,23 @@ import Hobbies from "../(home)/components/Hobbies";
 
 export default function page() {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#020202]">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <div className="max-w-screen-7xl mx-auto">
         <Navbar />
-        <div className="mx-auto px-4 py-8 sm:px-6 lg:px-8 lg:py-40" id="about">
+        <div className="mx-auto px-4 py-8 sm:px-6 lg:px-8 lg:py-40 text-gray-800 dark:text-gray-200" id="about">
           {/* <Link href="/" className="container flex gap-2 pt-8">
             <ArrowLeft /> Voltar
           </Link> */}
 
           <div className="sm:container mx-auto text-center gap-4">
-            <div className="text-4xl sm:text-4xl lg:text-6xl font-normal pb-4">
+            <div className="text-4xl sm:text-4xl lg:text-6xl font-normal pb-4 text-gray-800 dark:text-gray-200">
               Sobre{" "}
-              <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text font-[Piazolla] font-black italic">
+              <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-normal italic text-nowrap">
                 {" "}
                 mim
               </span>
             </div>
-            <p className="text-gray-500 text-xl sm:text-3xl leading-8 sm:leading-10">
+            <p className="text-gray-500 dark:text-gray-400 text-xl font-light pb-8 sm:text-3xl leading-8 sm:leading-10">
               Product Designer apaixonado por transformar problemas em soluções
               digitais que fazem a diferença. Colaboro com equipes
               multidisciplinares, usando pesquisa e dados para criar produtos
@@ -37,28 +37,28 @@ export default function page() {
             </p>
           </div>
           <div className="sm:container grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-6 pt-20 pb-16">
-            <div className="group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-slate-900 md:h-80">
+            <div className="group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-gray-200 dark:border-gray-900 md:h-80">
               <img
                 className="absolute inset-0 h-full w-full object-cover object-center transition group-hover:scale-110 saturate-50 hover:saturate-100 duration-700"
                 src="/assets/img-portfolio-02.png"
                 alt=""
               />
             </div>
-            <div className="group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-slate-900 md:col-span-2 md:h-80">
+            <div className="group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-gray-200 dark:border-gray-900 md:col-span-2 md:h-80">
               <img
                 className="absolute inset-0 h-full w-full object-cover object-center transition group-hover:scale-110 saturate-50 hover:saturate-100 duration-700"
                 src="/assets/img-portfolio-04.png"
                 alt=""
               />
             </div>
-            <div className="group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-slate-900 md:col-span-2 md:h-80">
+            <div className="group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-gray-200 dark:border-gray-900 md:col-span-2 md:h-80">
               <img
                 className="absolute inset-0 h-full w-full object-cover object-center transition group-hover:scale-110 saturate-50 hover:saturate-100 duration-700"
                 src="/assets/img-portfolio-03.png"
                 alt=""
               />
             </div>
-            <div className="group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-slate-900 md:h-80">
+            <div className="group relative flex h-48 items-end overflow-hidden rounded-lg border-2 border-gray-200 dark:border-gray-900 md:h-80">
               <img
                 className="absolute inset-0 h-full w-full object-cover object-center transition group-hover:scale-110 saturate-50 hover:saturate-100 duration-700"
                 src="/assets/img-portfolio-01.png"

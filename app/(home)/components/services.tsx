@@ -2,23 +2,23 @@ import React from "react";
 
 export default function Services() {
   return (
-    <div className="mt-4 sm:mt-0 grid grid-cols-3 sm:grid-cols-6 text-center align-middle text-gray-300 font-normal">
-      <span className="py-6 px-6 border w-full border-gray-900 border-l-0">
+    <div className="mt-4 sm:mt-0 grid grid-cols-3 sm:grid-cols-6 text-center align-middle text-gray-800 dark:text-gray-300 font-normal">
+      <span className="py-6 px-6 border w-full border-gray-200 dark:border-gray-900 border-l-0">
       Interaction Design
       </span>
-      <span className="py-6 px-6 border w-full border-gray-900">
+      <span className="py-6 px-6 border w-full border-gray-200 dark:border-gray-900">
       User Research  
       </span>
-      <span className="py-6 px-6 border w-full border-gray-900">
+      <span className="py-6 px-6 border w-full border-gray-200 dark:border-gray-900">
       Stakeholder Management
       </span>
-      <span className="py-6 px-6 border w-full border-gray-900">
+      <span className="py-6 px-6 border w-full border-gray-200 dark:border-gray-900">
       Data-Driven Design
       </span>
-      <span className="py-6 px-6 border w-full border-gray-900">
+      <span className="py-6 px-6 border w-full border-gray-200 dark:border-gray-900">
       Accessibility Specs
       </span>
-      <span className="py-6 px-6 border w-full border-gray-900 border-r-0">
+      <span className="py-6 px-6 border w-full border-gray-200 dark:border-gray-900 border-r-0">
       Design Systems
       </span>
       {/* <div className="flex justify-center items-stretch py-3 bg-neutral-50 w-full overflow-hidden">
