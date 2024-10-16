@@ -1,11 +1,35 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import {Github, Linkedin } from "lucide-react";
 import Link from "next/link";
-
+import { Coffee } from "lucide-react";
 export default function Footer() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [time, setTime] = useState<string>("");
+
+  // Função para obter a hora atual no fuso horário de Brasília
+  useEffect(() => {
+    const updateTime = () => {
+      const options: Intl.DateTimeFormatOptions = {
+        timeZone: "America/Sao_Paulo",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      };
+      const currentTime = new Intl.DateTimeFormat("pt-BR", options).format(
+        new Date()
+      );
+      setTime(currentTime);
+    };
+
+    updateTime(); // Atualiza imediatamente
+    const intervalId = setInterval(updateTime, 1000); // Atualiza a cada segundo
+
+    return () => clearInterval(intervalId); // Limpa o intervalo ao desmontar o componente
+  }, []);
   return (
     <div className="w-full px-4 pb-14">
-      <div className="container flex flex-col sm:flex-row items-center justify-between p-8 bg-[#090A0C] border border-slate-900 rounded-2xl">
+      <div className="container flex flex-col sm:flex-row items-center justify-between p-8 bg-gray-900 dark:bg-gray-200 text-gray-200 dark:text-gray-800 border border-slate-900 rounded-2xl">
         {/* Logo */}
         <img
           src="/assets/new-logo-2x1.svg"
@@ -13,13 +37,8 @@ export default function Footer() {
           alt="portfolio"
         />
 
-        {/* Texto Central */}
-        <div className="flex text-nowrap text-base font-normal text-gray-300 text-center sm:text-left mb-4 sm:mb-0 sm:px-6">
-          Vamos trabalhar juntos?
-        </div>
-
         {/* Redes Sociais e Contato */}
-        <div className="flex flex-col sm:flex-row items-center gap-10 justify-between text-base font-normal text-gray-300">
+        <div className="flex flex-col sm:flex-row items-center gap-10 justify-between text-base font-normal text-gray-200 dark:text-gray-800">
           <Link
             className="flex items-center gap-2"
             href="https://www.linkedin.com/in/ramon-sousa-pereira/"
@@ -40,6 +59,16 @@ export default function Footer() {
             contato@ramondesigner.com
           </div>
         </div>
+
+          {/* Texto Central */}
+        {/* <div className="flex text-nowrap text-base font-normal text-gray-200 dark:text-gray-800 text-center sm:text-left mb-4 sm:mb-0 sm:px-6">
+          Vamos trabalhar juntos?
+        </div> */}
+        <div className="hidden lg:inline-flex items-center text-gray-200 dark:text-gray-800 text-xs gap-3 text-center uppercase">
+          <Coffee size={32} />
+          <p className="">{`FRANCA • BR ${time}`}</p>
+        </div>
+
       </div>
     </div>
   );

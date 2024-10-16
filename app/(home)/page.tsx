@@ -14,7 +14,7 @@ import Carrousel from "./components/ui/Carrousel";
 
 export default function page() {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#020202]">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       <div className="max-w-screen-7xl mx-auto">
         <SpeedInsights />
         <Cursor />

@@ -37,7 +37,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
     const filenames = fs.readdirSync(casesDirectory);
 
     // Filtra apenas arquivos com a extensão .json
-    const jsonFilenames = filenames.filter((filename) => filename.endsWith(".json"));
+    const jsonFilenames = filenames.filter((filename) =>
+      filename.endsWith(".json")
+    );
 
     // Carrega os arquivos JSON e verifica o slug
     const caseFile = jsonFilenames.find((filename) => {
@@ -56,10 +58,17 @@ export default async function Page({ params }: { params: { slug: string } }) {
       // Exibe estado vazio caso o arquivo com o slug não seja encontrado
       return (
         <div className="flex flex-col items-center justify-center mt-16">
-          <img src="/assets/coffee-error.svg" alt="imagem-erro de cases" className="h-56" />
-          <h3 className="mt-4 text-2xl font-light text-gray-300">Nenhum case disponível</h3>
-          <p className="mt-2 text-lg text-gray-500">
-            Pegue um café e dê uma olhada no meu Linkedin enquanto faço as melhorias no portfólio.
+          <img
+            src="/assets/coffee-error.svg"
+            alt="imagem-erro de cases"
+            className="h-56"
+          />
+          <h3 className="mt-4 text-2xl font-light text-gray-800 dark:text-gray-200">
+            Nenhum case disponível
+          </h3>
+          <p className="mt-2 text-lg text-gray-500 dark:text-gray-400">
+            Pegue um café e dê uma olhada no meu Linkedin enquanto faço as
+            melhorias no portfólio.
           </p>
         </div>
       );
@@ -71,7 +80,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
     const project = JSON.parse(caseContent);
 
     return (
-      <div className="min-h-screen bg-[#020202]">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
         <div className="max-w-screen-7xl mx-auto">
           <Navbar />
           <div className="">
@@ -102,14 +111,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <div className="flex flex-col gap-6">
               {/* Título e subtítulo */}
               <div className="flex flex-col items-start gap-4">
-                <h1 className="text-gray-100 text-center sm:text-left text-base uppercase tracking-widest leading-4 font-light">
+                <h1 className="text-gray-800 dark:text-gray-200 text-center sm:text-left text-base uppercase tracking-widest leading-4 font-light">
                   {project.company}
                 </h1>
-                <h1 className="text-gray-100 text-4xl sm:text-5xl text-center sm:text-left">
+                <h1 className="text-gray-800 dark:text-gray-200 text-4xl sm:text-5xl text-center sm:text-left">
                   {project.title}
                 </h1>
               </div>
-              <h2 className="text-gray-300 text-justify text-lg">
+              <h2 className="text-gray-500 dark:text-gray-400 text-justify text-lg">
                 {project.subtitle}
               </h2>
 
@@ -129,10 +138,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     },
                   ].map((section, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
-                      <h4 className="text-gray-100 text-xl font-bold pb-2">
+                      <h4 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-2">
                         {section.title}
                       </h4>
-                      <span className="text-gray-300 text-justify text-lg pb-4 sm:pb-8">
+                      <span className="text-gray-500 dark:text-gray-400 text-justify text-lg pb-4 sm:pb-8">
                         {section.content}
                       </span>
                     </div>
@@ -147,10 +156,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     { title: "Plataforma", content: project.plataform },
                   ].map((section, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
-                      <h4 className="text-gray-100 text-xl font-bold pb-2">
+                      <h4 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-2">
                         {section.title}
                       </h4>
-                      <span className="text-gray-300 text-justify text-lg pb-4 sm:pb-8">
+                      <span className="text-gray-500 dark:text-gray-400 text-justify text-lg pb-4 sm:pb-8">
                         {section.content}
                       </span>
                     </div>
@@ -209,25 +218,25 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
               <div className="flex-1 sm:ml-8 mb-4 sm:mb-8">
                 <div className="gap-6 mb-10" id={project.problemName}>
-                  <h4 className="text-gray-100 text-xl font-bold pb-4">
+                  <h4 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-4">
                     {project.problemName}
                   </h4>
                   <div className="flex flex-col gap-4">
                     {project.goals.map((key: string, idx: string) => (
                       <div
                         key={idx}
-                        className="flex align-middle gap-2 w-full bg-gray-800 py-6 px-7 rounded-xl"
+                        className="flex align-middle gap-2 w-full bg-gray-100 dark:bg-gray-900 py-6 px-7 rounded-xl"
                       >
-                        <h4 className="text-gray-100 text-2xl font-medium font-[Piazolla]">
+                        <h4 className="text-gray-800 dark:text-gray-200 text-2xl font-medium font-serif">
                           {idx + 1}
                         </h4>
-                        <span className="text-gray-300 text-lg pt-1">
+                        <span className="text-gray-800 dark:text-gray-200 text-lg pt-1">
                           {key}
                         </span>
                       </div>
                     ))}
                   </div>
-                  <p className="text-2xl text-center justify-center italic text-gray-400 underline decoration-indigo-500 py-10">
+                  <p className="text-2xl text-center justify-center italic text-gray-800 dark:text-gray-400 underline decoration-indigo-500 py-10">
                     {project.problemCaption}
                   </p>
                 </div>
@@ -240,10 +249,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
                       className="w-full my-10"
                       id={paragraph?.descTitle}
                     >
-                      <h3 className="text-gray-100 text-xl font-bold pb-2">
+                      <h3 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-2">
                         {paragraph.descTitle}
                       </h3>
-                      <p className="text-gray-300 text-justify text-lg pb-8">
+                      <p className="text-gray-500 dark:text-gray-400 text-justify text-lg pb-8">
                         {paragraph?.descText ?? "Texto não disponível"}
                       </p>
                       <div>
@@ -254,17 +263,17 @@ export default async function Page({ params }: { params: { slug: string } }) {
                             className="rounded-lg sm:rounded-2xl mb-2"
                           />
                         )}
-                        <p className="text-xs italic text-gray-400 my-4">
+                        <p className="text-xs italic text-gray-500 dark:text-gray-400 my-4">
                           {paragraph?.imageCaption ?? ""}
                         </p>
                       </div>
-                      <hr className="my-10 h-[1px] border-dashed border-1 border-gray-700 dark:bg-white/10" />
+                     <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" />
                     </div>
                   );
                 })}
 
                 <div className="gap-6 my-10" id={project.resultName}>
-                  <h4 className="text-gray-100 text-xl font-bold pb-4">
+                  <h4 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-4">
                     {project.resultName}
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -276,10 +285,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
                         .trim(); // Extrair o nome do ícone
                       return (
                         <div
-                          className="flex flex-col gap-2 w-full bg-gray-800 py-6 px-6 rounded-xl"
+                          className="flex flex-col gap-2 w-full bg-gray-100 dark:bg-gray-900 py-6 px-6 rounded-xl"
                           key={idx}
                         >
-                          <h2 className="text-gray-100 text-2xl pb-2 gap-2 flex items-center">
+                          <h2 className="text-gray-800 dark:text-gray-200 text-2xl pb-2 gap-2 flex items-center">
                             <Icon
                               size={32}
                               color="#6366f1"
@@ -287,14 +296,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
                             />
                             {results.resultTitle}
                           </h2>
-                          <span className="text-gray-300 text-base">
+                          <span className="text-gray-500 dark:text-gray-400 text-base">
                             {results.resultDesc}
                           </span>
                         </div>
                       );
                     })}
                   </div>
-                  <p className="text-xs italic text-gray-400 my-4">
+                  <p className="text-xs italic text-gray-500 dark:text-gray-400 my-4">
                     {project.resultCaption}
                   </p>
                 </div>
@@ -305,17 +314,24 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </div>
       </div>
     );
-} catch (error) {
-  // Exibe estado vazio caso ocorra erro ao ler ou parsear o arquivo JSON
-  console.error("Erro ao carregar case:", error);
-  return (
-    <div className="flex flex-col items-center justify-center mt-16">
-      <img src="/assets/coffee-error.svg" alt="imagem-erro de cases" className="h-56" />
-      <h3 className="mt-4 text-2xl font-light text-gray-300">Nenhum case disponível</h3>
-      <p className="mt-2 text-lg text-gray-500">
-        Pegue um café e dê uma olhada no meu Linkedin enquanto faço as melhorias no portfólio.
-      </p>
-    </div>
-  );
-}
+  } catch (error) {
+    // Exibe estado vazio caso ocorra erro ao ler ou parsear o arquivo JSON
+    console.error("Erro ao carregar case:", error);
+    return (
+      <div className="flex flex-col items-center justify-center mt-16">
+        <img
+          src="/assets/coffee-error.svg"
+          alt="imagem-erro de cases"
+          className="h-56"
+        />
+        <h3 className="mt-4 text-2xl font-light text-gray-500 dark:text-gray-400">
+          Nenhum case disponível
+        </h3>
+        <p className="mt-2 text-lg text-gray-500">
+          Pegue um café e dê uma olhada no meu Linkedin enquanto faço as
+          melhorias no portfólio.
+        </p>
+      </div>
+    );
+  }
 }

@@ -20,7 +20,7 @@ const Carrousel: React.FC = () => {
 
   return (
     <div>
-      <div className="text-center text-lg font-medium text-gray-400">
+      <div className="text-center text-lg font-medium text-gray-500 dark:text-gray-400">
         +16 PROJETOS DESENVOLVIDOS
       </div>
       <div className="wrapper">
