@@ -55,10 +55,4 @@ portfolio/
 
    O site estará disponível em [http://localhost:3000](http://localhost:3000).
 
-## Contribuições
 
-Se você quiser contribuir com o projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
