@@ -12,7 +12,7 @@ export default function HeroSection() {
             Construindo produtos,
           </h1>
           <h2 className="text-4xl sm:text-6xl lg:text-8xl font-light text-gray-800 dark:text-gray-200">
-            interações & <span className="text-4xl sm:text-6xl lg:text-8xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-normal italic"> experiências</span>
+            interações & <span className="text-4xl sm:text-6xl lg:text-8xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-light italic"> experiências</span>
           </h2>
         </div>
         <div className="pt-10">

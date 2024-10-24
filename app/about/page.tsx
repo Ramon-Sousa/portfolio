@@ -16,13 +16,12 @@ export default function page() {
           </Link> */}
 
           <div className="sm:container mx-auto text-center gap-4">
-            <div className="text-4xl sm:text-4xl lg:text-6xl font-normal pb-4 text-gray-800 dark:text-gray-200">
-              Sobre{" "}
-              <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-normal italic text-nowrap">
-                {" "}
-                mim
-              </span>
-            </div>
+          <div className="text-4xl sm:text-4xl lg:text-6xl font-light pb-12text-gray-800 dark:text-gray-200">
+            Sobre{" "}
+            <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-normal italic text-nowrap">
+              mim
+            </span>
+          </div>
             <p className="text-gray-500 dark:text-gray-400 text-xl font-light pb-8 sm:text-3xl leading-8 sm:leading-10">
               Product Designer apaixonado por transformar problemas em soluções
               digitais que fazem a diferença. Colaboro com equipes

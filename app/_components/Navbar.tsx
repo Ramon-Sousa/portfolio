@@ -5,8 +5,8 @@ import { ModeToggle } from "../_components/Toggle";
 
 function Navbar() {
   const socials = [
-    { link: "/projects", label: "Projetos" },
-    { link: "/about", label: "Sobre mim" },
+    { link: "/projects", label: "Cases" },
+    { link: "/about", label: "Sobre" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -34,15 +34,20 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="py-2 border-b border-gray-200 dark:border-gray-900 bg-gray-50 dark:bg-gray-950 sticky top-0 z-10">
+    <nav className="py-4 z-50 border-b border-gray-200 dark:border-gray-900 bg-gray-50 dark:bg-gray-950 sticky top-0">
       <div className="container mx-auto flex justify-between items-center ">
         {/* Logo (Desktop and Mobile) */}
         <a href="/" className="flex items-center">
           <img
-            src="/assets/new-logo-2x1.svg"
-            className="h-10 sm:h-11"
+            src="/assets/name-black.svg"
+            className="h-4 sm:h-6 dark:hidden"
             alt="portfolio"
           />
+          <img
+          src="/assets/name-white.svg"
+          className="h-4 sm:h-6 hidden dark:block"
+          alt="portfolio"
+        />
         </a>
 
         {/* Hamburger Menu (Desktop and Mobile) */}
