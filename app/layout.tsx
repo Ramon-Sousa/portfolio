@@ -34,7 +34,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <div vaul-drawer-wrapper="" className="min-h-[100vh]">
+
             {children}
+            </div>
           </ThemeProvider>
         </body>
     </html>

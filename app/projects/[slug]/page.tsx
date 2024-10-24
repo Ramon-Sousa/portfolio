@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "@/app/_components/Footer";
 import Navbar from "@/app/_components/Navbar";
-import { icons } from "lucide-react"; // Importa todos os ícones como objetos
+import { ArrowLeft, icons } from "lucide-react"; // Importa todos os ícones como objetos
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
@@ -90,7 +90,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               className="object-cover w-full sm:h-[540px]"
             />
           </div>
-          <div className="container pt-8 pb-4py-8">
+          <div className="container pt-8 pb-4 py-8">
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
@@ -106,7 +106,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
+            
           </div>
+          {/* <Link
+              href="/"
+              className="container flex gap-2 pt-8 text-gray-800 dark:text-gray-200"
+            >
+              <ArrowLeft /> Voltar
+            </Link> */}
           <div className="container py-8">
             <div className="flex flex-col gap-6">
               {/* Título e subtítulo */}
@@ -267,7 +274,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                           {paragraph?.imageCaption ?? ""}
                         </p>
                       </div>
-                     <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" />
+                      <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" />
                     </div>
                   );
                 })}
