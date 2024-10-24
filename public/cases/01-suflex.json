@@ -4,7 +4,7 @@
   "slug": "otimizando-o-processo-de-contagem-manual-de-estoque-privateCase-23101652",
   "title": "EM BREVE - Otimizando o processo de contagem manual de estoque",
   "subtitle": "Este case aborda a otimização do processo de contagem de estoque em restaurantes. A solução busca automatizar e centralizar a gestão de insumos, eliminando o uso de papel, caneta e planilhas. Com foco na melhoria do controle de estoque e na redução de erros manuais, o produto visa facilitar a contagem recorrente, acompanhar o histórico de dados e otimizar a comunicação com fornecedores, garantindo uma operação mais eficiente e integrada.",
-  "company": "Diwe",
+  "company": "Suflex",
   "myrole": "Como Product Designer, fui responsável por liderar todo o processo de pesquisa e análise de dados, identificando as principais barreiras na experiência dos usuários. Criei protótipos de soluções, conduzi testes de usabilidade, e analisei métricas para validar as melhorias implementadas. Trabalhei em estreita colaboração com as equipes de produto e desenvolvimento para garantir que as mudanças fossem eficazes, sempre mantendo o foco em aprimorar a experiência mobile e reduzir as taxas de abandono nos testes de habilidade.",
   "timeFrame": "2 semanas (2022)",
   "plataform": "App (Android e IOS)",
@@ -12,14 +12,15 @@
   "tools": "Miro, Notion, Hotjar, Google analitycs, Figma, Maze.",
   "teamStructure": "Produto: Ramon Sousa(PD) e Lais Sousa(PM), Desenvolvedores: Vinicius Bassalobre e Jessé",
   "publishedAt": [
-    "2022"
+    "2024"
   ],
   "thumbnail": "/assets/cases/suflex-contagem/thumb-suflex.png",
   "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
   "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
+    "Service Blueprint",
     "Double Diamond",
-    "Case Produto"
+    "Benchmark"
   ],
   "problemName": "Motivações",
   "problemCaption": "Problem Statement: Apesar dos inúmeros problemas de usabilidade identificados na plataforma, nossos usuários demonstravam um valor significativo nos testes de habilidade, evidenciado pelas altas taxas de conclusão e pelos frequentes acessos ao fluxo. No entanto, as dificuldades enfrentadas durante a navegação comprometiam a experiência geral e levavam o usuário a se desengajar da plataforma.",
