@@ -29,6 +29,7 @@ Thumbs.db
 
 # node_modules
 node_modules
+
 # Ignore arquivos gerados pelo Next.js
 .next/
 
