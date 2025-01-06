@@ -80,7 +80,7 @@ export default async function Page() {
             </span>
           </div>
         </div>
-        <div className="container pb-16">
+        <div className="container">
           {cases.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
               {cases.map((caseItem, index) =>
@@ -103,7 +103,7 @@ export default async function Page() {
                             />
                           </div>
                           <div className="pt-4">
-                            <h3 className="text-3xl font-normal text-gray-800 dark:text-gray-200">
+                            <h3 className="text-xl sm:text-4xl lg:text-6xl font-normal text-gray-800 dark:text-gray-200">
                               {caseItem.title}
                             </h3>
                             <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
@@ -193,7 +193,7 @@ export default async function Page() {
                         />
                       </div>
                       <div className="pt-4">
-                        <h3 className="text-3xl font-normal text-gray-800 dark:text-gray-200">
+                        <h3 className="text-xl sm:text-4xl lg:text-6xl font-normal text-gray-800 dark:text-gray-200">
                           {caseItem.title}
                         </h3>
                         <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
