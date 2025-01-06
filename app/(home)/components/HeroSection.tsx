@@ -3,7 +3,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <section
-      className="h-auto py-20 sm:py-32 lg:py-40 w-screen flex items-center justify-center"
+      className="h-auto py-20 sm:py-32 lg:py-40 flex items-center justify-center"
       id="HeroSection"
     >
       <div className="container mx-auto">

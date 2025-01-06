@@ -103,7 +103,7 @@ export default async function Page() {
                             />
                           </div>
                           <div className="pt-4">
-                            <h3 className="text-xl sm:text-4xl lg:text-6xl font-normal text-gray-800 dark:text-gray-200">
+                            <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
                               {caseItem.title}
                             </h3>
                             <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
@@ -193,7 +193,7 @@ export default async function Page() {
                         />
                       </div>
                       <div className="pt-4">
-                        <h3 className="text-xl sm:text-4xl lg:text-6xl font-normal text-gray-800 dark:text-gray-200">
+                        <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
                           {caseItem.title}
                         </h3>
                         <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
