@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import {Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Coffee } from "lucide-react";
+import { Globe } from "lucide-react";
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
   const [time, setTime] = useState<string>("");
@@ -65,8 +66,14 @@ export default function Footer() {
           Vamos trabalhar juntos?
         </div> */}
         <div className="hidden lg:inline-flex items-center text-gray-200 dark:text-gray-800 text-xs gap-3 text-center uppercase">
-          <Coffee size={32} />
-          <p className="">{`FRANCA • BR ${time}`}</p>
+          {/* <Coffee size={32} /> */}
+          <div className="p-2 rounded bg-black dark:bg-gray-100">
+          <Globe  />
+          </div>
+         <div className="flex-row justify-items-start">
+         <p className="text-green-400 dark:text-green-700">Based in Brazil</p>
+         <p className="">{`SP • ${time}`}</p>
+         </div>
         </div>
 
       </div>

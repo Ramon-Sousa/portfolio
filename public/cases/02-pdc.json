@@ -2,7 +2,7 @@
   "id": "01",
   "privateCase": false,
   "slug": "parceiro-da-construcao",
-  "title": "Redesenhando a Experiência de Uso para a Funcionalidade de Quiz",
+  "title": "Redesenhando a experiência de uso para a funcionalidade de quiz",
   "subtitle": "O Parceiro da Construção é uma startup do grupo Saint-Gobain que oferece capacitação gratuita e online para profissionais da construção civil. Disponível em plataformas Android, iOS e web, o produto visa educar e certificar trabalhadores, ampliando suas oportunidades no mercado de trabalho.",
   "company": "Diwe",
   "myrole": "Como Product Designer, fui responsável por liderar todo o processo de pesquisa e análise de dados, identificando as principais barreiras na experiência dos usuários. Criei protótipos de soluções, conduzi testes de usabilidade, e analisei métricas para validar as melhorias implementadas. Trabalhei em estreita colaboração com as equipes de produto e desenvolvimento para garantir que as mudanças fossem eficazes, sempre mantendo o foco em aprimorar a experiência mobile e reduzir as taxas de abandono nos testes de habilidade.",
@@ -14,12 +14,12 @@
   "publishedAt": [
     "2022"
   ],
-  "thumbnail": "/assets/cases/pdc/thumb-pdc.webp",
+  "thumbnail": "/assets/cases/pdc/cover-test-pdc.png",
   "banner":  "/assets/cases/pdc/banner-highlights.png",
   "bannerHighlight":  "/assets/cases/pdc/before-after.png",
   "tags": [
-    "Double Diamond",
-    "Case Produto"
+    "Product Led Growth",
+    "User experience"
   ],
   "problemName": "Motivações",
   "problemCaption": "Problem Statement: Apesar dos inúmeros problemas de usabilidade identificados na plataforma, nossos usuários demonstravam um valor significativo nos testes de habilidade, evidenciado pelas altas taxas de conclusão e pelos frequentes acessos ao fluxo. No entanto, as dificuldades enfrentadas durante a navegação comprometiam a experiência geral e levavam o usuário a se desengajar da plataforma.",
@@ -48,7 +48,7 @@
       "imageCaption": "Dados referentes ao periodo anterior ao processo de discovery."
     },
     "paragraph-4": {
-      "descTitle": "Wireframe e cenário de teste",
+      "descTitle": "Wireframe e plano de teste",
       "descText": "Para os testes de usabilidade, desenvolvi wireframes que contemplavam as principais tarefas que os usuários deveriam realizar. O roteiro incluía ações como encontrar a nova página de cursos, localizar os testes em andamento, navegar entre as categorias disponíveis, e reportar um erro em uma questão específica. Além disso, os usuários foram incentivados a avaliar a relevância dos “Desafios” propostos e, ao final, compartilhar seus resultados após a conclusão de um teste.",
       "descImage": "/assets/cases/pdc/wireframe.png",
       "imageCaption": "Wireframe utilizado no primeiro teste de usabilidade, é válido ressaltar a navegação por 'Tabs'que foi descartada após o teste (O mesmo pode ser replicado em outros fluxos que estavam em desenvolvimento em simultâneo."

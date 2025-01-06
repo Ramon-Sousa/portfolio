@@ -23,9 +23,8 @@ export default function page() {
             </span>
           </div>
             <p className="text-gray-500 dark:text-gray-400 text-xl font-light pb-8 sm:text-3xl leading-8 sm:leading-10">
-              Product Designer apaixonado por transformar problemas em soluções
-              digitais que fazem a diferença. Colaboro com equipes
-              multidisciplinares, usando pesquisa e dados para criar produtos
+              Product Designer apaixonado por solucionar problemas utilizando soluções
+              digitais. Atuei em equipes multidisciplinares, usando pesquisa e dados para criar produtos
               intuitivos e impactantes.
               <br />
               <br /> Minha experiência em desenvolvimento front-end e web design

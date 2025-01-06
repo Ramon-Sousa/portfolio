@@ -17,7 +17,7 @@ const config = {
       xl: '1440px',
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Space Grotesk', 'sans-serif'],
       serif: ['Piazolla', 'serif'],
     },
     container: {

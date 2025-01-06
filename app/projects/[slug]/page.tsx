@@ -66,7 +66,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <h3 className="mt-4 text-2xl font-light text-gray-800 dark:text-gray-200">
             Nenhum case disponível
           </h3>
-          <p className="mt-2 text-lg text-gray-500 dark:text-gray-400">
+          <p className="mt-2 font-normal text-gray-500 dark:text-gray-400">
             Pegue um café e dê uma olhada no meu Linkedin enquanto faço as
             melhorias no portfólio.
           </p>
@@ -90,7 +90,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               className="object-cover w-full sm:h-[540px]"
             />
           </div>
-          <div className="container pt-8 pb-4 py-8">
+          <div className="mx-4 sm:mx-10 py-8">
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
@@ -98,7 +98,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/projects">Projetos</BreadcrumbLink>
+                  <BreadcrumbLink href="/projects">Cases</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
@@ -114,18 +114,18 @@ export default async function Page({ params }: { params: { slug: string } }) {
             >
               <ArrowLeft /> Voltar
             </Link> */}
-          <div className="container py-8">
+          <div className="mx-4 sm:mx-10 py-8">
             <div className="flex flex-col gap-6">
               {/* Título e subtítulo */}
               <div className="flex flex-col items-start gap-4">
                 <h1 className="text-gray-800 dark:text-gray-200 text-center sm:text-left text-base uppercase tracking-widest leading-4 font-light">
                   {project.company}
                 </h1>
-                <h1 className="text-gray-800 dark:text-gray-200 text-4xl sm:text-5xl text-center sm:text-left">
+                <h1 className="text-gray-800 dark:text-gray-200 text-2xl sm:text-4xl sm:text-left">
                   {project.title}
                 </h1>
               </div>
-              <h2 className="text-gray-500 dark:text-gray-400 text-justify text-lg">
+              <h2 className="text-gray-500 dark:text-gray-400 font-normal">
                 {project.subtitle}
               </h2>
 
@@ -145,10 +145,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     },
                   ].map((section, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
-                      <h4 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-2">
+                      <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-2">
                         {section.title}
                       </h4>
-                      <span className="text-gray-500 dark:text-gray-400 text-justify text-lg pb-4 sm:pb-8">
+                      <span className="text-gray-500 dark:text-gray-400 font-normal pb-4 sm:pb-8">
                         {section.content}
                       </span>
                     </div>
@@ -163,10 +163,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     { title: "Plataforma", content: project.plataform },
                   ].map((section, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
-                      <h4 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-2">
+                      <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-2">
                         {section.title}
                       </h4>
-                      <span className="text-gray-500 dark:text-gray-400 text-justify text-lg pb-4 sm:pb-8">
+                      <span className="text-gray-500 dark:text-gray-400 font-normal pb-4 sm:pb-8">
                         {section.content}
                       </span>
                     </div>
@@ -186,7 +186,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="flex gap-8 w-full my-8">
-              <div className="hidden sm:block w-1/4">
+              <div className="hidden sm:block w-1/5">
                 <div className="sticky top-16">
                   <ul className="space-y-2">
                     <a href={`#${project.problemName}`} className="block">
@@ -225,7 +225,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
               <div className="flex-1 sm:ml-8 mb-4 sm:mb-8">
                 <div className="gap-6 mb-10" id={project.problemName}>
-                  <h4 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-4">
+                  <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-4">
                     {project.problemName}
                   </h4>
                   <div className="flex flex-col gap-4">
@@ -234,16 +234,16 @@ export default async function Page({ params }: { params: { slug: string } }) {
                         key={idx}
                         className="flex align-middle gap-2 w-full bg-gray-100 dark:bg-gray-900 py-6 px-7 rounded-xl"
                       >
-                        <h4 className="text-gray-800 dark:text-gray-200 text-2xl font-medium font-serif">
+                        <h4 className="text-gray-800 dark:text-gray-200 text-xl font-medium">
                           {idx + 1}
                         </h4>
-                        <span className="text-gray-800 dark:text-gray-200 text-lg pt-1">
+                        <span className="text-gray-800 dark:text-gray-200 font-normal pt-1">
                           {key}
                         </span>
                       </div>
                     ))}
                   </div>
-                  <p className="text-2xl text-center justify-center italic text-gray-800 dark:text-gray-400 underline decoration-indigo-500 py-10">
+                  <p className="my-6 w-full bg-gray-900 dark:bg-gray-100 rounded-xl text-lg font-normal italic text-gray-200 dark:text-gray-800 py-10 px-8">
                     {project.problemCaption}
                   </p>
                 </div>
@@ -253,13 +253,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
                   return (
                     <div
                       key={idx}
-                      className="w-full my-10"
+                      className="w-full my-40"
                       id={paragraph?.descTitle}
                     >
-                      <h3 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-2">
+                      <h3 className="text-gray-800 dark:text-gray-200 font-semibold pb-2">
                         {paragraph.descTitle}
                       </h3>
-                      <p className="text-gray-500 dark:text-gray-400 text-justify text-lg pb-8">
+                      <p className="text-gray-500 dark:text-gray-400 font-normal pb-8">
                         {paragraph?.descText ?? "Texto não disponível"}
                       </p>
                       <div>
@@ -274,13 +274,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
                           {paragraph?.imageCaption ?? ""}
                         </p>
                       </div>
-                      <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" />
+                      {/* <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" /> */}
                     </div>
                   );
                 })}
 
                 <div className="gap-6 my-10" id={project.resultName}>
-                  <h4 className="text-gray-800 dark:text-gray-200 text-xl font-bold pb-4">
+                  <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-4">
                     {project.resultName}
                   </h4>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -303,7 +303,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
                             />
                             {results.resultTitle}
                           </h2>
-                          <span className="text-gray-500 dark:text-gray-400 text-base">
+                          <span className="text-gray-500 dark:text-gray-400 font-normal">
                             {results.resultDesc}
                           </span>
                         </div>
@@ -334,7 +334,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <h3 className="mt-4 text-2xl font-light text-gray-500 dark:text-gray-400">
           Nenhum case disponível
         </h3>
-        <p className="mt-2 text-lg text-gray-500">
+        <p className="mt-2 font-normal text-gray-500">
           Pegue um café e dê uma olhada no meu Linkedin enquanto faço as
           melhorias no portfólio.
         </p>

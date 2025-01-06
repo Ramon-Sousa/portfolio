@@ -2,7 +2,7 @@
   "id": "02",
   "privateCase": true,
   "slug": "otimizando-o-processo-de-contagem-manual-de-estoque-privateCase-23101652",
-  "title": "EM BREVE - Otimizando o processo de contagem manual de estoque",
+  "title": "Otimizando o processo de contagem manual de estoque",
   "subtitle": "Este case aborda a otimização do processo de contagem de estoque em restaurantes. A solução busca automatizar e centralizar a gestão de insumos, eliminando o uso de papel, caneta e planilhas. Com foco na melhoria do controle de estoque e na redução de erros manuais, o produto visa facilitar a contagem recorrente, acompanhar o histórico de dados e otimizar a comunicação com fornecedores, garantindo uma operação mais eficiente e integrada.",
   "company": "Suflex",
   "myrole": "Como Product Designer, fui responsável por liderar todo o processo de pesquisa e análise de dados, identificando as principais barreiras na experiência dos usuários. Criei protótipos de soluções, conduzi testes de usabilidade, e analisei métricas para validar as melhorias implementadas. Trabalhei em estreita colaboração com as equipes de produto e desenvolvimento para garantir que as mudanças fossem eficazes, sempre mantendo o foco em aprimorar a experiência mobile e reduzir as taxas de abandono nos testes de habilidade.",
@@ -14,12 +14,12 @@
   "publishedAt": [
     "2024"
   ],
-  "thumbnail": "/assets/cases/suflex-contagem/thumb-suflex.png",
+  "thumbnail": "/assets/cases/suflex-contagem/cover-test-2025.png",
   "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
   "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
     "Service Blueprint",
-    "Double Diamond",
+    "Mobile",
     "Benchmark"
   ],
   "problemName": "Motivações",

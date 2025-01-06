@@ -92,29 +92,31 @@ export default async function Page() {
                           <div className="absolute z-10 p-3 bg-gray-200 dark:bg-gray-900 rounded-full mt-4 ml-4">
                             <Lock size={16} />
                           </div>
-                          <img
-                            src={
-                              caseItem.thumbnail ||
-                              "/assets/empty-state-thumb.png"
-                            } // Fallback para imagem padrão
-                            alt={caseItem.title}
-                            className="rounded-md object-cover object-center w-full h-64 sm:h-[500px]"
-                          />
+                          <div className="rounded-md content-end overflow-clip bg-gray-100 dark:bg-gray-900 hover:bg-gray-800 hover:dark:bg-gray-200 w-full h-64 sm:h-[500px] duration-500">
+                            <img
+                              src={
+                                caseItem.thumbnail ||
+                                "/assets/empty-state-thumb.png"
+                              } // Fallback para imagem padrão
+                              alt={caseItem.title}
+                              className="rounded-md object-center w-full hover:scale-110 duration-500"
+                            />
+                          </div>
                           <div className="pt-4">
-                            <h3 className="text-3xl font-medium text-gray-800 dark:text-gray-200">
+                            <h3 className="text-3xl font-normal text-gray-800 dark:text-gray-200">
                               {caseItem.title}
                             </h3>
-                            <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify  h-28 text-wrap">
+                            <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
                               {caseItem.subtitle}
                             </p>
-                            <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" />
+                            {/* <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" /> */}
                             <div className="flex justify-between items-center">
                               <div className="flex flex-wrap gap-1 items-center">
                                 {caseItem.tags?.length > 0 ? (
                                   caseItem.tags.map((tag: string) => (
                                     <span
                                       key={tag}
-                                      className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 uppercase tracking-wide"
+                                      className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200  tracking-wide"
                                     >
                                       {tag}
                                     </span>
@@ -125,7 +127,7 @@ export default async function Page() {
                                   </span>
                                 )}
                               </div>
-                              <time className="text-lg text-gray-800 dark:text-gray-200">
+                              <time className="text-base text-gray-800 dark:text-gray-200">
                                 {caseItem.publishedAt}
                               </time>
                             </div>
@@ -180,28 +182,31 @@ export default async function Page() {
                     key={caseItem.id || index}
                   >
                     <div className="rounded-md">
-                      <img
-                        src={
-                          caseItem.thumbnail || "/assets/empty-state-thumb.png"
-                        } // Fallback para imagem padrão
-                        alt={caseItem.title}
-                        className="rounded-md object-cover object-center w-full h-64 sm:h-[500px]"
-                      />
+                      <div className="rounded-md content-end overflow-clip bg-gray-100 dark:bg-gray-900 hover:bg-gray-800 hover:dark:bg-gray-200 w-full h-64 sm:h-[500px] duration-500">
+                        <img
+                          src={
+                            caseItem.thumbnail ||
+                            "/assets/empty-state-thumb.png"
+                          } // Fallback para imagem padrão
+                          alt={caseItem.title}
+                          className="rounded-md object-center w-full hover:scale-110 duration-500"
+                        />
+                      </div>
                       <div className="pt-4">
-                        <h3 className="text-3xl font-medium text-gray-800 dark:text-gray-200">
+                        <h3 className="text-3xl font-normal text-gray-800 dark:text-gray-200">
                           {caseItem.title}
                         </h3>
-                        <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify  h-28 text-wrap">
+                        <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
                           {caseItem.subtitle}
                         </p>
-                        <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" />
+                        {/* <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" /> */}
                         <div className="flex justify-between items-center">
                           <div className="flex flex-wrap gap-1 items-center">
                             {caseItem.tags?.length > 0 ? (
                               caseItem.tags.map((tag: string) => (
                                 <span
                                   key={tag}
-                                  className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 uppercase tracking-wide"
+                                  className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200  tracking-wide"
                                 >
                                   {tag}
                                 </span>
@@ -212,7 +217,7 @@ export default async function Page() {
                               </span>
                             )}
                           </div>
-                          <time className="text-lg text-gray-800 dark:text-gray-200">
+                          <time className="text-base text-gray-800 dark:text-gray-200">
                             {caseItem.publishedAt}
                           </time>
                         </div>
