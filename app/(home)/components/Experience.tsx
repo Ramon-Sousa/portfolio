@@ -10,13 +10,13 @@ export default async function Experience() {
               profissional
             </span> */}
         </div>
-        <div className="text-gray-500 dark:text-gray-400 text-xl font-light pb-8">
-          Como Product Designer, trago uma combinação de habilidades em design e
-          desenvolvimento, adquiridas ao longo de minha experiência. Minha
-          experiência como Desenvolvedor Front-End e Web me proporciona uma
-          compreensão das competências técnicas necessárias para desenvolver
-          soluções eficazes e proporcionar um handoff eficiente entre design e
-          desenvolvimento.
+        <div className="text-gray-500 dark:text-gray-400 text-lg font-light pb-8">
+          Product Designer com background técnico em desenvolvimento
+          front-end, o que me permite criar soluções eficientes e promover uma
+          integração fluida entre design e desenvolvimento. Tenho experiência em
+          conduzir processos de discovery, criação de protótipos de alta
+          fidelidade e otimização de produtos com foco em métricas de negócio e
+          experiência do usuário.
         </div>
         <div className="flex justify-start gap-2 text-sm font-light text-gray-800 dark:text-gray-200 ">
           <span className="rounded-full  bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2">
@@ -38,8 +38,10 @@ export default async function Experience() {
           {/* Suflex */}
           <div className="h-28 px-4 py-2 border-b border-gray-200 dark:border-gray-900 flex justify-between items-center">
             <div className="flex flex-col gap-2">
-              <div className="text-gray-700 dark:text-gray-200 text-3xl font-light">Suflex</div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm font-medium">
+              <div className="text-gray-700 dark:text-gray-200 text-3xl font-light">
+                Suflex
+              </div>
+              <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
                 Set. 2023 - Atual | Product Designer
               </div>
             </div>
@@ -47,8 +49,10 @@ export default async function Experience() {
           {/* Diwe */}
           <div className="h-28 px-4 py-2 border-b border-gray-200 dark:border-gray-900 flex justify-between items-center">
             <div className="flex flex-col gap-2">
-              <div className="text-gray-700 dark:text-gray-200 text-3xl font-light">Diwe</div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm font-medium">
+              <div className="text-gray-700 dark:text-gray-200 text-3xl font-light">
+                Diwe
+              </div>
+              <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
                 Jul. 2021 - Jul. 2023 | UX/UI Designer → Product Designer
               </div>
             </div>
@@ -59,7 +63,7 @@ export default async function Experience() {
               <div className="text-gray-700 dark:text-gray-200 text-3xl font-light">
                 ibSystem
               </div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm font-medium">
+              <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
                 Jul. 2020 - Abr. 2021 | Programador Web → Front end Dev/UI
                 Designer
               </div>

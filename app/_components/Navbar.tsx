@@ -6,7 +6,11 @@ import { ModeToggle } from "../_components/Toggle";
 function Navbar() {
   const socials = [
     { link: "/projects", label: "Cases" },
-    { link: "/about", label: "Sobre" },
+    {
+      link: "https://www.linkedin.com/in/ramon-sousa-pereira/",
+      label: "Linkedin",
+    },
+    // { link: "/about", label: "Sobre" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -44,10 +48,10 @@ function Navbar() {
             alt="portfolio"
           />
           <img
-          src="/assets/name-white.svg"
-          className="h-4 sm:h-6 hidden dark:block"
-          alt="portfolio"
-        />
+            src="/assets/name-white.svg"
+            className="h-4 sm:h-6 hidden dark:block"
+            alt="portfolio"
+          />
         </a>
 
         {/* Hamburger Menu (Desktop and Mobile) */}
@@ -78,8 +82,8 @@ function Navbar() {
                 </li>
               ))}
               <div className="lg:inline-flex items-center gap-3 px-4 py-2">
-          <ModeToggle />
-        </div>
+                <ModeToggle />
+              </div>
             </ul>
           </div>
         </div>
@@ -91,11 +95,13 @@ function Navbar() {
               key={index}
               href={social.link}
               className="text-gray-800 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 text-md font-light"
+              target={index === 1 ? "_blank" : "_self"} // Adiciona target=_blank para o index 1
+              rel={index === 1 ? "noopener noreferrer" : undefined} // Boa prática de segurança
             >
               {social.label}
             </a>
           ))}
-          <p>·</p>
+          {/* <p>·</p>
           <a
             href="https://www.linkedin.com/in/ramon-sousa-pereira/"
             target="blank"
@@ -109,7 +115,7 @@ function Navbar() {
             className="text-gray-800 dark:text-gray-300 hover:text-gray-400 dark:hover:text-gray-200 text-md"
           >
             <Github className="w-5" strokeWidth={1} />
-          </a>
+          </a> */}
         </div>
 
         {/* Horário de Brasília */}

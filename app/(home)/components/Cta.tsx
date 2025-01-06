@@ -7,7 +7,7 @@ export default function Cta() {
       {/* <span className="flex gap-2 bg-slate-950 rounded-full px-2 text-xs text-white uppercase items-center justify-center leading-loose">
       BUILDING
       </span>{" "} */}
-      Explore o progresso deste portfólio no repositório do GitHub.{" "}
+      Explore o progresso deste projeto no GitHub.{" "}
       <a
         href="https://github.com/Ramon-Sousa/portfolio"
         className="underline font-bold"
