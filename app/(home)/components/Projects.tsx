@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
 import PasswordForm from "../../projects/_components/password-form/password-form";
+import { FollowerPointerCard } from "@/components/ui/following-pointer";
 
 export default async function Projects() {
   // Caminho para o diretório dos arquivos JSON
@@ -77,91 +78,94 @@ export default async function Projects() {
               {projects.map((caseItem, index) =>
                 caseItem.privateCase ? (
                   <div key={caseItem.id || index}>
-                    <Drawer>
-                      <DrawerTrigger asChild>
-                        <div className="rounded-md cursor-pointer ">
-                          <div className="absolute z-10 p-3 bg-gray-200 dark:bg-gray-900 rounded-full mt-4 ml-4">
-                            <Lock size={16} />
-                          </div>
-                          <div className="rounded-md content-end overflow-clip bg-gray-100 dark:bg-gray-900 hover:bg-gray-800 hover:dark:bg-gray-200 w-full h-64 sm:h-[500px] duration-500">
-                          <img
-                            src={
-                              caseItem.thumbnail ||
-                              "/assets/empty-state-thumb.png"
-                            } // Fallback para imagem padrão
-                            alt={caseItem.title}
-                            className="rounded-md object-center w-full hover:scale-110 duration-500"
-                          />
-                          </div>
-                          <div className="pt-4">
-                          <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
-                              {caseItem.title}
-                            </h3>
-                            <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
-                              {caseItem.subtitle}
-                            </p>
-                            {/* <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" /> */}
-                            <div className="flex justify-between items-center">
-                              <div className="flex flex-wrap gap-1 items-center">
-                                {caseItem.tags?.length > 0 ? (
-                                  caseItem.tags.map((tag: string) => (
-                                    <span
-                                      key={tag}
-                                      className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200  tracking-wide"
-                                    >
-                                      {tag}
+                    <FollowerPointerCard>
+                      <Drawer>
+                        <DrawerTrigger asChild>
+                          <div className="rounded-md cursor-pointer ">
+                            <div className="absolute z-10 p-3 bg-gray-200 dark:bg-gray-900 rounded-full mt-4 ml-4">
+                              <Lock size={16} />
+                            </div>
+                            <div className="rounded-md content-end overflow-clip bg-gray-100 dark:bg-gray-900 hover:bg-gray-800 hover:dark:bg-gray-200 w-full h-64 sm:h-[500px] duration-500">
+                              <img
+                                src={
+                                  caseItem.thumbnail ||
+                                  "/assets/empty-state-thumb.png"
+                                } // Fallback para imagem padrão
+                                alt={caseItem.title}
+                                className="rounded-md object-center w-full hover:scale-110 duration-500"
+                              />
+                            </div>
+                            <div className="pt-4">
+                              <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
+                                {caseItem.title}
+                              </h3>
+                              <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
+                                {caseItem.subtitle}
+                              </p>
+                              {/* <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" /> */}
+                              <div className="flex justify-between items-center">
+                                <div className="flex flex-wrap gap-1 items-center">
+                                  {caseItem.tags?.length > 0 ? (
+                                    caseItem.tags.map((tag: string) => (
+                                      <span
+                                        key={tag}
+                                        className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200  tracking-wide"
+                                      >
+                                        {tag}
+                                      </span>
+                                    ))
+                                  ) : (
+                                    <span className="text-xs text-gray-800 dark:text-gray-200">
+                                      Sem tags disponíveis
                                     </span>
-                                  ))
-                                ) : (
-                                  <span className="text-xs text-gray-800 dark:text-gray-200">
-                                    Sem tags disponíveis
-                                  </span>
-                                )}
+                                  )}
+                                </div>
+                                <time className="text-base text-gray-800 dark:text-gray-200">
+                                  {caseItem.publishedAt}
+                                </time>
                               </div>
-                              <time className="text-base text-gray-800 dark:text-gray-200">
-                                {caseItem.publishedAt}
-                              </time>
                             </div>
                           </div>
-                        </div>
-                      </DrawerTrigger>
-                      <DrawerContent>
-                        <div className="mx-auto w-full max-w-sm">
-                          <DrawerHeader>
-                            <DrawerTitle className="text-3xl font-medium text-gray-800 dark:text-gray-200">
-                              Informe a senha
-                            </DrawerTitle>
-                            <DrawerDescription className="text-pretty text-gray-500 dark:text-gray-400">
-                              Para acessar o projeto, você deve informar a senha
-                              do projeto.
-                            </DrawerDescription>
-                          </DrawerHeader>
-                          <DrawerDescription>
-                            <div className="p-4 pb-0">
-                              {/* <div className="text-lg font-medium text-gray-800 dark:text-gray-200">{caseItem.title}</div> */}
-                              <div className="flex items-center justify-center space-x-2">
-                                <PasswordForm caseSlug={caseItem.slug} />
+                        </DrawerTrigger>
+                        <DrawerContent>
+                          <div className="mx-auto w-full max-w-sm">
+                            <DrawerHeader>
+                              <DrawerTitle className="text-3xl font-medium text-gray-800 dark:text-gray-200">
+                                Informe a senha
+                              </DrawerTitle>
+                              <DrawerDescription className="text-pretty text-gray-500 dark:text-gray-400">
+                                Para acessar o projeto, você deve informar a
+                                senha do projeto.
+                              </DrawerDescription>
+                            </DrawerHeader>
+                            <DrawerDescription>
+                              <div className="p-4 pb-0">
+                                {/* <div className="text-lg font-medium text-gray-800 dark:text-gray-200">{caseItem.title}</div> */}
+                                <div className="flex items-center justify-center space-x-2">
+                                  <PasswordForm caseSlug={caseItem.slug} />
+                                </div>
                               </div>
-                            </div>
-                          </DrawerDescription>
-                          <DrawerFooter className="pt-2">
-                            {/* <Button>Salvar</Button> */}
-                            <DrawerClose asChild>
-                              <Button variant="outline">Cancelar</Button>
-                            </DrawerClose>
-                          </DrawerFooter>
-                        </div>
-                      </DrawerContent>
-                    </Drawer>
+                            </DrawerDescription>
+                            <DrawerFooter className="pt-2">
+                              {/* <Button>Salvar</Button> */}
+                              <DrawerClose asChild>
+                                <Button variant="outline">Cancelar</Button>
+                              </DrawerClose>
+                            </DrawerFooter>
+                          </div>
+                        </DrawerContent>
+                      </Drawer>
+                    </FollowerPointerCard>
                   </div>
                 ) : (
                   <Link
-                    href={`/projects/${caseItem.slug}`}
-                    className="mb-8"
-                    key={caseItem.id || index}
+                  href={`/projects/${caseItem.slug}`}
+                  className="mb-8"
+                  key={caseItem.id || index}
                   >
-                    <div className="rounded-md">
-                    <div className="rounded-md content-end overflow-clip bg-gray-100 dark:bg-gray-900 hover:bg-gray-800 hover:dark:bg-gray-200 w-full h-64 sm:h-[500px] duration-500">
+                      <div className="rounded-md">
+                    <FollowerPointerCard>
+                        <div className="rounded-md content-end overflow-clip bg-gray-100 dark:bg-gray-900 hover:bg-gray-800 hover:dark:bg-gray-200 w-full h-64 sm:h-[500px] duration-500">
                           <img
                             src={
                               caseItem.thumbnail ||
@@ -170,38 +174,39 @@ export default async function Projects() {
                             alt={caseItem.title}
                             className="rounded-md object-center w-full hover:scale-110 duration-500"
                           />
-                          </div>
-                      <div className="pt-4">
-                      <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
-                          {caseItem.title}
-                        </h3>
-                        <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
-                          {caseItem.subtitle}
-                        </p>
-                        {/* <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" /> */}
-                        <div className="flex justify-between items-center">
-                          <div className="flex flex-wrap gap-1 items-center">
-                            {caseItem.tags?.length > 0 ? (
-                              caseItem.tags.map((tag: string) => (
-                                <span
-                                  key={tag}
-                                  className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200  tracking-wide"
-                                >
-                                  {tag}
-                                </span>
-                              ))
-                            ) : (
-                              <span className="text-xs text-gray-800 dark:text-gray-200">
-                                Sem tags disponíveis
-                              </span>
-                            )}
-                          </div>
-                          <time className="text-base text-gray-800 dark:text-gray-200">
-                            {caseItem.publishedAt}
-                          </time>
                         </div>
+                        <div className="pt-4">
+                          <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
+                            {caseItem.title}
+                          </h3>
+                          <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
+                            {caseItem.subtitle}
+                          </p>
+                          {/* <hr className="my-10 h-[1px] border-t-0 bg-gray-200 dark:bg-gray-900" /> */}
+                          <div className="flex justify-between items-center">
+                            <div className="flex flex-wrap gap-1 items-center">
+                              {caseItem.tags?.length > 0 ? (
+                                caseItem.tags.map((tag: string) => (
+                                  <span
+                                    key={tag}
+                                    className="whitespace-nowrap rounded-full px-4 py-2 text-xs bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200  tracking-wide"
+                                  >
+                                    {tag}
+                                  </span>
+                                ))
+                              ) : (
+                                <span className="text-xs text-gray-800 dark:text-gray-200">
+                                  Sem tags disponíveis
+                                </span>
+                              )}
+                            </div>
+                            <time className="text-base text-gray-800 dark:text-gray-200">
+                              {caseItem.publishedAt}
+                            </time>
+                          </div>
+                        </div>
+                    </FollowerPointerCard>
                       </div>
-                    </div>
                   </Link>
                 )
               )}
