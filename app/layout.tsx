@@ -11,7 +11,7 @@ const raleway = Work_Sans({
 
 export const metadata: Metadata = {
   title: "Ramon Sousa - Product Designer",
-  description: "roduct Designer apaixonado por solucionar problemas utilizando soluções digitais. Atuei em equipes multidisciplinares, usando pesquisa e dados para criar produtos intuitivos e impactantes.",
+  description: "Product Designer apaixonado por solucionar problemas utilizando soluções digitais. Atuei em equipes multidisciplinares, usando pesquisa e dados para criar produtos intuitivos e impactantes.",
 };
 
 // export const metadata: Metadata = {
