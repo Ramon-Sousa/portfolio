@@ -1,20 +1,20 @@
 {
   "id": "02",
   "privateCase": true,
-  "slug": "otimizando-o-processo-de-contagem-manual-de-estoque-privateCase-23101652",
-  "title": "Otimizando o processo de contagem manual de estoque",
-  "subtitle": "Este case aborda a otimização do processo de contagem de estoque em restaurantes. A solução busca automatizar e centralizar a gestão de insumos, eliminando o uso de papel, caneta e planilhas. Com foco na melhoria do controle de estoque e na redução de erros manuais, o produto visa facilitar a contagem recorrente, acompanhar o histórico de dados e otimizar a comunicação com fornecedores, garantindo uma operação mais eficiente e integrada.",
-  "company": "Suflex",
+  "slug": "controle-financeiro-whatsapp-privateCase-20251255",
+  "title": "Controle financeiro integrado com WhatsApp",
+  "subtitle": "Plataforma que permite gerenciar finanças pessoais ou empresariais diretamente pelo WhatsApp, oferecendo uma maneira prática de controlar entradas, saídas e gerar relatórios financeiros.",
+  "company": "Freelancer",
   "myrole": "Como Product Designer, fui responsável por liderar todo o processo de pesquisa e análise de dados, identificando as principais barreiras na experiência dos usuários. Criei protótipos de soluções, conduzi testes de usabilidade, e analisei métricas para validar as melhorias implementadas. Trabalhei em estreita colaboração com as equipes de produto e desenvolvimento para garantir que as mudanças fossem eficazes, sempre mantendo o foco em aprimorar a experiência mobile e reduzir as taxas de abandono nos testes de habilidade.",
-  "timeFrame": "2 semanas (2023)",
-  "plataform": "Web (Desktop, Tablet & Mobile)",
+  "timeFrame": "2 semanas (2022)",
+  "plataform": "App (Android e IOS)",
   "researchMethods": "Double Diamond Entender as taxas de abandono; Definir o problema, métricas e como será medido; Desenvolver uma solução; Entrega (Teste e refinamento).",
   "tools": "Miro, Notion, Hotjar, Google analitycs, Figma, Maze.",
-  "teamStructure": "Produto: Ramon Sousa(PD), Leo Coitim (PM), Desenvolvedores, QA e Stakeholders",
+  "teamStructure": "Produto: Ramon Sousa(PD) e Lais Sousa(PM), Desenvolvedores: Vinicius Bassalobre e Jessé",
   "publishedAt": [
-    "2023"
+    "2024"
   ],
-  "thumbnail": "/assets/cases/suflex-contagem/cover-test-2025.png",
+  "thumbnail": "/assets/cases/moneymio/cover-moneymio.png",
   "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
   "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
@@ -22,8 +22,8 @@
     "Mobile",
     "Benchmark"
   ],
-  "problemName": "Contexo",
-  "problemCaption": "A empresa enfrentava desafios para atingir o breakeven e expandir sua participação no mercado. No entanto, falta clareza sobre quais caminhos explorar para alcançar esses objetivos. Então, nosso objetivo era dentificar dores recorrentes na gestão e operação de restaurantes e explorar, como área de produto, soluções que possam atender a essas necessidades de forma eficaz.",
+  "problemName": "Motivações",
+  "problemCaption": "Problem Statement: Apesar dos inúmeros problemas de usabilidade identificados na plataforma, nossos usuários demonstravam um valor significativo nos testes de habilidade, evidenciado pelas altas taxas de conclusão e pelos frequentes acessos ao fluxo. No entanto, as dificuldades enfrentadas durante a navegação comprometiam a experiência geral e levavam o usuário a se desengajar da plataforma.",
   "goals": [
     "Aumentar o número de downloads do aplicativo mobile.",
     "Reduzir taxa de abandono em testes iniciados.",
@@ -49,7 +49,7 @@
       "imageCaption": "Dados referentes ao periodo anterior ao processo de discovery."
     },
     "paragraph-4": {
-      "descTitle": "Cenários de teste",
+      "descTitle": "Wireframe e cenário de teste",
       "descText": "Para os testes de usabilidade, desenvolvi wireframes que contemplavam as principais tarefas que os usuários deveriam realizar. O roteiro incluía ações como encontrar a nova página de cursos, localizar os testes em andamento, navegar entre as categorias disponíveis, e reportar um erro em uma questão específica. Além disso, os usuários foram incentivados a avaliar a relevância dos “Desafios” propostos e, ao final, compartilhar seus resultados após a conclusão de um teste.",
       "descImage": "/assets/cases/suflex-contagem/wireframe.png",
       "imageCaption": "Wireframe utilizado no primeiro teste de usabilidade, é válido ressaltar a navegação por 'Tabs'que foi descartada após o teste (O mesmo pode ser replicado em outros fluxos que estavam em desenvolvimento em simultâneo."
