@@ -16,10 +16,10 @@ export default function Services() {
       Data-Driven Design
       </span>
       <span className="py-6 px-6 border w-full border-gray-200 dark:border-gray-900">
-      Accessibility Specs
+      Accessibility Specs (WCAG)
       </span>
       <span className="py-6 px-6 border w-full border-gray-200 dark:border-gray-900 border-r-0">
-      Design Systems
+      Design System
       </span>
       {/* <div className="flex justify-center items-stretch py-3 bg-neutral-50 w-full overflow-hidden">
         <div className="flex justify-between items-center w-full overflow-hidden mx-auto px-4 flex-nowrap">

@@ -1,10 +1,10 @@
 {
-  "id": "01",
-  "privateCase": false,
-  "slug": "parceiro-da-construcao",
-  "title": "Redesenhando a experiência de uso para a funcionalidade de quiz",
-  "subtitle": "O Parceiro da Construção é uma startup do grupo Saint-Gobain que oferece capacitação gratuita e online para profissionais da construção civil. Disponível em plataformas Android, iOS e web, o produto visa educar e certificar trabalhadores, ampliando suas oportunidades no mercado de trabalho.",
-  "company": "Diwe",
+  "id": "06",
+  "privateCase": true,
+  "slug": "guia-lucro-negocio-privateCase-23101652",
+  "title": "Guia Lucro - Seu negócio mais lucrativo",
+  "subtitle": "Plataforma que oferece ferramentas para aumentar a lucratividade dos negócios, com dicas, planejamento financeiro e relatórios detalhados sobre performance.",
+  "company": "Suflex",
   "myrole": "Como Product Designer, fui responsável por liderar todo o processo de pesquisa e análise de dados, identificando as principais barreiras na experiência dos usuários. Criei protótipos de soluções, conduzi testes de usabilidade, e analisei métricas para validar as melhorias implementadas. Trabalhei em estreita colaboração com as equipes de produto e desenvolvimento para garantir que as mudanças fossem eficazes, sempre mantendo o foco em aprimorar a experiência mobile e reduzir as taxas de abandono nos testes de habilidade.",
   "timeFrame": "2 semanas (2022)",
   "plataform": "App (Android e IOS)",
@@ -12,14 +12,15 @@
   "tools": "Miro, Notion, Hotjar, Google analitycs, Figma, Maze.",
   "teamStructure": "Produto: Ramon Sousa(PD) e Lais Sousa(PM), Desenvolvedores: Vinicius Bassalobre e Jessé",
   "publishedAt": [
-    "2022"
+    "2024"
   ],
-  "thumbnail": "/assets/cases/pdc/cover-test-pdc.png",
-  "banner":  "/assets/cases/pdc/banner-highlights.png",
-  "bannerHighlight":  "/assets/cases/pdc/before-after.png",
+  "thumbnail": "/assets/cases/guia-lucro/cover-guia-lucro.png",
+  "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
+  "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
-    "Product Led Growth",
-    "User experience"
+    "Service Blueprint",
+    "Mobile",
+    "Benchmark"
   ],
   "problemName": "Motivações",
   "problemCaption": "Problem Statement: Apesar dos inúmeros problemas de usabilidade identificados na plataforma, nossos usuários demonstravam um valor significativo nos testes de habilidade, evidenciado pelas altas taxas de conclusão e pelos frequentes acessos ao fluxo. No entanto, as dificuldades enfrentadas durante a navegação comprometiam a experiência geral e levavam o usuário a se desengajar da plataforma.",
@@ -32,37 +33,37 @@
     "paragraph": {
       "descTitle": "Pesquisa e coleta de dados",
       "descText": "Utilizando ferramentas como Hotjar e Google Analytics, analisamos o comportamento dos usuários e identificamos as principais barreiras. Observamos altas taxas de abandono nos testes de habilidade, especialmente para os usuários mobile.",
-      "descImage": "/assets/cases/pdc/insights.png",
+      "descImage": "/assets/cases/suflex-contagem/insights.png",
       "imageCaption": "Entrevistas com usuários e análise de heatmaps ajudaram a mapear pontos de fricção e problemas de navegabilidade."
     },
     "paragraph-2": {
       "descTitle": "Persona relevante",
       "descText": "A persona 'Aplicadores' foi a mais relevante para os objetivos de negócio, pois representou uma grande parte da nossa base de usuários. Eles desempenharam um papel crucial nas futuras estratégias de monetização da plataforma, tornando-se fundamentais para o crescimento do produto até a obtenção do Breakeven.",
-      "descImage": "/assets/cases/pdc/personas.png",
+      "descImage": "/assets/cases/suflex-contagem/personas.png",
       "imageCaption": ""
     },
     "paragraph-3": {
       "descTitle": "Performance indicator",
       "descText": "Analisei a frequência com que os usuários acessaram o Parceiro da Construção em períodos anteriores as melhorias nos testes de habilidade. Além disso, avaliei se houve um aumento na emissão de certificados após a introdução desses testes.",
-      "descImage": "/assets/cases/pdc/perfomance.png",
+      "descImage": "/assets/cases/suflex-contagem/perfomance.png",
       "imageCaption": "Dados referentes ao periodo anterior ao processo de discovery."
     },
     "paragraph-4": {
-      "descTitle": "Wireframe e plano de teste",
+      "descTitle": "Wireframe e cenário de teste",
       "descText": "Para os testes de usabilidade, desenvolvi wireframes que contemplavam as principais tarefas que os usuários deveriam realizar. O roteiro incluía ações como encontrar a nova página de cursos, localizar os testes em andamento, navegar entre as categorias disponíveis, e reportar um erro em uma questão específica. Além disso, os usuários foram incentivados a avaliar a relevância dos “Desafios” propostos e, ao final, compartilhar seus resultados após a conclusão de um teste.",
-      "descImage": "/assets/cases/pdc/wireframe.png",
+      "descImage": "/assets/cases/suflex-contagem/wireframe.png",
       "imageCaption": "Wireframe utilizado no primeiro teste de usabilidade, é válido ressaltar a navegação por 'Tabs'que foi descartada após o teste (O mesmo pode ser replicado em outros fluxos que estavam em desenvolvimento em simultâneo."
     },
     "paragraph-5": {
       "descTitle": "Testes de usabilidade",
       "descText": "Realizei duas versões de testes de usabilidade. Na primeira versão, um grupo de cinco usuários, representando as personas definidas, os usuários encontraram dificuldades em diversas etapas do teste. Com base nesse feedback, implementei melhorias e conduzi um novo teste, envolvendo tanto novos usuários quanto alguns dos participantes da primeira versão. ",
-      "descImage": "/assets/cases/pdc/persona-usabillity-test.png",
+      "descImage": "/assets/cases/suflex-contagem/persona-usabillity-test.png",
       "imageCaption": "Principais insights coletados após a realização do teste de usabilidade com usuários da persona 'Aplicador'."
     },
     "paragraph-6": {
       "descTitle": "Alta fidelidade e handoff",
       "descText": "Após a validação dos wireframes e testes de usabilidade, desenvolvi as telas em alta fidelidade no Figma, garantindo uma experiência visual mais refinada e alinhada ao design system da plataforma. Em seguida, realizei o handoff para os desenvolvedores, documentando detalhadamente os componentes, espaçamentos, cores e comportamentos interativos.",
-      "descImage": "/assets/cases/pdc/high-fidelity.png",
+      "descImage": "/assets/cases/suflex-contagem/high-fidelity.png",
       "imageCaption": "Telas em alta fidelidade, já contemplando um rebrand realizado em paralelo pelo time de marketing durante a execução do projeto."
     }
   },

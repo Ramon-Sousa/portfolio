@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import {Github, Linkedin } from "lucide-react";
 import Link from "next/link";
-import { Coffee } from "lucide-react";
+import { FileText } from "lucide-react";
 import { Globe } from "lucide-react";
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ export default function Footer() {
 
         {/* Redes Sociais e Contato */}
         <div className="flex flex-col sm:flex-row items-center gap-10 justify-between text-base font-normal text-gray-200 dark:text-gray-800">
-          <Link
+          {/* <Link
             className="flex items-center gap-2"
             href="https://www.linkedin.com/in/ramon-sousa-pereira/"
             target="_blank"
@@ -55,7 +55,15 @@ export default function Footer() {
           >
             <Github />
             GitHub
-          </Link>
+          </Link> */}
+          <Link
+            className="flex items-center gap-2"
+            href="https://drive.google.com/file/d/1zwMyU7dPKRwygoGJx7_669STw6ifeqwI/view?usp=sharing"
+            target="_blank"
+          >
+           <FileText />
+            Currículo
+          </Link> 
           <div className="text-center sm:text-left">
             contato@ramondesigner.com
           </div>
