@@ -1,7 +1,8 @@
 {
-  "id": "02",
+  "id": "01",
   "privateCase": true,
-  "slug": "otimizando-o-processo-de-contagem-manual-de-estoque-privateCase-23101652",
+  "caseType": "case",
+  "slug": "otimizando-o-processo-de-contagem-manual-de-estoque-privateCase-21012025",
   "title": "Otimizando o processo de contagem manual de estoque",
   "subtitle": "Este case aborda a otimização do processo de contagem de estoque em restaurantes. A solução busca automatizar e centralizar a gestão de insumos, eliminando o uso de papel, caneta e planilhas. Com foco na melhoria do controle de estoque e na redução de erros manuais, o produto visa facilitar a contagem recorrente, acompanhar o histórico de dados e otimizar a comunicação com fornecedores, garantindo uma operação mais eficiente e integrada.",
   "company": "Suflex",
@@ -12,7 +13,7 @@
   "tools": "Miro, Notion, Hotjar, Google analitycs, Figma, Maze.",
   "teamStructure": "Produto: Ramon Sousa(PD), Leo Coitim (PM), Desenvolvedores, QA e Stakeholders",
   "publishedAt": [
-    "2023"
+    "2024"
   ],
   "thumbnail": "/assets/cases/suflex-contagem/cover-test-2025.png",
   "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",

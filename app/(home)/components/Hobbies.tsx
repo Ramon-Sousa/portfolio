@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Hobbies() {
   return (
     <section className="mx-auto w-full">
@@ -196,4 +195,3 @@ export default function Hobbies() {
     </section>
   );
 }
-

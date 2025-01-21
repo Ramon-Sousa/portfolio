@@ -1,10 +1,10 @@
 {
-  "id": "06",
+  "id": "05",
   "privateCase": true,
-  "slug": "guia-lucro-negocio-privateCase-23101652",
-  "title": "Guia Lucro - Seu negócio mais lucrativo",
-  "subtitle": "Plataforma que oferece ferramentas para aumentar a lucratividade dos negócios, com dicas, planejamento financeiro e relatórios detalhados sobre performance.",
-  "company": "Suflex",
+  "slug": "otimizacao-aprendizado-parceiro-construcao-privateCase-23101652",
+  "title": "Otimização da plataforma de aprendizado Parceiro da Construção",
+  "subtitle": "Plataforma de aprendizado online focada na construção civil, otimizada para oferecer cursos e treinamentos técnicos de forma interativa e acessível.",
+  "company": "Diwe",
   "myrole": "Como Product Designer, fui responsável por liderar todo o processo de pesquisa e análise de dados, identificando as principais barreiras na experiência dos usuários. Criei protótipos de soluções, conduzi testes de usabilidade, e analisei métricas para validar as melhorias implementadas. Trabalhei em estreita colaboração com as equipes de produto e desenvolvimento para garantir que as mudanças fossem eficazes, sempre mantendo o foco em aprimorar a experiência mobile e reduzir as taxas de abandono nos testes de habilidade.",
   "timeFrame": "2 semanas (2022)",
   "plataform": "App (Android e IOS)",
@@ -12,9 +12,9 @@
   "tools": "Miro, Notion, Hotjar, Google analitycs, Figma, Maze.",
   "teamStructure": "Produto: Ramon Sousa(PD) e Lais Sousa(PM), Desenvolvedores: Vinicius Bassalobre e Jessé",
   "publishedAt": [
-    "2024"
+    "2023"
   ],
-  "thumbnail": "/assets/cases/guia-lucro/cover-guia-lucro.png",
+  "thumbnail": "/assets/cases/pdc-exame/cover-pdc.png",
   "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
   "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
