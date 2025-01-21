@@ -1,21 +1,13 @@
 import React from "react";
 import Footer from "@/app/_components/Footer";
 import Navbar from "@/app/_components/Navbar";
-import { ArrowLeft, icons } from "lucide-react"; // Importa todos os ícones como objetos
-import Link from "next/link";
+import { icons } from "lucide-react";
 import fs from "fs";
 import path from "path";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink,BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator} from "@/components/ui/breadcrumb";
 import { LucideProps } from "lucide-react";
+import ParseError from "@/app/parse-error";
 
-// Componente para renderizar ícones dinamicamente
 interface IconProps extends LucideProps {
   name: keyof typeof icons; // Define o nome com base nos ícones disponíveis
 }
@@ -106,7 +98,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
-            
           </div>
           {/* <Link
               href="/"
@@ -278,42 +269,43 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     </div>
                   );
                 })}
-
-                <div className="gap-6 my-10" id={project.resultName}>
-                  <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-4">
-                    {project.resultName}
-                  </h4>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                    {Object.keys(project.results).map((key, idx) => {
-                      const results = project.results[key];
-                      const iconName = results.resultIcon
-                        .replace("<", "")
-                        .replace("/>", "")
-                        .trim(); // Extrair o nome do ícone
-                      return (
-                        <div
-                          className="flex flex-col gap-2 w-full bg-gray-100 dark:bg-gray-900 py-6 px-6 rounded-xl"
-                          key={idx}
-                        >
-                          <h2 className="text-gray-800 dark:text-gray-200 text-2xl pb-2 gap-2 flex items-center">
-                            <Icon
-                              size={32}
-                              color="#6366f1"
-                              name={iconName as keyof typeof icons}
-                            />
-                            {results.resultTitle}
-                          </h2>
-                          <span className="text-gray-500 dark:text-gray-400 font-normal">
-                            {results.resultDesc}
-                          </span>
-                        </div>
-                      );
-                    })}
+                {project?.resultName && (
+                  <div className="gap-6 my-10" id={project.resultName}>
+                    <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-4">
+                      {project.resultName}
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                      {Object.keys(project.results).map((key, idx) => {
+                        const results = project.results[key];
+                        const iconName = results.resultIcon
+                          .replace("<", "")
+                          .replace("/>", "")
+                          .trim(); // Extrair o nome do ícone
+                        return (
+                          <div
+                            className="flex flex-col gap-2 w-full bg-gray-100 dark:bg-gray-900 py-6 px-6 rounded-xl"
+                            key={idx}
+                          >
+                            <h2 className="text-gray-800 dark:text-gray-200 text-2xl pb-2 gap-2 flex items-center">
+                              <Icon
+                                size={32}
+                                color="#6366f1"
+                                name={iconName as keyof typeof icons}
+                              />
+                              {results.resultTitle}
+                            </h2>
+                            <span className="text-gray-500 dark:text-gray-400 font-normal">
+                              {results.resultDesc}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                    <p className="text-xs italic text-gray-500 dark:text-gray-400 my-4">
+                      {project.resultCaption}
+                    </p>
                   </div>
-                  <p className="text-xs italic text-gray-500 dark:text-gray-400 my-4">
-                    {project.resultCaption}
-                  </p>
-                </div>
+                )}
               </div>
             </div>
           </div>
@@ -322,23 +314,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
       </div>
     );
   } catch (error) {
-    // Exibe estado vazio caso ocorra erro ao ler ou parsear o arquivo JSON
-    console.error("Erro ao carregar case:", error);
+    // console.error("Erro ao carregar case:", error);
     return (
-      <div className="flex flex-col items-center justify-center mt-16">
-        <img
-          src="/assets/coffee-error.svg"
-          alt="imagem-erro de cases"
-          className="h-56"
-        />
-        <h3 className="mt-4 text-2xl font-light text-gray-500 dark:text-gray-400">
-          Nenhum case disponível
-        </h3>
-        <p className="mt-2 font-normal text-gray-500">
-          Pegue um café e dê uma olhada no meu Linkedin enquanto faço as
-          melhorias no portfólio.
-        </p>
-      </div>
+      <ParseError />
     );
   }
 }

@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 
 const Carrousel: React.FC = () => {
   const imagesLeft = [
@@ -20,9 +19,9 @@ const Carrousel: React.FC = () => {
 
   return (
     <div>
-      <div className="text-center text-lg font-medium text-gray-500 dark:text-gray-400">
+      {/* <div className="text-center text-lg font-medium text-gray-500 dark:text-gray-400">
         +16 PROJETOS DESENVOLVIDOS
-      </div>
+      </div> */}
       <div className="wrapper">
         {imagesLeft.map((src, index) => (
           <div key={index} className={`itemLeft item${index + 1}`}>

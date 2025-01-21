@@ -10,16 +10,9 @@ const raleway = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Ramon Sousa - Product Designer",
-  description: "Product Designer apaixonado por solucionar problemas utilizando soluções digitais. Atuei em equipes multidisciplinares, usando pesquisa e dados para criar produtos intuitivos e impactantes.",
+  title: "Ramon Sousa | Product Designer @Suflex",
+  description: "Precisa impulsionar seu projeto em 2025? Como Product Designer, crio soluções digitais eficientes, alinhadas a objetivos de negócio, com foco em dados, pesquisa e design centrado no usuário.",
 };
-
-// export const metadata: Metadata = {
-//   title: {
-//     template: "%s | Product Designer",
-//     default: "Ramon Sousa",
-//   }
-// };
 
 export default function RootLayout({
   children,

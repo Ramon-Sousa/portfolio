@@ -1,7 +1,6 @@
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 
-
 export default function HeroSection() {
   const words = ["experiências", "jornadas", "emoções", "histórias", "conexões"];
   return (
@@ -12,7 +11,7 @@ export default function HeroSection() {
       <div className="container mx-auto">
         <div className="flex-col justify-end inline-flex">
           <h1 className="text-2xl sm:text-6xl lg:text-8xl font-light text-gray-800 dark:text-gray-200">
-            Desenhando produtos,
+            Projetando produtos,
           </h1>
           <h2 className="text-2xl sm:text-6xl lg:text-8xl font-light text-gray-800 dark:text-gray-200">
             interações & <span className="text-2xl sm:text-6xl lg:text-8xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-light italic"> <FlipWords words={words} /></span>

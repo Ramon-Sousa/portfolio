@@ -1,6 +1,5 @@
-"use client"; // Isso define que o componente é um Client Component
-
-import { useRouter } from "next/navigation"; // Certifique-se de estar importando de "next/navigation"
+"use client"; 
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
