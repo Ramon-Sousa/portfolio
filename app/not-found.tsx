@@ -11,22 +11,22 @@ export default function Page() {
         <div className="text-center max-w-3xl">
           {/* Ilustração */}
           <div className="mb-8">
-          <h4 className="text-2xl md:text-4xl font-thin text-gray-800 dark:text-gray-200 mb-4">
-            404
-          </h4>
+            <h4 className="text-2xl md:text-4xl font-thin text-gray-800 dark:text-gray-200 mb-4">
+              404
+            </h4>
           </div>
 
           {/* Texto */}
           <h1 className="text-2xl md:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-            Página não encontrada
+            Page Not Found
           </h1>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-            A página que você está procurando não existe ou foi movida.
+            The page you are looking for does not exist or has been moved.
           </p>
 
           {/* Botão */}
           <a href="/">
-            <Button className="px-6 py-3 text-lg">Voltar para o início</Button>
+            <Button className="px-6 py-3 text-lg">Go back to home</Button>
           </a>
         </div>
       </main>

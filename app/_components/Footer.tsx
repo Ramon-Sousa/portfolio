@@ -62,7 +62,7 @@ export default function Footer() {
             target="_blank"
           >
            <FileText />
-            Currículo
+            Resume
           </Link> 
           <div className="text-center sm:text-left">
             contato@ramondesigner.com

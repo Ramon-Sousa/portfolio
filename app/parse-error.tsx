@@ -11,22 +11,23 @@ export default function ParseError() {
         <div className="text-center max-w-3xl">
           {/* Ilustração */}
           <div className="mb-8">
-          <h4 className="text-2xl md:text-4xl font-thin text-gray-800 dark:text-gray-200 mb-4">
-           =(
-          </h4>
+            <h4 className="text-2xl md:text-4xl font-thin text-gray-800 dark:text-gray-200 mb-4">
+              =(
+            </h4>
           </div>
 
           {/* Texto */}
           <h1 className="text-2xl md:text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-         Ocorreu um erro ao carregar o case.
+            An error occurred while loading the case.
           </h1>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-          Pegue um café e dê uma olhada no meu LinkedIn enquanto faço os ajustes necessários.
+            Grab a coffee and take a look at my LinkedIn while I make the
+            necessary adjustments.
           </p>
 
           {/* Botão */}
           <a href="https://www.linkedin.com/in/ramon-sousa-pereira/">
-            <Button className="px-6 py-3 text-lg">Ir para o LinkedIn</Button>
+            <Button className="px-6 py-3 text-lg">Go to LinkedIn</Button>
           </a>
         </div>
       </main>

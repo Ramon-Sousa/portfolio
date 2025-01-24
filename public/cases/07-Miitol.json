@@ -3,21 +3,21 @@
   "privateCase": false,
   "caseType": "link",
   "slug": "https://miitol.com.br/",
-  "title": "Miitol - Montagem industrial",
-  "subtitle": "A Miitol é uma empresa que presta serviços há mais de dez anos com mão de obra totalmente qualificada e com todas as prerrogativas de segurança no trabalho, prezando sempre pela execução de seus trabalhos com agilidade e qualidade.",
+  "title": "Miitol - Industrial Assembly",
+  "subtitle": "Miitol is a company that has been providing services for over ten years with fully qualified labor and all the necessary safety protocols, always ensuring the execution of its work with speed and quality.",
   "company": "Freelancer",
-  "myrole": "Como UX/UI Designer, fui responsável por conduzir o processo de pesquisa e análise de dados, afim de construir um site institucional para promover o laboratório Genesi. Realizei reuniões com stakeholders, estruturei um benchmark, criei protótipos de soluções e defini métricas para futuras melhorias do projeto.",
-  "timeFrame": "2 semanas (2022)",
+  "myrole": "As a UX/UI Designer, I was responsible for conducting the research and data analysis process to build an institutional website to promote the Genesi Laboratory. I held meetings with stakeholders, structured a benchmark, created solution prototypes, and defined metrics for future project improvements.",
+  "timeFrame": "2 weeks (2022)",
   "plataform": "Web (Desktop and mobile)",
-  "researchMethods": "Deskresearch e benchmark",
+  "researchMethods": "Desk research and benchmarking",
   "tools": "Meet, Hotjar, Figma, Maze.",
   "teamStructure": "Ramon Sousa (UX), Diogo Barros (DEV)",
   "publishedAt": [
     "2022"
   ],
-"thumbnail": "/assets/cases/miitol/new-cover-miitol.png",
-  "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
-  "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
+  "thumbnail": "/assets/cases/miitol/new-cover-miitol.png",
+  "banner": "/assets/cases/suflex-contagem/banner-highlights.png",
+  "bannerHighlight": "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
     "Landing Page"
   ]

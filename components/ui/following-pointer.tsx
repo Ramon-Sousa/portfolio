@@ -101,7 +101,7 @@ export const FollowPointer = ({
       }}
     >
       <span className="text-lg text-gray-800">
-        {title || `Ver case`}
+        {title || `View project`}
       </span>
       <ArrowUpRight className="h-7 w-7 text-red-500" />
     </motion.div>

@@ -14,14 +14,14 @@ export default async function Page() {
           href="/"
           className="container flex gap-2 pt-8 text-gray-800 dark:text-gray-200"
         >
-          <ArrowLeft /> Voltar
+          <ArrowLeft /> Go back
         </Link>
         <div className="container py-8">
           <div className="text-4xl sm:text-4xl lg:text-6xl font-light pb-12text-gray-800 dark:text-gray-200">
-            Cases{" "}
-            <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-normal italic text-nowrap">
+            Selected projects
+            {/* <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-normal italic text-nowrap">
               selecionados
-            </span>
+            </span> */}
           </div>
         </div>
 

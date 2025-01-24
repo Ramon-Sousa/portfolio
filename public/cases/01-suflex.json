@@ -2,90 +2,89 @@
   "id": "01",
   "privateCase": true,
   "caseType": "case",
-  "slug": "otimizando-o-processo-de-contagem-manual-de-estoque-privateCase-21012025",
-  "title": "Otimizando o processo de contagem manual de estoque",
-  "subtitle": "A contagem de estoque e insumos é uma atividade essencial na rotina das cozinhas de restaurantes. Nossa solução revoluciona esse processo ao centralizar a gestão de insumos, substituindo papel, caneta e planilhas por tecnologia. Agora, a contagem é realizada de forma prática e precisa, utilizando um QR Code presente nas etiquetas, o que garante uma operação mais eficiente, moderna e totalmente integrada aos demais processos do dia a dia da cozinha.",
+  "slug": "optimizing-manual-stock-counting-process-privateCase-21012025",
+  "title": "Optimizing the Manual Stock Counting Process",
+  "subtitle": "Stock and supply counting is an essential activity in restaurant kitchens. Our solution revolutionizes this process by centralizing inventory management, replacing paper, pen, and spreadsheets with technology. Now, counting is done in a practical and accurate manner using QR codes on labels, ensuring a more efficient, modern operation fully integrated into the daily kitchen workflow.",
   "company": "Suflex",
-  "myrole": "Como Product Designer, fui responsável por liderar todo o processo de pesquisa e análise de dados, identificando as principais barreiras na experiência dos usuários. Criei protótipos de soluções, conduzi testes de usabilidade, e analisei métricas para validar as melhorias implementadas. Trabalhei em estreita colaboração com as equipes de produto e desenvolvimento para garantir que as mudanças fossem eficazes, sempre mantendo o foco em aprimorar a experiência mobile e reduzir as taxas de abandono nos testes de habilidade.",
-  "timeFrame": "2 semanas (2023)",
+  "myrole": "As a Product Designer, I led the entire research and data analysis process, identifying key barriers in user experience. I created solution prototypes, conducted usability testing, and analyzed metrics to validate the implemented improvements. I worked closely with product and development teams to ensure that the changes were effective, always focusing on enhancing the mobile experience and reducing abandonment rates during skill tests.",
+  "timeFrame": "2 weeks (2023)",
   "plataform": "Web (Desktop, Tablet & Mobile)",
-  "researchMethods": "Double Diamond Entender as taxas de abandono; Definir o problema, métricas e como será medido; Desenvolver uma solução; Entrega (Teste e refinamento).",
-  "tools": "Miro, Notion, Hotjar, Google analitycs, Figma, Maze.",
-  "teamStructure": "Produto: Ramon Sousa(PD), Leo Coitim (PM), Desenvolvedores, QA e Stakeholders",
+  "researchMethods": "Double Diamond: Understand abandonment rates; Define the problem, metrics, and how it will be measured; Develop a solution; Delivery (Test and refinement).",
+  "tools": "Miro, Notion, Hotjar, Google Analytics, Figma, Maze.",
+  "teamStructure": "Product: Ramon Sousa (PD), Leo Coitim (PM), Developers, QA, and Stakeholders",
   "publishedAt": [
     "2024"
   ],
   "thumbnail": "/assets/cases/suflex-contagem/cover-test-2025.png",
-  "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
-  "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
+  "banner": "/assets/cases/suflex-contagem/banner-highlights.png",
+  "bannerHighlight": "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
     "Service Blueprint",
     "Mobile",
     "Benchmark"
   ],
   "problemName": "Contexo",
-  "problemCaption": "A empresa enfrentava desafios para atingir o breakeven e expandir sua participação no mercado. No entanto, falta clareza sobre quais caminhos explorar para alcançar esses objetivos. Então, nosso objetivo era dentificar dores recorrentes na gestão e operação de restaurantes e explorar, como área de produto, soluções que possam atender a essas necessidades de forma eficaz.",
+  "problemCaption": "The company was facing challenges in reaching breakeven and expanding its market share. However, there was a lack of clarity about which paths to explore to achieve these goals. Our objective was to identify recurring pain points in restaurant management and operations and explore product solutions that could address these needs effectively.",
   "goals": [
-    "Aumentar o número de downloads do aplicativo mobile.",
-    "Reduzir taxa de abandono em testes iniciados.",
-    "Melhorar a experiência de uso nos testes."
+    "Increase the number of mobile app downloads.",
+    "Reduce abandonment rate in started tests.",
+    "Improve the user experience in tests."
   ],
   "description": {
     "paragraph": {
-      "descTitle": "Pesquisa e coleta de dados",
-      "descText": "Utilizando ferramentas como Hotjar e Google Analytics, analisamos o comportamento dos usuários e identificamos as principais barreiras. Observamos altas taxas de abandono nos testes de habilidade, especialmente para os usuários mobile.",
+      "descTitle": "Research and Data Collection",
+      "descText": "Using tools like Hotjar and Google Analytics, we analyzed user behavior and identified the main barriers. We observed high abandonment rates in skill tests, especially for mobile users.",
       "descImage": "/assets/cases/suflex-contagem/insights.png",
-      "imageCaption": "Entrevistas com usuários e análise de heatmaps ajudaram a mapear pontos de fricção e problemas de navegabilidade."
+      "imageCaption": "Interviews with users and heatmap analysis helped map friction points and navigability issues."
     },
     "paragraph-2": {
-      "descTitle": "Persona relevante",
-      "descText": "A persona 'Aplicadores' foi a mais relevante para os objetivos de negócio, pois representou uma grande parte da nossa base de usuários. Eles desempenharam um papel crucial nas futuras estratégias de monetização da plataforma, tornando-se fundamentais para o crescimento do produto até a obtenção do Breakeven.",
+      "descTitle": "Relevant Persona",
+      "descText": "The 'Applicators' persona was the most relevant for business goals, representing a large part of our user base. They played a crucial role in future platform monetization strategies and became essential to the product's growth towards achieving breakeven.",
       "descImage": "/assets/cases/suflex-contagem/personas.png",
       "imageCaption": ""
     },
     "paragraph-3": {
-      "descTitle": "Performance indicator",
-      "descText": "Analisei a frequência com que os usuários acessaram o Parceiro da Construção em períodos anteriores as melhorias nos testes de habilidade. Além disso, avaliei se houve um aumento na emissão de certificados após a introdução desses testes.",
+      "descTitle": "Performance Indicator",
+      "descText": "I analyzed how often users accessed the Construction Partner in periods before improvements in skill tests. I also evaluated whether there was an increase in certificate issuance after the introduction of these tests.",
       "descImage": "/assets/cases/suflex-contagem/perfomance.png",
-      "imageCaption": "Dados referentes ao periodo anterior ao processo de discovery."
+      "imageCaption": "Data from the period before the discovery process."
     },
     "paragraph-4": {
-      "descTitle": "Cenários de teste",
-      "descText": "Para os testes de usabilidade, desenvolvi wireframes que contemplavam as principais tarefas que os usuários deveriam realizar. O roteiro incluía ações como encontrar a nova página de cursos, localizar os testes em andamento, navegar entre as categorias disponíveis, e reportar um erro em uma questão específica. Além disso, os usuários foram incentivados a avaliar a relevância dos “Desafios” propostos e, ao final, compartilhar seus resultados após a conclusão de um teste.",
+      "descTitle": "Test Scenarios",
+      "descText": "For usability testing, I developed wireframes that addressed key tasks users should perform. The test script included actions such as finding the new course page, locating ongoing tests, navigating between available categories, and reporting an error in a specific question. Users were also encouraged to evaluate the relevance of the 'Challenges' proposed and share their results upon completing a test.",
       "descImage": "/assets/cases/suflex-contagem/wireframe.png",
-      "imageCaption": "Wireframe utilizado no primeiro teste de usabilidade, é válido ressaltar a navegação por 'Tabs'que foi descartada após o teste (O mesmo pode ser replicado em outros fluxos que estavam em desenvolvimento em simultâneo."
+      "imageCaption": "Wireframe used in the first usability test. It's important to note the 'Tabs' navigation, which was discarded after the test (This was also replicated in other flows being developed simultaneously)."
     },
     "paragraph-5": {
-      "descTitle": "Testes de usabilidade",
-      "descText": "Realizei duas versões de testes de usabilidade. Na primeira versão, um grupo de cinco usuários, representando as personas definidas, os usuários encontraram dificuldades em diversas etapas do teste. Com base nesse feedback, implementei melhorias e conduzi um novo teste, envolvendo tanto novos usuários quanto alguns dos participantes da primeira versão. ",
+      "descTitle": "Usability Testing",
+      "descText": "I conducted two versions of usability tests. In the first version, a group of five users, representing the defined personas, faced difficulties in various steps of the test. Based on this feedback, I implemented improvements and conducted a new test, involving both new users and some participants from the first version.",
       "descImage": "/assets/cases/suflex-contagem/persona-usabillity-test.png",
-      "imageCaption": "Principais insights coletados após a realização do teste de usabilidade com usuários da persona 'Aplicador'."
+      "imageCaption": "Key insights collected after conducting the usability test with the 'Applicator' persona users."
     },
     "paragraph-6": {
-      "descTitle": "Alta fidelidade e handoff",
-      "descText": "Após a validação dos wireframes e testes de usabilidade, desenvolvi as telas em alta fidelidade no Figma, garantindo uma experiência visual mais refinada e alinhada ao design system da plataforma. Em seguida, realizei o handoff para os desenvolvedores, documentando detalhadamente os componentes, espaçamentos, cores e comportamentos interativos.",
+      "descTitle": "High Fidelity and Handoff",
+      "descText": "After validating wireframes and usability tests, I developed high-fidelity screens in Figma, ensuring a more refined visual experience aligned with the platform's design system. I then handed off the designs to the developers, documenting the components, spacings, colors, and interactive behaviors in detail.",
       "descImage": "/assets/cases/suflex-contagem/high-fidelity.png",
-      "imageCaption": "Telas em alta fidelidade, já contemplando um rebrand realizado em paralelo pelo time de marketing durante a execução do projeto."
+      "imageCaption": "High-fidelity screens, already incorporating a rebrand done in parallel by the marketing team during the project execution."
     }
   },
-  "resultName": "Resultados",
-  "resultCaption": "Utilizei ferramentas como Google Analytics e Hotjar para monitorar o desempenho da plataforma durante um trimestre.",
+  "resultName": "Results",
+  "resultCaption": "I used tools like Google Analytics and Hotjar to monitor platform performance over a three-month period.",
   "results": {
     "outcome": {
       "resultIcon": "<BadgeCheck />",
       "resultTitle": "+18%",
-      "resultDesc": "Observamos um aumento de 18% no número de usuários que completaram os testes de habilidade, passando de 1.586 para 1.871 finalizações mensais."
+      "resultDesc": "We observed an 18% increase in the number of users completing skill tests, rising from 1,586 to 1,871 monthly completions."
     },
     "outcome-2": {
       "resultIcon": "<TabletSmartphone />",
       "resultTitle": "+23%",
-      "resultDesc": "O aplicativo registrou um crescimento de 23% nos downloads, subindo de 871 para 1.071 novos usuários no trismestre após a implementação."
+      "resultDesc": "The app recorded a 23% growth in downloads, increasing from 871 to 1,071 new users in the quarter after implementation."
     },
     "outcome-3": {
       "resultIcon": "<CircleArrowOutDownRight />",
       "resultTitle": "-13%",
-      "resultDesc": "A taxa de abandono durante a execução dos testes de habilidade diminuiu em 13%, passando de 7.38% para 6.42%."
+      "resultDesc": "The abandonment rate during skill test execution decreased by 13%, from 7.38% to 6.42%."
     }
   }
-
 }
