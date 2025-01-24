@@ -4,24 +4,24 @@ export default async function Experience() {
     <div className="container flex flex-col lg:flex-row justify-between items-center mx-auto py-24 sm:py-12 lg:py-36 gap-8 lg:gap-20">
       <div className="items-center lg:items-start text-center lg:text-left w-full col-span-1">
         <div className="text-4xl lg:text-6xl font-light pb-4 text-gray-800 dark:text-gray-200">
-          Experiência{" "}
+          Experience{" "}
           {/* <span className="text-4xl sm:text-4xl lg:text-6xl bg-gradient-to-r from-gray-50 from-10% to-gray-400 to-90% text-transparent bg-clip-text font-[Piazolla] font-black italic text-nowrap">
               {" "}
               profissional
             </span> */}
         </div>
         <div className="text-gray-500 dark:text-gray-400 text-lg font-light pb-8">
-          Product Designer com background técnico em desenvolvimento
-          front-end, o que me permite criar soluções eficientes e promover uma
-          integração fluida entre design e desenvolvimento. Tenho experiência em
-          conduzir processos de discovery, criação de protótipos de alta
-          fidelidade e otimização de produtos com foco em métricas de negócio e
-          experiência do usuário.
+          Product Designer with a strong technical background in front-end
+          development, enabling me to craft efficient solutions and foster
+          seamless integration between design and development. I have experience
+          leading discovery processes, creating high-fidelity prototypes, and
+          optimizing products with a focus on business metrics and user
+          experience.
         </div>
         <div className="flex justify-start gap-2 text-sm font-light text-gray-800 dark:text-gray-200 ">
           <span className="rounded-full  bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2">
             {" "}
-            +4 anos de experiência{" "}
+            4+ years of experience{" "}
           </span>
           <span className="rounded-full  bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2">
             {" "}
@@ -29,7 +29,7 @@ export default async function Experience() {
           </span>
           <span className="rounded-full  bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2">
             {" "}
-            Programador Front End{" "}
+            Front-End Developer{" "}
           </span>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default async function Experience() {
                 Suflex
               </div>
               <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
-                Set. 2023 - Atual | Product Designer
+              Sept. 2023 - Present | Product Designer
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default async function Experience() {
                 Diwe
               </div>
               <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
-                Jul. 2021 - Jul. 2023 | UX/UI Designer → Product Designer
+              July 2021 – July 2023 | UX/UI Designer → Product Designer
               </div>
             </div>
           </div>
@@ -64,8 +64,7 @@ export default async function Experience() {
                 ibSystem
               </div>
               <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
-                Jul. 2020 - Abr. 2021 | Programador Web → Front end Dev/UI
-                Designer
+              July 2020 – April 2021 | Web Developer → Front-End Developer / UI Designer
               </div>
             </div>
           </div>

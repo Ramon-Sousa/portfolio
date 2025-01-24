@@ -96,7 +96,7 @@ export default async function CaseList() {
                                   ))
                                 ) : (
                                   <span className="text-xs text-gray-800 dark:text-gray-200">
-                                    Sem tags disponíveis
+                                    No tags available
                                   </span>
                                 )}
                               </div>
@@ -111,11 +111,10 @@ export default async function CaseList() {
                         <div className="mx-auto w-full max-w-sm">
                           <DrawerHeader>
                             <DrawerTitle className="text-3xl font-medium text-gray-800 dark:text-gray-200">
-                              Informe a senha
+                              Enter the password
                             </DrawerTitle>
                             <DrawerDescription className="text-pretty text-gray-500 dark:text-gray-400">
-                              Para acessar o projeto, você deve informar a senha
-                              do projeto.
+                              To access project, you must enter the password.
                             </DrawerDescription>
                           </DrawerHeader>
                           <DrawerDescription>
@@ -127,7 +126,7 @@ export default async function CaseList() {
                           </DrawerDescription>
                           <DrawerFooter className="pt-2">
                             <DrawerClose asChild>
-                              <Button variant="outline">Cancelar</Button>
+                              <Button variant="outline">Cancel</Button>
                             </DrawerClose>
                           </DrawerFooter>
                         </div>
@@ -175,7 +174,7 @@ export default async function CaseList() {
                               ))
                             ) : (
                               <span className="text-xs text-gray-800 dark:text-gray-200">
-                                Sem tags disponíveis
+                                No tags available
                               </span>
                             )}
                           </div>
@@ -225,7 +224,7 @@ export default async function CaseList() {
                               ))
                             ) : (
                               <span className="text-xs text-gray-800 dark:text-gray-200">
-                                Sem tags disponíveis
+                                No tags available
                               </span>
                             )}
                           </div>

@@ -1,60 +1,59 @@
 {
   "id": "03",
   "privateCase": false,
+  "caseType": "case",
   "slug": "allugae",
-  "title": "Allugae: Seu próximo celular está aqui!",
-  "subtitle": "Esse projeto foi desenvolvido como conclusão de curso para a faculdade. A proposta da Allugaê surgiu como uma empresa que visa desburocratizar o aluguel de celulares e possibilitar que as pessoas possam trocar de celular com maior frequência e contando sempre com aparelhos mais atualizados e novos. Tudo isso sem pagar valores altos em parcelas de um celular durante alguns anos.",
-  "company": "Case de estudo",
-  "myrole": "Como Product Designer, fui responsável por realizar um benchmark de concorrentes, identificar pontos que a empresa poderia ter como um diferencial e definir um modelo de negócio no qual seja atrativo e competitivo com demais empresas.",
-  "timeFrame": "4 semanas (2023)",
+  "title": "Allugae: Your next phone is here!",
+  "subtitle": "This project was developed as a final assignment for university. The idea behind Allugaê was to create a company that aims to simplify the process of renting smartphones, allowing people to upgrade their phones more frequently while always having newer models. All of this without paying high prices for a phone over several years.",
+  "company": "Case Study",
+  "myrole": "As a Product Designer, I was responsible for conducting a competitor benchmark, identifying points where the company could differentiate itself, and defining a business model that would be attractive and competitive with other companies.",
+  "timeFrame": "4 weeks (2023)",
   "plataform": "Web",
-  "researchMethods": "Benchmarking; Moodboard; Usabillity test.",
-  "tools": "Forms, Notion, Google analitycs, Figma, Maze.",
-  "teamStructure": "Ramon Sousa(PD)",
+  "researchMethods": "Benchmarking; Moodboard; Usability test.",
+  "tools": "Forms, Notion, Google Analytics, Figma, Maze.",
+  "teamStructure": "Ramon Sousa (PD)",
   "publishedAt": [
     "2023"
   ],
   "thumbnail": "/assets/cases/allugae/cover-allugae.png",
-  "banner":  "/assets/cases/allugae/banner-highlights.png",
-  "bannerHighlight":  "/assets/cases/allugae/before-after.png",
+  "banner": "/assets/cases/allugae/banner-highlights.png",
+  "bannerHighlight": "/assets/cases/allugae/before-after.png",
   "tags": [
     "TCC",
-    "Protype",
+    "Prototype",
     "Benchmark"
   ],
-  "problemName": "Protótipo interativo",
-  "problemCaption": "Você pode navegar pelos protótipos usados nos testes de usabilidade clicando aqui.",
-  "goals": [
-    
-  ],
+  "problemName": "Interactive Prototype",
+  "problemCaption": "You can navigate through the prototypes used in usability tests by clicking here.",
+  "goals": [],
   "description": {
     "paragraph": {
-      "descTitle": "Pesquisa e coleta de dados",
-      "descText": "Entrevistas realizada via Forms, com objetivo de mapear a percepção de valor de nossos usuários em relação a alugar um dispositivo móvel.",
+      "descTitle": "Research and Data Collection",
+      "descText": "Interviews conducted via Forms, aiming to map the value perception of our users regarding mobile device rentals.",
       "descImage": "/assets/cases/allugae/allugae_03.png",
       "imageCaption": ""
     },
     "paragraph-2": {
       "descTitle": "Benchmark",
-      "descText": "Na analise de competidores, foram levantados através dos sites, plataformas de reclamações, redes sociais e clientes de algumas dos serviços.",
+      "descText": "In the competitor analysis, data was collected from websites, complaint platforms, social media, and clients of some of the services.",
       "descImage": "/assets/cases/allugae/allugae_04.png",
       "imageCaption": ""
     },
     "paragraph-3": {
       "descTitle": "Styleguide",
-      "descText": "Guia de estilo definido com objetivo de padronizar entregas de design e facilitar um handoff.",
+      "descText": "A style guide was defined to standardize design deliverables and facilitate handoff.",
       "descImage": "/assets/cases/allugae/allugae_06.png",
       "imageCaption": ""
     },
     "paragraph-4": {
       "descTitle": "Wireframes",
-      "descText": "Wireframe realizado em média fidelidade, definindo hierarquia de informações.",
+      "descText": "Wireframes created at mid-fidelity, defining the information hierarchy.",
       "descImage": "/assets/cases/allugae/allugae_05.png",
       "imageCaption": ""
     },
     "paragraph-5": {
-      "descTitle": "Layout finalidado",
-      "descText": "Wireframe realizado em média fidelidade, definindo hierarquia de informações.",
+      "descTitle": "Final Layout",
+      "descText": "The final layout was developed based on mid-fidelity wireframes, with a focus on defining information hierarchy.",
       "descImage": "/assets/cases/allugae/allugae_07.png",
       "imageCaption": ""
     },
@@ -65,5 +64,4 @@
       "imageCaption": ""
     }
   }
-
 }

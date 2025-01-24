@@ -3,21 +3,21 @@
   "privateCase": false,
   "caseType": "link",
   "slug": "https://genesimedlab.com.br/",
-  "title": "Genesi medicina laboratorial",
-  "subtitle": "O projeto realizado teve como foco aprimorar a experiência do usuário para a Genesi Medicina Laboratorial, uma empresa que se destaca na oferta de serviços diagnósticos acessíveis e de alta qualidade.",
+  "title": "Genesi Laboratory Medicine",
+  "subtitle": "The project focused on enhancing the user experience for Genesi Laboratory Medicine, a company that stands out in providing accessible and high-quality diagnostic services.",
   "company": "Freelancer",
-  "myrole": "Como UX/UI Designer, fui responsável por conduzir o processo de pesquisa e análise de dados, afim de construir um site institucional para promover o laboratório Genesi. Realizei reuniões com stakeholders, estruturei um benchmark, criei protótipos de soluções e defini métricas para futuras melhorias do projeto.",
-  "timeFrame": "2 semanas (2022)",
+  "myrole": "As a UX/UI Designer, I was responsible for conducting the research and data analysis process to build an institutional website to promote the Genesi Laboratory. I held meetings with stakeholders, structured a benchmark, created solution prototypes, and defined metrics for future project improvements.",
+  "timeFrame": "2 weeks (2022)",
   "plataform": "Web (Desktop and mobile)",
-  "researchMethods": "Deskresearch e benchmark",
+  "researchMethods": "Desk research and benchmarking",
   "tools": "Meet, Hotjar, Figma, Maze.",
   "teamStructure": "Ramon Sousa (UX), Diogo Barros (DEV)",
   "publishedAt": [
     "2022"
   ],
   "thumbnail": "/assets/cases/genesi-lab/cover-genesi.png",
-  "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
-  "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
+  "banner": "/assets/cases/suflex-contagem/banner-highlights.png",
+  "bannerHighlight": "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
     "Landing Page"
   ]

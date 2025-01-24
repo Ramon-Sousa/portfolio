@@ -4,7 +4,14 @@ import Navbar from "@/app/_components/Navbar";
 import { icons } from "lucide-react";
 import fs from "fs";
 import path from "path";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink,BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator} from "@/components/ui/breadcrumb";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 import { LucideProps } from "lucide-react";
 import ParseError from "@/app/parse-error";
 
@@ -48,22 +55,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
     if (!caseFile) {
       // Exibe estado vazio caso o arquivo com o slug não seja encontrado
-      return (
-        <div className="flex flex-col items-center justify-center mt-16">
-          <img
-            src="/assets/coffee-error.svg"
-            alt="imagem-erro de cases"
-            className="h-56"
-          />
-          <h3 className="mt-4 text-2xl font-light text-gray-800 dark:text-gray-200">
-            Nenhum case disponível
-          </h3>
-          <p className="mt-2 font-normal text-gray-500 dark:text-gray-400">
-            Pegue um café e dê uma olhada no meu Linkedin enquanto faço as
-            melhorias no portfólio.
-          </p>
-        </div>
-      );
+      return <ParseError />;
     }
 
     // Lê o conteúdo do case encontrado
@@ -86,11 +78,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/">Início</BreadcrumbLink>
+                  <BreadcrumbLink href="/">Home</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/projects">Cases</BreadcrumbLink>
+                  <BreadcrumbLink href="/projects">Projects</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
@@ -125,13 +117,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 {/* Coluna principal */}
                 <div className="col-span-3 flex flex-col gap-6">
                   {[
-                    { title: "Responsabilidades", content: project.myrole },
+                    { title: "Responsibilities", content: project.myrole },
                     {
-                      title: "Estrutura do time",
+                      title: "Team Structure",
                       content: project.teamStructure,
                     },
                     {
-                      title: "Métodos de pesquisa",
+                      title: "Research Methods",
                       content: project.researchMethods,
                     },
                   ].map((section, idx) => (
@@ -147,11 +139,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 </div>
 
                 {/* Coluna secundária */}
-                <div className="col-span-1 flex flex-col gap-6 ">
+                <div className="col-span-1 flex flex-col gap-6">
                   {[
-                    { title: "Cronograma", content: project.timeFrame },
-                    { title: "Ferramentas", content: project.tools },
-                    { title: "Plataforma", content: project.plataform },
+                    { title: "Timeline", content: project.timeFrame },
+                    { title: "Tools", content: project.tools },
+                    { title: "Platform", content: project.plataform },
                   ].map((section, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
                       <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-2">
@@ -315,8 +307,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
     );
   } catch (error) {
     // console.error("Erro ao carregar case:", error);
-    return (
-      <ParseError />
-    );
+    return <ParseError />;
   }
 }

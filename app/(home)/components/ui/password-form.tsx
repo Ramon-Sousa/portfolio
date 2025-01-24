@@ -16,7 +16,7 @@ const casePasswords = process.env.NEXT_PUBLIC_VALID_KEYS
 
 // Esquema de validação usando zod
 const formSchema = z.object({
-  password: z.string().min(1, { message: "A senha é obrigatória" }),
+  password: z.string().min(1, { message: "Password is required" }),
 });
 type FormData = z.infer<typeof formSchema>;
 
@@ -39,7 +39,7 @@ function PasswordForm({ caseSlug }: { caseSlug: string }) {
       // Exibir uma mensagem de erro se a senha estiver incorreta
       form.setError("password", {
         type: "manual",
-        message: "Senha incorreta, tente novamente.",
+        message: "Password is incorrect, try again.",
       });
     }
   };
@@ -52,16 +52,16 @@ function PasswordForm({ caseSlug }: { caseSlug: string }) {
           control={form.control}
           render={({ field }) => (
             <FormItem className="pb-4">
-              <FormLabel>Senha</FormLabel>
+              <FormLabel>Password</FormLabel>
               <FormControl>
-                <Input type="password" placeholder="Digite a senha" {...field} />
+                <Input type="password" placeholder="Enter the password" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
         <Button type="submit" className="w-full">
-          Acessar projeto
+        Access Project
         </Button>
       </form>
     </Form>

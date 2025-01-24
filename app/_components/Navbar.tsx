@@ -5,10 +5,10 @@ import { ModeToggle } from "../_components/Toggle";
 
 function Navbar() {
   const socials = [
-    { link: "/projects", label: "Cases" },
+    { link: "/projects", label: "Projects" },
     {
       link: "https://www.linkedin.com/in/ramon-sousa-pereira/",
-      label: "Linkedin",
+      label: "LinkedIn",
     },
     // { link: "/about", label: "Sobre" },
   ];

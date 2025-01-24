@@ -3,25 +3,24 @@
   "privateCase": false,
   "caseType": "link",
   "slug": "https://moneymio.com.br/",
-  "title": "Controle financeiro integrado com WhatsApp",
-  "subtitle": "Plataforma que permite gerenciar finanças pessoais ou empresariais integrado com WhatsApp, oferecendo uma maneira prática de controlar entradas, saídas e gerar relatórios financeiros.",
+  "title": "Financial Control Integrated with WhatsApp",
+  "subtitle": "A platform that allows you to manage personal or business finances integrated with WhatsApp, offering a convenient way to track income, expenses, and generate financial reports.",
   "company": "Freelancer",
-  "myrole": "Como Product Designer, fui responsável por liderar todo o processo de pesquisa e análise de dados, identificando as principais barreiras na experiência dos usuários. Criei protótipos de soluções, conduzi testes de usabilidade, e analisei métricas para validar as melhorias implementadas. Trabalhei em estreita colaboração com as equipes de produto e desenvolvimento para garantir que as mudanças fossem eficazes, sempre mantendo o foco em aprimorar a experiência mobile e reduzir as taxas de abandono nos testes de habilidade.",
-  "timeFrame": "2 semanas (2022)",
-  "plataform": "App (Android e IOS)",
-  "researchMethods": "Double Diamond Entender as taxas de abandono; Definir o problema, métricas e como será medido; Desenvolver uma solução; Entrega (Teste e refinamento).",
-  "tools": "Miro, Notion, Hotjar, Google analitycs, Figma, Maze.",
-  "teamStructure": "Produto: Ramon Sousa(PD) e Lais Sousa(PM), Desenvolvedores: Vinicius Bassalobre e Jessé",
+  "myrole": "As a Product Designer, I was responsible for leading the entire research and data analysis process, identifying key barriers in the user experience. I created solution prototypes, conducted usability tests, and analyzed metrics to validate the improvements implemented. I worked closely with the product and development teams to ensure that the changes were effective, always focusing on enhancing the mobile experience and reducing abandonment rates in skill tests.",
+  "timeFrame": "2 weeks (2022)",
+  "plataform": "App (Android and iOS)",
+  "researchMethods": "Double Diamond: Understand abandonment rates; Define the problem, metrics, and how it will be measured; Develop a solution; Delivery (Testing and refinement).",
+  "tools": "Miro, Notion, Hotjar, Google Analytics, Figma, Maze.",
+  "teamStructure": "Product: Ramon Sousa (PD) and Lais Sousa (PM), Developers: Vinicius Bassalobre and Jessé",
   "publishedAt": [
     "2024"
   ],
   "thumbnail": "/assets/cases/moneymio/cover-moneymio.png",
-  "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
-  "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
+  "banner": "/assets/cases/suflex-contagem/banner-highlights.png",
+  "bannerHighlight": "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
     "UI Design",
     "Mobile",
-    "Design de Interface Conversacional"
+    "Conversational Interface Design"
   ]
-
 }
