@@ -4,7 +4,7 @@
   "caseType": "link",
   "slug": "https://genesimedlab.com.br/",
   "title": "Genesi medicina laboratorial",
-  "subtitle": "O projeto realizado teve como foco aprimorar a experiência do usuário para a Genesi Medicina Laboratorial, uma empresa que se destaca na oferta de serviços diagnósticos acessíveis e de alta qualidade. A iniciativa envolveu a criação de soluções digitais centradas no usuário, alinhadas aos valores da empresa: respeito, responsabilidade, segurança e confiança.",
+  "subtitle": "O projeto realizado teve como foco aprimorar a experiência do usuário para a Genesi Medicina Laboratorial, uma empresa que se destaca na oferta de serviços diagnósticos acessíveis e de alta qualidade.",
   "company": "Freelancer",
   "myrole": "Como UX/UI Designer, fui responsável por conduzir o processo de pesquisa e análise de dados, afim de construir um site institucional para promover o laboratório Genesi. Realizei reuniões com stakeholders, estruturei um benchmark, criei protótipos de soluções e defini métricas para futuras melhorias do projeto.",
   "timeFrame": "2 semanas (2022)",
@@ -19,8 +19,6 @@
   "banner":  "/assets/cases/suflex-contagem/banner-highlights.png",
   "bannerHighlight":  "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
-    "Service Blueprint",
-    "Mobile",
-    "Benchmark"
+    "Landing Page"
   ]
 }
