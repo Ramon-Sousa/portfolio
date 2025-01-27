@@ -1,5 +1,5 @@
 import React from "react";
-import { Lock } from "lucide-react";
+import { Lock, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import fs from "fs/promises";
 import path from "path";
@@ -63,7 +63,7 @@ export default async function CaseList() {
                     <Drawer>
                       <DrawerTrigger asChild>
                         <div className="rounded-md cursor-pointer ">
-                          <div className="absolute z-10 p-3 bg-gray-200 dark:bg-gray-900 rounded-full mt-4 ml-4">
+                          <div className="absolute z-10 p-3 bg-gray-200 dark:bg-gray-800 rounded-full mt-4 ml-4">
                             <Lock size={16} />
                           </div>
                           <div className="rounded-md content-end overflow-clip bg-gray-100 dark:bg-gray-900 hover:bg-gray-800 hover:dark:bg-gray-200 w-full h-64 sm:h-[500px] duration-500">
@@ -77,7 +77,7 @@ export default async function CaseList() {
                             />
                           </div>
                           <div className="pt-4">
-                            <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
+                            <h3 className="text-xl sm:text-2xl lg:text-2xl font-normal text-gray-800 dark:text-gray-200">
                               {caseItem.title}
                             </h3>
                             <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
@@ -144,6 +144,9 @@ export default async function CaseList() {
                   >
                     <FollowerPointerCard>
                     <div className="rounded-md">
+                    {caseItem.caseType === "link" ? ( <div className="absolute z-10 p-3 bg-gray-200 dark:bg-gray-800 rounded-full mt-4 ml-4">
+                            <ExternalLink size={16} />
+                          </div>): null}
                       <div className="rounded-md content-end overflow-clip bg-gray-100 dark:bg-gray-900 hover:bg-gray-800 hover:dark:bg-gray-200 w-full h-64 sm:h-[500px] duration-500">
                         <img
                           src={
@@ -155,7 +158,7 @@ export default async function CaseList() {
                         />
                       </div>
                       <div className="pt-4">
-                        <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
+                        <h3 className="text-xl sm:text-2xl lg:text-2xl font-normal text-gray-800 dark:text-gray-200">
                           {caseItem.title}
                         </h3>
                         <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
@@ -205,7 +208,7 @@ export default async function CaseList() {
                         />
                       </div>
                       <div className="pt-4">
-                        <h3 className="text-xl sm:text-3xl lg:text-3xl font-normal text-gray-800 dark:text-gray-200">
+                        <h3 className="text-xl sm:text-2xl lg:text-2xl font-normal text-gray-800 dark:text-gray-200">
                           {caseItem.title}
                         </h3>
                         <p className="text-gray-500 dark:text-gray-400 mt-2 text-justify text-base font-light line-clamp-3 mb-4">
