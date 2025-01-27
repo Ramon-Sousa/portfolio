@@ -10,7 +10,7 @@ export default async function Experience() {
               profissional
             </span> */}
         </div>
-        <div className="text-gray-500 dark:text-gray-400 text-lg font-light pb-8">
+        <div className="text-gray-500 dark:text-gray-400 text-base font-light pb-8">
           Product Designer with a strong technical background in front-end
           development, enabling me to craft efficient solutions and foster
           seamless integration between design and development. I have experience
@@ -23,13 +23,13 @@ export default async function Experience() {
             {" "}
             4+ years of experience{" "}
           </span>
+          {/* <span className="rounded-full  bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2">
+            {" "}
+            16+{" "}
+          </span> */}
           <span className="rounded-full  bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2">
             {" "}
-            Product Designer{" "}
-          </span>
-          <span className="rounded-full  bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2">
-            {" "}
-            Front-End Developer{" "}
+            2000+ Coffee cups consumed (This month){" "}
           </span>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default async function Experience() {
               <div className="text-gray-700 dark:text-gray-200 text-3xl font-light">
                 Suflex
               </div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
+              <div className="text-gray-500 dark:text-gray-400 text-base font-light">
               Sept. 2023 - Present | Product Designer
               </div>
             </div>
@@ -52,7 +52,7 @@ export default async function Experience() {
               <div className="text-gray-700 dark:text-gray-200 text-3xl font-light">
                 Diwe
               </div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
+              <div className="text-gray-500 dark:text-gray-400 text-base font-light">
               July 2021 – July 2023 | UX/UI Designer → Product Designer
               </div>
             </div>
@@ -63,7 +63,7 @@ export default async function Experience() {
               <div className="text-gray-700 dark:text-gray-200 text-3xl font-light">
                 ibSystem
               </div>
-              <div className="text-gray-500 dark:text-gray-400 text-sm font-normal">
+              <div className="text-gray-500 dark:text-gray-400 text-base font-light">
               July 2020 – April 2021 | Web Developer → Front-End Developer / UI Designer
               </div>
             </div>

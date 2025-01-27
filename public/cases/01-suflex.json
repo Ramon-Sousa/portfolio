@@ -6,8 +6,8 @@
   "title": "Optimizing the Manual Stock Counting Process",
   "subtitle": "Stock and supply counting is an essential activity in restaurant kitchens. Our solution revolutionizes this process by centralizing inventory management, replacing paper, pen, and spreadsheets with technology. Now, counting is done in a practical and accurate manner using QR codes on labels, ensuring a more efficient, modern operation fully integrated into the daily kitchen workflow.",
   "company": "Suflex",
-  "myrole": "As a Product Designer, I led the entire research and data analysis process, identifying key barriers in user experience. I created solution prototypes, conducted usability testing, and analyzed metrics to validate the implemented improvements. I worked closely with product and development teams to ensure that the changes were effective, always focusing on enhancing the mobile experience and reducing abandonment rates during skill tests.",
-  "timeFrame": "2 weeks (2023)",
+  "myrole": "As a Product Designer, I was responsible for leading the entire research process, where I was able to map the user journey, identifying the main barriers in the user experience. I wrote research scripts for in-person user interviews. Later, I created prototypes, performed usability tests, and defined metrics to validate the improvements made.",
+  "timeFrame": "2023 - 2024 | Web (Desktop, Tablet & Mobile)",
   "plataform": "Web (Desktop, Tablet & Mobile)",
   "researchMethods": "Double Diamond: Understand abandonment rates; Define the problem, metrics, and how it will be measured; Develop a solution; Delivery (Test and refinement).",
   "tools": "Miro, Notion, Hotjar, Google Analytics, Figma, Maze.",
@@ -19,72 +19,74 @@
   "banner": "/assets/cases/suflex-contagem/banner-highlights.png",
   "bannerHighlight": "/assets/cases/suflex-contagem/before-after.png",
   "tags": [
-    "Service Blueprint",
-    "Mobile",
-    "Benchmark"
+    "SaaS",
+    "Foodtech",
+    "B2B/B2C"
   ],
-  "problemName": "Contexo",
-  "problemCaption": "The company was facing challenges in reaching breakeven and expanding its market share. However, there was a lack of clarity about which paths to explore to achieve these goals. Our objective was to identify recurring pain points in restaurant management and operations and explore product solutions that could address these needs effectively.",
+  "problemCaption": "Goal:Identify recurring pain points in restaurant management and operations, and explore, as a product team, solutions that can effectively address these needs.",
+  "problemName": "Research steps",
   "goals": [
-    "Increase the number of mobile app downloads.",
-    "Reduce abandonment rate in started tests.",
-    "Improve the user experience in tests."
+    "Conduct a CSD Matrix to build the research script",
+    "Semistructured interview for data collection.",
+    "Development of a service blueprint for user validation.",
+    "Creation of a storyboard.",
+    "Blueprint validation interview"
   ],
   "description": {
     "paragraph": {
       "descTitle": "Research and Data Collection",
-      "descText": "Using tools like Hotjar and Google Analytics, we analyzed user behavior and identified the main barriers. We observed high abandonment rates in skill tests, especially for mobile users.",
-      "descImage": "/assets/cases/suflex-contagem/insights.png",
-      "imageCaption": "Interviews with users and heatmap analysis helped map friction points and navigability issues."
+      "descText": "After CSD Matrix, we conducted the research with 6 restaurant owners, our goal was to map the restaurant's routine and identify points where we could help.",
+      "descImage": "/assets/cases/suflex-contagem/paragraph-01.png",
+      "imageCaption": "Interview answers has been blurred to preserve confidential informations."
     },
     "paragraph-2": {
-      "descTitle": "Relevant Persona",
-      "descText": "The 'Applicators' persona was the most relevant for business goals, representing a large part of our user base. They played a crucial role in future platform monetization strategies and became essential to the product's growth towards achieving breakeven.",
-      "descImage": "/assets/cases/suflex-contagem/personas.png",
-      "imageCaption": ""
+      "descTitle": "After first research",
+      "descText": "During the research phase, we identified several recurring pain points among the interviewees, including a lack of control over inventory due to reliance on manual processes, high employee turnover coupled with challenges in training and production planning, the complexity of managing work schedules and supplier communication, and an overdependence on Excel, highlighting the pressing need for automation to improve efficiency and accuracy.",
+      "descImage": "/assets/cases/suflex-contagem/paragraph-02.png",
+      "imageCaption": "The manual process of counting stock."
     },
     "paragraph-3": {
-      "descTitle": "Performance Indicator",
-      "descText": "I analyzed how often users accessed the Construction Partner in periods before improvements in skill tests. I also evaluated whether there was an increase in certificate issuance after the introduction of these tests.",
-      "descImage": "/assets/cases/suflex-contagem/perfomance.png",
-      "imageCaption": "Data from the period before the discovery process."
+      "descTitle": "Mapping the Service Blueprint:",
+      "descText": "After completing the initial interviews, we began mapping the operational journey within the restaurant. Our goal was to clearly understand who was responsible for each stage, identify competitors, as well as capture emotions, questions, and potential areas where the product could provide value.",
+      "descImage": "/assets/cases/suflex-contagem/paragraph-03.png",
+      "imageCaption": "Sketch from service blueprint"
     },
     "paragraph-4": {
-      "descTitle": "Test Scenarios",
-      "descText": "For usability testing, I developed wireframes that addressed key tasks users should perform. The test script included actions such as finding the new course page, locating ongoing tests, navigating between available categories, and reporting an error in a specific question. Users were also encouraged to evaluate the relevance of the 'Challenges' proposed and share their results upon completing a test.",
-      "descImage": "/assets/cases/suflex-contagem/wireframe.png",
-      "imageCaption": "Wireframe used in the first usability test. It's important to note the 'Tabs' navigation, which was discarded after the test (This was also replicated in other flows being developed simultaneously)."
+      "descTitle": "Kitchen journey mapped",
+      "descText": "After validating the service blueprint with new interviewees, we gained a clear understanding of the key stages of this journey and the main pain points in restaurant operations. Our next step was to validate which stages would be the most effective for us to address.",
+      "descImage": "/assets/cases/suflex-contagem/paragraph-04.png",
+      "imageCaption": "Kitchen journey"
     },
     "paragraph-5": {
-      "descTitle": "Usability Testing",
-      "descText": "I conducted two versions of usability tests. In the first version, a group of five users, representing the defined personas, faced difficulties in various steps of the test. Based on this feedback, I implemented improvements and conducted a new test, involving both new users and some participants from the first version.",
-      "descImage": "/assets/cases/suflex-contagem/persona-usabillity-test.png",
-      "imageCaption": "Key insights collected after conducting the usability test with the 'Applicator' persona users."
+      "descTitle": "Challenges Encountered",
+      "descText": "Once we determined that the Stock Counting stage would be prioritized, we outlined the primary objectives our solution needed to achieve: eliminating manual processes for stock counting, ensuring frequent usage of the feature by our users, and eliminating errors caused by duplicate product counts.",
+      "descImage": "/assets/cases/suflex-contagem/paragraph-05.png",
+      "imageCaption": "The implementation of this functionality proved to require more effort than initially anticipated."
     },
     "paragraph-6": {
-      "descTitle": "High Fidelity and Handoff",
-      "descText": "After validating wireframes and usability tests, I developed high-fidelity screens in Figma, ensuring a more refined visual experience aligned with the platform's design system. I then handed off the designs to the developers, documenting the components, spacings, colors, and interactive behaviors in detail.",
-      "descImage": "/assets/cases/suflex-contagem/high-fidelity.png",
-      "imageCaption": "High-fidelity screens, already incorporating a rebrand done in parallel by the marketing team during the project execution."
+      "descTitle": "Proposed Solution",
+      "descText": "A QR Code was added to the product control label, opening up a wide range of possibilities for exploration as a Product feature. The label became a control point, enabling traceability of supplies, reducing errors from manual processes, and unlocking other potential functionalities.",
+      "descImage": "/assets/cases/suflex-contagem/paragraph-06.png",
+      "imageCaption": "On the left, the screen for QR Code scanning used in stock counting; on the right, the new label structure featuring the QR Code."
     }
   },
   "resultName": "Results",
-  "resultCaption": "I used tools like Google Analytics and Hotjar to monitor platform performance over a three-month period.",
+  "resultCaption": "I used tools like Google Analytics and Hotjar to monitor platform performance over a twoo-month period.",
   "results": {
     "outcome": {
-      "resultIcon": "<BadgeCheck />",
-      "resultTitle": "+18%",
-      "resultDesc": "We observed an 18% increase in the number of users completing skill tests, rising from 1,586 to 1,871 monthly completions."
+      "resultIcon": "<Repeat2 />",
+      "resultTitle": "+94%",
+      "resultDesc": "After the launch, we observed that approximately 94% of users returned to the app to use the feature again after their first experience, demonstrating a high initial engagement rate."
     },
     "outcome-2": {
-      "resultIcon": "<TabletSmartphone />",
-      "resultTitle": "+23%",
-      "resultDesc": "The app recorded a 23% growth in downloads, increasing from 871 to 1,071 new users in the quarter after implementation."
+      "resultIcon": "<Clock12 />",
+      "resultTitle": "2:23",
+      "resultDesc": "The average session time recorded was 2 minutes and 23 seconds. By analyzing usage recordings, we noticed that many users completed one counting process and immediately started another, suggesting they were counting different physical areas within their operations, such as distinct sections of a restaurant or kitchen."
     },
     "outcome-3": {
       "resultIcon": "<CircleArrowOutDownRight />",
-      "resultTitle": "-13%",
-      "resultDesc": "The abandonment rate during skill test execution decreased by 13%, from 7.38% to 6.42%."
+      "resultTitle": "14.3%",
+      "resultDesc": "Despite this high initial engagement, we identified an abandonment rate that, although expected during the first months of experimentation, could be reduced. One of the main contributing factors was the warning modal displayed when scanning an already registered label. In some cases, this alert interrupted the user’s journey, making the experience less seamless."
     }
   }
 }

@@ -122,10 +122,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
                       title: "Team Structure",
                       content: project.teamStructure,
                     },
-                    {
-                      title: "Research Methods",
-                      content: project.researchMethods,
-                    },
+                    // {
+                    //   title: "Research Methods",
+                    //   content: project.researchMethods,
+                    // },
                   ].map((section, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
                       <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-2">
@@ -141,9 +141,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
                 {/* Coluna secundária */}
                 <div className="col-span-1 flex flex-col gap-6">
                   {[
-                    { title: "Timeline", content: project.timeFrame },
+                    { title: "Timeline and plataform", content: project.timeFrame },
                     { title: "Tools", content: project.tools },
-                    { title: "Platform", content: project.plataform },
+                    // { title: "Platform", content: project.plataform },
                   ].map((section, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
                       <h4 className="text-gray-800 dark:text-gray-200 font-semibold pb-2">

@@ -4,10 +4,10 @@
   "caseType": "case",
   "slug": "construction-partner-quiz-experience-redesign",
   "title": "Redesigning the User Experience for the Quiz Feature",
-  "subtitle": "Parceiro da Construção is a startup from the Saint-Gobain group that offers free online training for construction professionals. Available on Android, iOS, and web platforms, the product aims to educate and certify workers, expanding their opportunities in the job market.",
+  "subtitle": "Parceiro da Construção is a startup from the Saint-Gobain group that offers free online training for construction professionals. Available on Android, iOS, and web platforms, the product aims to educate and certify construction professionals, making them more qualified professionals for the job market.",
   "company": "Diwe",
-  "myrole": "As a Product Designer, I was responsible for leading the entire research and data analysis process, identifying key barriers in the user experience. I created solution prototypes, conducted usability tests, and analyzed metrics to validate the improvements made. I worked closely with the product and development teams to ensure that the changes were effective, always focusing on improving the mobile experience and reducing abandonment rates in skill tests.",
-  "timeFrame": "2 weeks (2022)",
+  "myrole": "As a Product Designer, i was responsible for leading the entire research and data analysis process, identifying key barriers in the user experience. I leading user interviews, analyed Hotjar recodings to created prototypes, conducted usability tests, and analyzed metrics to validate the improvements made. I worked closely with the product and development teams to ensure that the changes were effective, always focusing on improving the mobile experience and reducing abandonment rates in skill tests.",
+  "timeFrame": "2 weeks (2022) - App (Android and iOS)",
   "plataform": "App (Android and iOS)",
   "researchMethods": "Double Diamond: Understand abandonment rates; Define the problem, metrics, and how it will be measured; Develop a solution; Delivery (Test and refinement).",
   "tools": "Miro, Notion, Hotjar, Google Analytics, Figma, Maze.",
@@ -19,8 +19,8 @@
   "banner": "/assets/cases/pdc/banner-highlights.png",
   "bannerHighlight": "/assets/cases/pdc/before-after.png",
   "tags": [
-    "Product Led Growth",
-    "User experience"
+    "B2B/B2C",
+    "SaaS"
   ],
   "problemName": "Motivations",
   "problemCaption": "Problem Statement: Despite the numerous usability issues identified on the platform, our users showed significant value in skill tests, evidenced by high completion rates and frequent access to the flow. However, the difficulties faced during navigation compromised the overall experience and led users to disengage from the platform.",
@@ -31,10 +31,8 @@
   ],
   "description": {
     "paragraph": {
-      "descTitle": "Research and Data Collection",
-      "descText": "Using tools like Hotjar and Google Analytics, we analyzed user behavior and identified the main barriers. We observed high abandonment rates in skill tests, especially for mobile users.",
-      "descImage": "/assets/cases/pdc/insights.png",
-      "imageCaption": "Interviews with users and heatmap analysis helped map friction points and navigability issues."
+      "descTitle": "Step by step",
+      "descText": "First step: Gather usage indicators through Google Analytics and Hotjar. Second step: Analyze existing research documentation on the skill tests. Third step: Conduct a CSD Matrix to build the research script. Fourth step: Create the research script and recruit users."
     },
     "paragraph-2": {
       "descTitle": "Relevant Persona",

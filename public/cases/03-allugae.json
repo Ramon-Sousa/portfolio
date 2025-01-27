@@ -7,7 +7,7 @@
   "subtitle": "This project was developed as a final assignment for university. The idea behind Allugaê was to create a company that aims to simplify the process of renting smartphones, allowing people to upgrade their phones more frequently while always having newer models. All of this without paying high prices for a phone over several years.",
   "company": "Case Study",
   "myrole": "As a Product Designer, I was responsible for conducting a competitor benchmark, identifying points where the company could differentiate itself, and defining a business model that would be attractive and competitive with other companies.",
-  "timeFrame": "4 weeks (2023)",
+  "timeFrame": "4 weeks (2023) - Web",
   "plataform": "Web",
   "researchMethods": "Benchmarking; Moodboard; Usability test.",
   "tools": "Forms, Notion, Google Analytics, Figma, Maze.",
@@ -20,8 +20,7 @@
   "bannerHighlight": "/assets/cases/allugae/before-after.png",
   "tags": [
     "TCC",
-    "Prototype",
-    "Benchmark"
+    "B2C"
   ],
   "problemName": "Interactive Prototype",
   "problemCaption": "You can navigate through the prototypes used in usability tests by clicking here.",
