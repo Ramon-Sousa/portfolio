@@ -1,34 +1,14 @@
+# netlify.toml — versão resolvida
+
 [build]
+  command = "npm run build"
   publish = ".next"
-  command = "npm run build:netlify"
 
 [build.environment]
-  NODE_VERSION = "18"
-  NPM_FLAGS = "--version"
+  # Use a mesma versão do Node que você usa localmente (18 LTS recomendado para Next 14)
+  NODE_VERSION = "18.20.3"
+  # Opcional: ajuda em conflitos de peer deps; remova se não precisar
+  NPM_FLAGS = "--legacy-peer-deps"
 
-# For Next.js static sites
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
-
-# SPA fallback for dynamic routes
-[[redirects]]
-  from = "/projects/*"
-  to = "/projects/[slug].html"
-  status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-# Ensure environment variables are available during build
-[context.production]
-  command = "npm run build:netlify"
-
-[context.deploy-preview]
-  command = "npm run build:netlify"
-
-[context.branch-deploy]
-  command = "npm run build:netlify"
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
