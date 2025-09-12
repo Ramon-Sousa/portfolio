@@ -1,10 +1,14 @@
+# netlify.toml — versão resolvida
+
 [build]
   command = "npm run build"
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "18.20.3" # ou a mesma versão que você usa localmente
-  NPM_FLAGS = "--legacy-peer-deps" # opcional, ajuda a evitar conflitos de dependência
+  # Use a mesma versão do Node que você usa localmente (18 LTS recomendado para Next 14)
+  NODE_VERSION = "18.20.3"
+  # Opcional: ajuda em conflitos de peer deps; remova se não precisar
+  NPM_FLAGS = "--legacy-peer-deps"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

@@ -11,7 +11,12 @@ import { Input } from "@/components/ui/input";
 const casePasswords = process.env.NEXT_PUBLIC_VALID_KEYS
   ? process.env.NEXT_PUBLIC_VALID_KEYS.split(",") // Converte a string em um array
   : [];
-  // console.log(casePasswords);
+
+// Debug: verificar se as variáveis estão sendo carregadas
+if (typeof window !== 'undefined') {
+  console.log('🔐 NEXT_PUBLIC_VALID_KEYS loaded:', !!process.env.NEXT_PUBLIC_VALID_KEYS);
+  console.log('🔐 Number of passwords configured:', casePasswords.length);
+}
 
 
 // Esquema de validação usando zod

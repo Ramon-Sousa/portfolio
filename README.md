@@ -1,58 +1,57 @@
-# Meu Portfólio Pessoal
+# My Personal Portfolio
 
-Este é o meu portfólio pessoal, um projeto desenvolvido para apresentar meus trabalhos e experiências de forma interativa e visualmente atraente. O site inclui uma seção de projetos, onde você pode ver casos de estudos detalhados, uma área sobre mim e informações de contato.
+This is my personal portfolio, a project developed to present my work and experiences in an interactive and visually appealing way. The website includes a project section where you can view detailed case studies, a section about me, and contact information.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **Next.js**: Framework React para renderização do lado do servidor e geração de sites estáticos.
-- **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
-- **Lucide Icons**: Biblioteca de ícones para React.
-- **Node.js**: Ambiente de execução JavaScript do lado do servidor.
-- **Webpack**: Empacotador de módulos para a aplicação.
+- **React**: JavaScript library for building user interfaces.
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: CSS framework for fast and responsive styling.
+- **Lucide Icons**: Icon library for React.
+- **Node.js**: JavaScript runtime environment on the server-side.
+- **Webpack**: Module bundler for the application.
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
 portfolio/
 ├── public/
-│   ├── cases/              # Arquivos JSON dos casos de estudo
-│   └── assets/             # Imagens e ícones utilizados no portfólio
+│   ├── cases/              # JSON files of the case studies
+│   └── assets/             # Images and icons used in the portfolio
 ├── src/
-│   ├── app/                # Componentes da aplicação
-│   │   ├── _components/    # Componentes reutilizáveis (Navbar, Footer)
-│   │   ├── projects/       # Páginas de projetos individuais
-│   │   └── [slug]/         # Páginas dinâmicas baseadas em slug
-│   ├── components/         # Componentes UI (Breadcrumb, etc.)
-│   ├── styles/             # Estilos globais
-│   └── utils/              # Funções utilitárias
-├── package.json             # Dependências e scripts do projeto
-└── next.config.js          # Configurações do Next.js
+│   ├── app/                # Application components
+│   │   ├── _components/    # Reusable components (Navbar, Footer)
+│   │   ├── projects/       # Individual project pages
+│   │   └── [slug]/         # Dynamic pages based on slug
+│   ├── components/         # UI components (Breadcrumb, etc.)
+│   ├── styles/             # Global styles
+│   └── utils/              # Utility functions
+├── package.json            # Dependencies and scripts for the project
+└── next.config.js          # Next.js configurations
 ```
 
-## Como Instalar
+## How to Install
 
-1. **Clone o repositório**:
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/seu-usuario/portfolio.git
+   git clone https://github.com/your-username/portfolio.git
    cd portfolio
-   ```
 
-2. **Instale as dependências**:
+2. **Install the dependencies:**
 
-   Você precisa do Node.js instalado. Se não tiver, você pode [baixar e instalar aqui](https://nodejs.org/).
+   You need Node.js installed. If you don’t have it, you can download and install it here. (https://nodejs.org/).
 
    ```bash
    npm install
    ```
 
-3. **Inicie o servidor de desenvolvimento**:
+3. **Start the development server:**
 
    ```bash
    npm run dev
    ```
 
-   O site estará disponível em [http://localhost:3000](http://localhost:3000).
+   The website will be available at [http://localhost:3000](http://localhost:3000).
 
 
