@@ -3,8 +3,14 @@
   "privateCase": true,
   "caseType": "case",
   "slug": "optimizing-manual-stock-counting-process-privateCase-21012025",
-  "title": "Optimizing the Manual Stock Counting Process",
-  "subtitle": "Stock and supply counting is an essential activity in restaurant kitchens. Our solution revolutionizes this process by centralizing inventory management, replacing paper, pen, and spreadsheets with technology. Now, counting is done in a practical and accurate manner using QR codes on labels, ensuring a more efficient, modern operation fully integrated into the daily kitchen workflow.",
+  "title": {
+    "en": "Optimizing the Manual Stock Counting Process",
+    "pt-br": "Otimizando o Processo Manual de Contagem de Estoque"
+  },
+  "subtitle": {
+    "en": "Stock and supply counting is an essential activity in restaurant kitchens. Our solution revolutionizes this process by centralizing inventory management, replacing paper, pen, and spreadsheets with technology. Now, counting is done in a practical and accurate manner using QR codes on labels, ensuring a more efficient, modern operation fully integrated into the daily kitchen workflow.",
+    "pt-br": "A contagem de estoque e insumos é uma atividade essencial em cozinhas de restaurantes. Nossa solução revoluciona esse processo centralizando o gerenciamento de inventário, substituindo papel, caneta e planilhas por tecnologia. Agora, a contagem é feita de maneira prática e precisa usando QR codes em etiquetas, garantindo uma operação mais eficiente, moderna e totalmente integrada ao fluxo de trabalho diário da cozinha."
+  },
   "company": "Suflex",
   "myrole": "As a Product Designer, I was responsible for leading the entire research process, where I was able to map the user journey, identifying the main barriers in the user experience. I wrote research scripts for in-person user interviews. Later, I created prototypes, performed usability tests, and defined metrics to validate the improvements made.",
   "timeFrame": "2023 - 2024 | Web (Desktop, Tablet & Mobile)",
@@ -86,7 +92,7 @@
     "outcome-3": {
       "resultIcon": "<CircleArrowOutDownRight />",
       "resultTitle": "14.3%",
-      "resultDesc": "Despite this high initial engagement, we identified an abandonment rate that, although expected during the first months of experimentation, could be reduced. One of the main contributing factors was the warning modal displayed when scanning an already registered label. In some cases, this alert interrupted the user’s journey, making the experience less seamless."
+      "resultDesc": "Despite this high initial engagement, we identified an abandonment rate that, although expected during the first months of experimentation, could be reduced. One of the main contributing factors was the warning modal displayed when scanning an already registered label. In some cases, this alert interrupted the user's journey, making the experience less seamless."
     }
   }
 }

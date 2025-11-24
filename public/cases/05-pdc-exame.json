@@ -3,8 +3,14 @@
   "privateCase": true,
   "caseType": "case",
   "slug": "optimization-learning-platform-partner-construction-privateCase-23101652",
-  "title": "Optimization of the educational platform",
-  "subtitle": "An online learning platform focused on civil construction, optimized to offer interactive and accessible technical courses and training.",
+  "title": {
+    "en": "Optimization of the educational platform",
+    "pt-br": "Otimização da plataforma educacional"
+  },
+  "subtitle": {
+    "en": "An online learning platform focused on civil construction, optimized to offer interactive and accessible technical courses and training.",
+    "pt-br": "Uma plataforma de aprendizagem online focada em construção civil, otimizada para oferecer cursos técnicos e treinamentos interativos e acessíveis."
+  },
   "company": "Diwe",
   "myrole": "As a Product Designer, I was responsible for leading the entire research and data analysis process, identifying key barriers in the user experience. I created solution prototypes, conducted usability tests, and analyzed metrics to validate the improvements implemented. I worked closely with the product and development teams to ensure the changes were effective, always focusing on improving the mobile experience and reducing abandonment rates in usability tests.",
   "timeFrame": "2 weeks (2022)",

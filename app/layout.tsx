@@ -4,6 +4,7 @@ import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import { LanguageProvider } from "./_context/LanguageContext";
 
 const raleway = Work_Sans({
   subsets: ["latin"],
@@ -29,9 +30,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div vaul-drawer-wrapper="" className="min-h-[100vh]">
-            {children}
-          </div>
+          <LanguageProvider>
+            <div vaul-drawer-wrapper="" className="min-h-[100vh]">
+              {children}
+            </div>
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

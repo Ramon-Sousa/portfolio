@@ -2,46 +2,38 @@
 
 import * as React from "react";
 import { useTheme } from "next-themes";
-import { Switch } from "@/components/ui/switch";
-import { Moon } from "lucide-react";
-import { Sun } from "lucide-react";
-import { useEffect } from "react";
+import { Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   const toggleTheme = () => {
-    // Altera o tema com base no tema atual
     const nextTheme = theme === "dark" ? "light" : "dark";
     setTheme(nextTheme);
   };
 
-  // Armazena o tema atual no localStorage
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) {
-      setTheme(storedTheme);
-    } else {
-      setTheme("dark");
-    }
-  }, [theme]);
+    setMounted(true);
+  }, []);
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return <div className="h-[1.2rem] w-[1.2rem]" />;
+  }
 
   return (
-    <div className="flex items-center gap-2">
-      <Moon
-        className={`h-[1.2rem] w-[1.2rem] transition-opacity duration-300 text-gray-800 dark:text-gray-300`}
-        aria-hidden="true" // Esconde o ícone da lua para leitores de tela quando não está visível
-      />
-      <Switch
-        onCheckedChange={toggleTheme}
-        checked={theme === "light"}
-        aria-label="Toggle theme" // Acessibilidade
-      />
-
-      <Sun
-        className={`h-[1.2rem] w-[1.2rem] transition-opacity duration-300 text-gray-800 dark:text-gray-300`}
-        aria-hidden="true" // Esconde o ícone do sol para leitores de tela quando não está visível
-      />
-    </div>
+    <button
+      onClick={toggleTheme}
+      className="flex items-center justify-center transition-transform hover:scale-110 duration-200"
+      aria-label="Toggle theme"
+    >
+      {theme === "dark" ? (
+        <Sun className="h-[1.2rem] w-[1.2rem] text-gray-800 dark:text-gray-300" />
+      ) : (
+        <Moon className="h-[1.2rem] w-[1.2rem] text-gray-800 dark:text-gray-300" />
+      )}
+    </button>
   );
 }

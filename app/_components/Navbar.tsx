@@ -2,13 +2,16 @@
 import React, { useState, useEffect } from "react";
 import { Github, Menu, X, Linkedin } from "lucide-react";
 import { ModeToggle } from "../_components/Toggle";
+import { LanguageToggle } from "../_components/LanguageToggle";
+import { useLanguage } from "../_context/LanguageContext";
 
 function Navbar() {
+  const { dict } = useLanguage();
   const socials = [
-    { link: "/projects", label: "Projects" },
+    { link: "/projects", label: dict.navbar.projects },
     {
       link: "https://www.linkedin.com/in/ramon-sousa-pereira/",
-      label: "LinkedIn",
+      label: dict.navbar.linkedin,
     },
     // { link: "/about", label: "Sobre" },
   ];
@@ -83,6 +86,7 @@ function Navbar() {
               ))}
               <div className="lg:inline-flex items-center gap-3 px-4 py-2">
                 <ModeToggle />
+                <LanguageToggle />
               </div>
             </ul>
           </div>
@@ -127,6 +131,7 @@ function Navbar() {
         {/* Toggle para troca de Tema */}
         <div className="hidden lg:inline-flex items-center  ml-8 gap-3 border-l border-gray-600 pl-8">
           <ModeToggle />
+          <LanguageToggle />
         </div>
       </div>
     </nav>
