@@ -3,8 +3,14 @@
   "privateCase": false,
   "caseType": "case",
   "slug": "construction-partner-quiz-experience-redesign",
-  "title": "Redesigning the User Experience for the Quiz Feature",
-  "subtitle": "Parceiro da Construção is a startup from the Saint-Gobain group that offers free online training for construction professionals. Available on Android, iOS, and web platforms, the product aims to educate and certify construction professionals, making them more qualified professionals for the job market.",
+  "title": {
+    "en": "Redesigning the User Experience for the Quiz Feature",
+    "pt-br": "Redesenhando a Experiência do Usuário para o Recurso de Quiz"
+  },
+  "subtitle": {
+    "en": "Parceiro da Construção is a startup from the Saint-Gobain group that offers free online training for construction professionals. Available on Android, iOS, and web platforms, the product aims to educate and certify construction professionals, making them more qualified professionals for the job market.",
+    "pt-br": "Parceiro da Construção é uma startup do grupo Saint-Gobain que oferece treinamento online gratuito para profissionais da construção. Disponível nas plataformas Android, iOS e web, o produto visa educar e certificar profissionais da construção, tornando-os profissionais mais qualificados para o mercado de trabalho."
+  },
   "company": "Diwe",
   "myrole": "As a Product Designer, i was responsible for leading the entire research and data analysis process, identifying key barriers in the user experience. I leading user interviews, analyed Hotjar recodings to created prototypes, conducted usability tests, and analyzed metrics to validate the improvements made. I worked closely with the product and development teams to ensure that the changes were effective, always focusing on improving the mobile experience and reducing abandonment rates in skill tests.",
   "timeFrame": "2 weeks (2022) - App (Android and iOS)",

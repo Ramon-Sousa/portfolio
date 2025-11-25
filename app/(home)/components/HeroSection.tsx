@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
+import { useLanguage } from "@/app/_context/LanguageContext";
 
 export default function HeroSection() {
-  const words = ["experiences", "journeys", "emotions", "conections"];
+  const { dict } = useLanguage();
   return (
     <section
       className="h-auto py-20 sm:py-32 lg:py-40 flex items-center justify-center"
@@ -11,10 +13,10 @@ export default function HeroSection() {
       <div className="container mx-auto">
         <div className="flex-col justify-end inline-flex">
           <h1 className="text-2xl sm:text-6xl lg:text-8xl font-light text-gray-800 dark:text-gray-200">
-            Building products,
+            {dict.hero.building}
           </h1>
           <h2 className="text-2xl sm:text-6xl lg:text-8xl font-light text-gray-800 dark:text-gray-200">
-            interactions & <span className="text-2xl sm:text-6xl lg:text-8xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-light italic"> <FlipWords words={words} /></span>
+            {dict.hero.interactions} <span className="text-2xl sm:text-6xl lg:text-8xl bg-gradient-to-r from-gray-600 to-gray-950  dark:from-gray-50 from-10% dark:to-gray-400 to-90% text-transparent bg-clip-text font-serif font-light italic"> <FlipWords words={dict.hero.words} /></span>
           </h2>
         </div>
         {/* <div className="flex-col justify-end inline-flex w-1/2">
@@ -32,7 +34,7 @@ export default function HeroSection() {
               Ramon Sousa
             </div>
             <div className="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-base font-light tracking-wide">
-              Product Designer & Front-End Developer
+              {dict.hero.role}
             </div>
           </div>
         </div>

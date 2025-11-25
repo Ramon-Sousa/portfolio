@@ -3,8 +3,14 @@
   "privateCase": false,
   "caseType": "link",
   "slug": "https://miitol.com.br/",
-  "title": "Miitol - Industrial Assembly",
-  "subtitle": "Miitol is a company that has been providing services for over ten years with fully qualified labor and all the necessary safety protocols, always ensuring the execution of its work with speed and quality.",
+  "title": {
+    "en": "Miitol - Industrial Assembly",
+    "pt-br": "Miitol - Montagem Industrial"
+  },
+  "subtitle": {
+    "en": "Miitol is a company that has been providing services for over ten years with fully qualified labor and all the necessary safety protocols, always ensuring the execution of its work with speed and quality.",
+    "pt-br": "Miitol é uma empresa que há mais de dez anos presta serviços com mão de obra totalmente qualificada e todos os protocolos de segurança necessários, sempre garantindo a execução de seu trabalho com rapidez e qualidade."
+  },
   "company": "Freelancer",
   "myrole": "As a UX/UI Designer, I was responsible for conducting the research and data analysis process to build an institutional website to promote the Genesi Laboratory. I held meetings with stakeholders, structured a benchmark, created solution prototypes, and defined metrics for future project improvements.",
   "timeFrame": "2 weeks (2022)",

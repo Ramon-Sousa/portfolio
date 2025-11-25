@@ -37,6 +37,7 @@ portfolio/
    ```bash
    git clone https://github.com/your-username/portfolio.git
    cd portfolio
+   ```
 
 2. **Install the dependencies:**
 
@@ -46,7 +47,23 @@ portfolio/
    npm install
    ```
 
-3. **Start the development server:**
+3. **Configure as variáveis de ambiente**:
+
+   Copie o arquivo `.env.example` para `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Edite o arquivo `.env` e adicione a senha para acessar os casos privados:
+
+   ```env
+   NEXT_PUBLIC_VALID_KEYS=sua_senha_aqui
+   ```
+
+   > **Nota**: Você pode adicionar múltiplas senhas separadas por vírgula, por exemplo: `senha1,senha2,senha3`
+
+4. **Inicie o servidor de desenvolvimento**:
 
    ```bash
    npm run dev
@@ -54,4 +71,32 @@ portfolio/
 
    The website will be available at [http://localhost:3000](http://localhost:3000).
 
+## Funcionalidades
 
+### 🌐 Internacionalização (i18n)
+
+O portfólio suporta dois idiomas: **Português (PT-BR)** e **Inglês (EN)**.
+
+- **Idioma padrão**: Português (PT-BR)
+- **Troca de idioma**: Use o switch no header (bandeiras 🇧🇷/🇺🇸)
+- **Persistência**: A escolha do idioma é salva no `localStorage`
+- **Conteúdo traduzido**:
+  - Navegação e interface
+  - Títulos e descrições dos projetos
+  - Seção de experiência profissional
+  - Modais e mensagens do sistema
+
+### 🎨 Temas
+
+- **Tema escuro** (padrão)
+- **Tema claro**
+- Troca de tema via ícone no header (☀️/🌙)
+- Persistência da preferência
+
+### 🔒 Casos Privados
+
+Alguns projetos são protegidos por senha. Para acessá-los:
+
+1. Clique no card do projeto com o ícone de cadeado 🔒
+2. Digite a senha configurada no arquivo `.env`
+3. Acesse o conteúdo completo do caso de estudo

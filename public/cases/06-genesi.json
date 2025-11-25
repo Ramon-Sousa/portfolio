@@ -3,8 +3,14 @@
   "privateCase": false,
   "caseType": "link",
   "slug": "https://genesimedlab.com.br/",
-  "title": "Genesi Laboratory Medicine",
-  "subtitle": "The project focused on enhancing the user experience for Genesi Laboratory Medicine, a company that stands out in providing accessible and high-quality diagnostic services.",
+  "title": {
+    "en": "Genesi Laboratory Medicine",
+    "pt-br": "Genesi Medicina Laboratorial"
+  },
+  "subtitle": {
+    "en": "The project focused on enhancing the user experience for Genesi Laboratory Medicine, a company that stands out in providing accessible and high-quality diagnostic services.",
+    "pt-br": "O projeto focou em melhorar a experiência do usuário para a Genesi Medicina Laboratorial, uma empresa que se destaca em fornecer serviços de diagnóstico acessíveis e de alta qualidade."
+  },
   "company": "Freelancer",
   "myrole": "As a UX/UI Designer, I was responsible for conducting the research and data analysis process to build an institutional website to promote the Genesi Laboratory. I held meetings with stakeholders, structured a benchmark, created solution prototypes, and defined metrics for future project improvements.",
   "timeFrame": "2 weeks (2022)",

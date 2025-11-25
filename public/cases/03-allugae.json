@@ -3,8 +3,14 @@
   "privateCase": false,
   "caseType": "case",
   "slug": "allugae",
-  "title": "Allugae: Your next phone is here!",
-  "subtitle": "This project was developed as a final assignment for university. The idea behind Allugaê was to create a company that aims to simplify the process of renting smartphones, allowing people to upgrade their phones more frequently while always having newer models. All of this without paying high prices for a phone over several years.",
+  "title": {
+    "en": "Allugae: Your next phone is here!",
+    "pt-br": "Allugae: Seu próximo celular está aqui!"
+  },
+  "subtitle": {
+    "en": "This project was developed as a final assignment for university. The idea behind Allugaê was to create a company that aims to simplify the process of renting smartphones, allowing people to upgrade their phones more frequently while always having newer models. All of this without paying high prices for a phone over several years.",
+    "pt-br": "Este projeto foi desenvolvido como trabalho final de faculdade. A ideia por trás do Allugaê era criar uma empresa que visa simplificar o processo de aluguel de smartphones, permitindo que as pessoas troquem seus telefones com mais frequência, sempre tendo modelos mais novos. Tudo isso sem pagar preços altos por um telefone ao longo de vários anos."
+  },
   "company": "Case Study",
   "myrole": "As a Product Designer, I was responsible for conducting a competitor benchmark, identifying points where the company could differentiate itself, and defining a business model that would be attractive and competitive with other companies.",
   "timeFrame": "4 weeks (2023) - Web",

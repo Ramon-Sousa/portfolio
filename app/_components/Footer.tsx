@@ -4,7 +4,10 @@ import {Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { FileText } from "lucide-react";
 import { Globe } from "lucide-react";
+import { useLanguage } from "../_context/LanguageContext";
+
 export default function Footer() {
+  const { dict } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [time, setTime] = useState<string>("");
 
@@ -62,7 +65,7 @@ export default function Footer() {
             target="_blank"
           >
            <FileText />
-            Resume
+            {dict.footer.resume}
           </Link> 
           <div className="text-center sm:text-left">
             contato@ramondesigner.com
@@ -79,7 +82,7 @@ export default function Footer() {
           <Globe  />
           </div>
          <div className="flex-row justify-items-start">
-         <p className="text-green-400 dark:text-green-700">Based in Brazil</p>
+         <p className="text-green-400 dark:text-green-700">{dict.footer.based}</p>
          <p className="">{`SP • ${time}`}</p>
          </div>
         </div>

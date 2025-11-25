@@ -3,8 +3,14 @@
   "privateCase": false,
   "caseType": "link",
   "slug": "https://apps.apple.com/br/app/divide-a%C3%AD-bill/id1664642166?l=en-GB",
-  "title": "Divide Aí, Bill - Split your bill without complications",
-  "subtitle": "How about never having to worry about splitting the bar bill with your friends again? With Bill, you focus on the fun and let the app handle all the calculations.",
+  "title": {
+    "en": "Divide Aí, Bill - Split your bill without complications",
+    "pt-br": "Divide Aí, Bill - Divida sua conta sem complicações"
+  },
+  "subtitle": {
+    "en": "How about never having to worry about splitting the bar bill with your friends again? With Bill, you focus on the fun and let the app handle all the calculations.",
+    "pt-br": "Que tal nunca mais se preocupar em dividir a conta do bar com seus amigos? Com o Bill, você foca na diversão e deixa o app cuidar de todos os cálculos."
+  },
   "company": "Freelancer",
   "myrole": "As a Product Designer, I was responsible for leading the entire research and data analysis process, identifying key barriers in the user experience. I created solution prototypes, conducted usability tests, and analyzed metrics to validate the improvements implemented. I worked closely with the product and development teams to ensure the changes were effective, always focusing on improving the mobile experience and reducing abandonment rates in usability tests.",
   "timeFrame": "2 weeks (2022)",
